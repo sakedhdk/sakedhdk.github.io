@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://sakedhdk.github.io/sake.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://sakedhdk.github.io/sake.owl"
+     versionIRI="https://sakedhdk.github.io/sake.owl">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <ObjectProperty IRI="#isProvedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#demonstrates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#proves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIdeaOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSupportedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAsIdea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Demonstration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thesis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDemonstratedBy"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Demonstration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#demonstrates"/>
+            <Class IRI="#Theory"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demonstration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isProvedBy"/>
+            <Class IRI="#Evidence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demonstration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#supports"/>
+            <Class IRI="#Thesis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evidence"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#proves"/>
+            <Class IRI="#Demonstration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAsIdea"/>
+            <Class IRI="#Thesis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDemonstratedBy"/>
+            <Class IRI="#Demonstration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thesis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isIdeaOf"/>
+            <Class IRI="#Theory"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thesis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSupportedBy"/>
+            <Class IRI="#Demonstration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Demonstration"/>
+        <Class IRI="#Evidence"/>
+        <Class IRI="#Theory"/>
+        <Class IRI="#Thesis"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#demonstrates"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAsIdea"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDemonstratedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isIdeaOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isProvedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSupportedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#proves"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#supports"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty IRI="#isSupportedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#demonstrates"/>
+        <ObjectProperty IRI="#isDemonstratedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAsIdea"/>
+        <ObjectProperty IRI="#isIdeaOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isProvedBy"/>
+        <ObjectProperty IRI="#proves"/>
+    </InverseObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Demonstration</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The Demonstration is the intellectual procedure made by one or more scholars to demonstrate the scientifical validity of the Idea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Evidence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An Evidence is something that scientifically proves the Demonstration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Theory</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The Theory is an Idea proposed and demonstrated by one or more scholars</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Thesis</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The Thesis is an Idea proposed by one or more scholars</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
