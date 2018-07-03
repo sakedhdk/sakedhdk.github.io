@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://sakedhdk.github.io/sake#"
+     xml:base="https://sakedhdk.github.io/sake"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://sakedhdk.github.io/sake"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#demonstrates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#demonstrates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isDemonstratedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#hasAsIdea -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#hasAsIdea">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isIdeaOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isDemonstratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isDemonstratedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isIdeaOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isIdeaOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isProvedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isProvedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#proves"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isSupportedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isSupportedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#proves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#proves">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#supports -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#supports">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Demonstration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Demonstration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#demonstrates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isProvedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Evidence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#supports"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Thesis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Demonstration is the intellectual procedure made by one or more scholars to demonstrate the scientifical validity of the Idea</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Evidence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Evidence">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#proves"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Demonstration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Evidence is something that scientifically proves the Demonstration</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Theory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Theory">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#hasAsIdea"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Thesis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isDemonstratedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Demonstration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Theory is an Idea proposed and demonstrated by one or more scholars</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Thesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Thesis">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isIdeaOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isSupportedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Demonstration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Thesis is an Idea proposed by one or more scholars</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Demonstration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Evidence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Theory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Thesis"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
