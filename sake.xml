@@ -21,69 +21,69 @@
     
 
 
-    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#demonstrates -->
+    <!-- https://sakedhdk.github.io/sake#demonstrates -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#demonstrates">
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#demonstrates">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isDemonstratedBy"/>
+        <owl:inverseOf rdf:resource="https://sakedhdk.github.io/sake#isDemonstratedBy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#hasAsIdea -->
+    <!-- https://sakedhdk.github.io/sake#hasAsIdea -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#hasAsIdea">
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#hasAsIdea">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isIdeaOf"/>
+        <owl:inverseOf rdf:resource="https://sakedhdk.github.io/sake#isIdeaOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isDemonstratedBy -->
+    <!-- https://sakedhdk.github.io/sake#isDemonstratedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isDemonstratedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isIdeaOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isIdeaOf">
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isDemonstratedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isProvedBy -->
+    <!-- https://sakedhdk.github.io/sake#isIdeaOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isProvedBy">
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isIdeaOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#proves"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isSupportedBy -->
+    <!-- https://sakedhdk.github.io/sake#isProvedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isSupportedBy">
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isProvedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://sakedhdk.github.io/sake#proves"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sakedhdk.github.io/sake#isSupportedBy -->
+
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isSupportedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#proves -->
+    <!-- https://sakedhdk.github.io/sake#proves -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#proves">
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#proves">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#supports -->
+    <!-- https://sakedhdk.github.io/sake#supports -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#supports">
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#supports">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -106,25 +106,25 @@
     
 
 
-    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Demonstration -->
+    <!-- https://sakedhdk.github.io/sake#Demonstration -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Demonstration">
+    <owl:Class rdf:about="https://sakedhdk.github.io/sake#Demonstration">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#demonstrates"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Theory"/>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#demonstrates"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isProvedBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Evidence"/>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isProvedBy"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#supports"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Thesis"/>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#supports"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Thesis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Demonstration is the intellectual procedure made by one or more scholars to demonstrate the scientifical validity of the Idea</rdfs:comment>
@@ -132,13 +132,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Evidence -->
+    <!-- https://sakedhdk.github.io/sake#Evidence -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Evidence">
+    <owl:Class rdf:about="https://sakedhdk.github.io/sake#Evidence">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#proves"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Demonstration"/>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#proves"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Demonstration"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Evidence is something that scientifically proves the Demonstration</rdfs:comment>
@@ -146,19 +146,19 @@
     
 
 
-    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Theory -->
+    <!-- https://sakedhdk.github.io/sake#Theory -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Theory">
+    <owl:Class rdf:about="https://sakedhdk.github.io/sake#Theory">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#hasAsIdea"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Thesis"/>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#hasAsIdea"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Thesis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isDemonstratedBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Demonstration"/>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isDemonstratedBy"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Demonstration"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Theory is an Idea proposed and demonstrated by one or more scholars</rdfs:comment>
@@ -166,19 +166,19 @@
     
 
 
-    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Thesis -->
+    <!-- https://sakedhdk.github.io/sake#Thesis -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Thesis">
+    <owl:Class rdf:about="https://sakedhdk.github.io/sake#Thesis">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isIdeaOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Theory"/>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isIdeaOf"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#isSupportedBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Demonstration"/>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isSupportedBy"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Demonstration"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Thesis is an Idea proposed by one or more scholars</rdfs:comment>
@@ -197,10 +197,10 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Demonstration"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Evidence"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Theory"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#Thesis"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Demonstration"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Evidence"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Theory"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Thesis"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
