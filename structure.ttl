@@ -132,49 +132,209 @@
 :section_introduction a doco:Section , deo:Introduction ;
   po:containsAsHeader :section_introduction_title ;
   po:contains
-        :sentence_1 ,
-        :sentence_2 ,
-        :sentence_3 ,
-        :sentence_4 ,
-        :sentence_5 ,
-        :sentence_6 ,
-        :sentence_7 ,
-        :sentence_8 ,
-        :sentence_9 ,
-        :sentence_10 ,
-        :sentence_11 ,
-        :sentence_12 ,
-        :sentence_13 ,
-        :sentence_14 .
+    :paragraph_1 ,
+    :paragraph_2 ,
+    :paragraph_3 .
 
 # SECTION INTRODUCTION TITLE
 :section_introduction_title a doco:SectionTitle ;
   c4o:hasContent "Introduction" .
 
+# PARAGRAPH 1
+:paragraph_1 a doco:Paragraph ;
+  po:contains
+        :sentence_1 ,
+        :sentence_2 ,
+        :sentence_3 ,
+        :sentence_4 ,
+        :sentence_5 ,
+        :sentence_6 .
+
+# SENTENCE 1
+:sentence_1 a doco:Sentence
+  c4o:hasContent "Most woodpeckers drill holes into trees to forage for insects and their larvae."
+
+# SENTENCE 2
+:sentence_2 a doco:Sentence
+  c4o:hasContent "One group of woodpeckers, the sapsuckers, draws sap out of the holes they drill with the brush-like ends of their long tongues."
+
+# SENTENCE 3
+:sentence_3 a doco:Sentence
+  c4o:hasContent "The acorn woodpecker excavates larger holes to store individual acorns; social groups of acorn woodpeckers have been known to store more than 60000 acorns, each in its individual hole, in a dead tree trunk or limb, known as a ‘granary’ (Elphick, Dunning & Sibley, 2001)."
+
+# SENTENCE 4
+:sentence_4 a doco:Sentence
+  c4o:hasContent "All woodpeckers excavate cavity nests with a horizontal entry leading to an enlarged opening below it to lay their eggs."
+
+# SENTENCE 5
+:sentence_5 a doco:Sentence
+  c4o:hasContent "Woodpeckers drum on hollow branches, beating quickly and loudly, but less forcefully than during drilling, to attract a mate or to maintain their territory."
+
+# SENTENCE 6
+:sentence_6 a doco:Sentence
+  c4o:hasContent "With all of this drilling, excavating and drumming, how do woodpeckers avoid brain injury?"
+
+# PARAGRAPH 2
+:paragraph_2 a doco:Paragraph ;
+  po:contains
+        :sentence_7 ,
+        :sentence_8 ,
+        :sentence_9 ,
+        :sentence_10 .
+
+# SENTENCE 7
+:sentence_7 a doco:Sentence
+  c4o:hasContent "The most detailed study of woodpecker drilling behaviour remains that of May et al. (1979), who made high-speed films of an acorn woodpecker Melanerpes formicivorus pecking into a tree."
+
+# SENTENCE 8
+:sentence_8 a doco:Sentence
+  c4o:hasContent "(The bird, which was unable to fly as a result of injuries from a broken wing, lived in the office of a park ranger in California and would reliably peck on a tree trunk in the office when it heard the tapping of typewriter keys)."
+
+# SENTENCE 9
+:sentence_9 a doco:Sentence
+  c4o:hasContent "Quantitative analysis of the film images showed that the woodpecker’s head moved forward in a straight trajectory, reaching maximum speeds of roughly 6–7.5 m s􏰀1, and decelerating at about 600–1500 g on impact, in 0.5–1.0ms."
+
+# SENTENCE 10
+:sentence_10 a doco:Sentence
+  c4o:hasContent "The entire forward trajectory took between 8 and 25 ms."
+
+# PARAGRAPH 3
+:paragraph_3 a doco:Paragraph ;
+  po:contains
+        :sentence_11 ,
+        :sentence_12 ,
+        :sentence_13 ,
+        :sentence_14 .
+
+# SENTENCE 11
+:sentence_11 a doco:Sentence
+  c4o:hasContent "The tolerance of the human head to impact depends on both the acceleration and the duration of that acceleration."
+
+# SENTENCE 12
+:sentence_12 a doco:Sentence
+  c4o:hasContent "The Japan Head Tolerance Curve, the lower curve in Fig. 1, shows the threshold combinations of impact acceleration and duration for concussion; accelerations above the curve cause concussion whereas those below do not (Ono et al., 1980; McLean & Anderson, 1997)."
+
+# SENTENCE 13
+:sentence_13 a doco:Sentence
+  c4o:hasContent "For shorter impact durations, higher accelerations can be tolerated."
+
+# SENTENCE 14
+:sentence_14 a doco:Sentence
+  c4o:hasContent "Note that, for a 1 ms duration impact, the threshold acceleration for concussion in humans is about 300 g: the human brain is injured at accelerations of about 1/5–1/2 of those routinely attained in repeated woodpecker drilling."
+
 # SECTION LITERATURE REVIEW
 :section_literature_review a doco:Section , deo:RelatedWork ;
   po:containsAsHeader :section_literature_review_title ;
   po:contains
-        :sentence_15 ,
-        :sentence_16 ,
-        :sentence_17 ,
-        :sentence_18 ,
-        :sentence_19 ,
-        :sentence_20 ,
-        :sentence_21 ,
-        :sentence_22 ,
-        :sentence_23 ,
-        :sentence_24 ,
-        :sentence_25 ,
-        :sentence_26 ,
-        :sentence_27 ,
-        :sentence_28 ,
-        :sentence_29 ,
-        :sentence_30 .
+    :paragraph_4 ,
+    :paragraph_5 ,
+    :paragraph_6 ,
+    :paragraph_7 ,
+    :paragraph_8 .
+  
+  # SECTION LITERATURE REVIEW TITLE
+  :section_literature_review_title a doco:SectionTitle ;
+    c4o:hasContent "Literature Review" .
+  
+  # PARAGRAPH 4
+  :paragraph_4 a doco:Paragraph ;
+    po:contains
+      :sentence_15 ,
+      :sentence_16 ,
+      :sentence_17 ,
+      :sentence_18 ,
+      :sentence_19 .
+  
+  # SENTENCE 15
+  :sentence_15 a doco:Sentence
+    c4o:hasContent "A number of suggestions have been made to explain the ability of woodpeckers to withstand the repeated impacts from drilling."
 
-# SECTION LITERATURE REVIEW TITLE
-:section_literature_review_title a doco:SectionTitle ;
-  c4o:hasContent "Literature Review" .
+  # SENTENCE 16
+  :sentence_16 a doco:Sentence
+    c4o:hasContent "The classic argument made in the ornithology literature focuses on an unusual feature of birds: cranial kinesis, or the ability to move the upper portion of the beak relative to the brain case."
+  
+  # SENTENCE 17
+  :sentence_17 a doco:Sentence
+    c4o:hasContent "Bock (1964, 1966, 1999a,b) used a static analysis of the anatomical features of birds that give rise to cranial kinesis to show that, during pecking, the force of the impact is directed away from the dorsal portion of the brain case (which is lightly constructed) and towards the ventral base of the brain case (which consists of more massive bone), so that the brain itself is protected from the impact."
+  
+  # SENTENCE 18
+  :sentence_18 a doco:Sentence
+    c4o:hasContent "This analysis appears to miss the dynamic effect: the brain itself accelerates during the impact."
+  
+  # SENTENCE 19
+  :sentence_19 a doco:Sentence
+    c4o:hasContent "Bock (1999a) does note that the brain may move forward and hit the inner wall of the skull if it is not firmly anchored in some way, possibly causing brain injury, and that there is little information on the morphological relationship of the brain to the brain case."
+
+  # PARAGRAPH 5
+  :paragraph_5 a doco:Paragraph ;
+    po:contains
+      :sentence_20 ,
+      :sentence_21 .
+  
+  # SENTENCE 20
+  :sentence_20 a doco:Sentence
+  c4o:hasContent "Simple scaling arguments indicate that small size is an advantage: as brain size decreases, the ratio of the brain mass to surface area decreases (assuming that the brain tissue density is similar across species), reducing the stress on the brain tissue associated with a given acceleration (May et al., 1979; Winkler, Christie & Nurney, 1995)."
+  
+  # SENTENCE 21
+  :sentence_21 a doco:Sentence
+    c4o:hasContent "I examine the scaling argument in more detail below."
+
+  # PARAGRAPH 6
+  :paragraph_6 a doco:Paragraph ;
+    po:contains
+      :sentence_22 ,
+      :sentence_23 ,
+      :sentence_24 ,
+      :sentence_25 .
+  
+  # SENTENCE 22
+  :sentence_22 a doco:Sentence
+    c4o:hasContent "The centripetal theory of concussion suggests that rotational, rather than translational, accelerations produce concussion (Holbourn, 1943; Ommaya et al., 1967; Ommaya & Hirsch, 1971), leading May et al. (1979) to argue that the straight-line trajectory protects the woodpecker from injury."
+
+  # SENTENCE 23
+  :sentence_23 a doco:Sentence
+    c4o:hasContent "However, later studies demonstrated that translational accelerations in non-human primates also lead to concussion (Ono et al., 1980)."
+  
+  # SENTENCE 24
+  :sentence_24 a doco:Sentence
+    c4o:hasContent "In addition, the centripetal model predicts a progression of injury from cortex to subcortex to brain stem that does not always correspond to clinical observations of concussion (Shaw, 2002)."
+  
+  # SENTENCE 25
+  :sentence_25 a doco:Sentence
+    c4o:hasContent "In light of these observations, the centripetal theory of concussion is no longer thought to be valid so that May’s argument, that the straight trajectory prevents brain injury in woodpeckers, is doubtful."
+  
+  # PARAGRAPH 7
+  :paragraph_7 a doco:Paragraph ;
+    po:contains
+      :sentence_26 ,
+      :sentence_27 ,
+      :sentence_28 .
+  
+  # SENTENCE 26
+  :sentence_26 a doco:Sentence
+    c4o:hasContent "The convulsive theory proposes that concussion occurs when mechanical stresses produce depolarization in neurons."
+  
+  # SENTENCE 27
+  :sentence_27 a doco:Sentence
+    c4o:hasContent "The brain of the woodpecker is tightly packed within the skull, and there is relatively little cerebrospinal fluid (May et al., 1976)."
+  
+  # SENTENCE 28
+  :sentence_28 a doco:Sentence
+    c4o:hasContent "Shaw (2002) has proposed that the woodpecker avoids injury through the tight packing of the brain in the skull, which he suggests prevents rotation and mechanical stressing of the brain within the skull."
+
+  # PARAGRAPH 8
+  :paragraph_8 a doco:Paragraph ;
+    po:contains
+      :sentence_29 ,
+      :sentence_30 .
+  
+  # SENTENCE 29
+  :sentence_29 a doco:Sentence
+    c4o:hasContent "Various shock absorption mechanisms, involving the muscles attached at the rear end of the mandible (Bock, 1964; Spring, 1965; May et al., 1976) or those connected to the tongue, which wraps around the back of the head (May et al., 1976), have been proposed."
+  
+  # SENTENCE 30
+  :sentence_30 a doco:Sentence
+    c4o:hasContent "Yet all of these suffer from the difficulty that such shock absorption mechanisms work by increasing the duration of the impact, decreasing the force and, consequently, the efficiency of drilling (Bock, 1999a)."
 
 # SECTION ANALYSIS to finishhhhh!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DOUDOU
 :section_analysis a doco:Section , deo: ;
@@ -187,16 +347,35 @@
 :section_acknowledgements a doco:Section , deo:Acknowledgements ;
 po:containsAsHeader :section_acknowledgements_title ;
   po:contains
-        :sentence_53 ,
-        :sentence_54 ,
-        :sentence_55 ,
-        :sentence_56 ,
-        :sentence_57 ,
-        :sentence_58 .
+    :paragraph_13.
 
 # SECTION ACKNOWLEDGEMENTS TITLE
 :section_acknowledgements_title a doco:SectionTitle ;
   c40:hasContent "Acknowledgements" .
+
+# PARAGRAPH 13
+:paragraph_8 a doco:Paragraph ;
+  po:contains
+    :sentence_56 ,
+    :sentence_57 ,
+    :sentence_58 .
+
+# SENTENCE 56
+:sentence_56 a doco:Sentence
+  c4o:hasContent "I am grateful to Professors Trey Crisco of the Department of Orthopaedics and Sharon Swartz of the Department of Ecology and Evolutionary Biology, both at Brown University, who commented on an earlier draft of this paper."
+
+# SENTENCE 57
+:sentence_57 a doco:Sentence
+  c4o:hasContent "I also appreciate early discussions with Professor Andy Biewener of the Department of Organismic and Evolutionary Biology at Harvard University."
+
+# SENTENCE 58
+:sentence_58 a doco:Sentence
+  c4o:hasContent "Mr Matt Dawson assisted with the preparation of Fig. 1. The photographs of the skulls in Fig. 2 were kindly provided by Mr Jeremiah Trimble of the Ornithology Department of the Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard College."
+       
+# BACK MATTER
+:back_matter a doco:BackMatter ;
+  po:contains
+    :section_references .
 
 # SECTION REFERENCES 
 :section_references a doco:Section , doco:BibliographicReference ;
@@ -225,97 +404,134 @@ po:containsAsHeader :section_references_title ;
 :section_references_title a doco:SectionTitle ;
   c40:hasContent "References" .
 
+# BIBLIOGRAPHY 1
+:bibliography_1
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Bock, W.J. (1964). Kinetics of the avian skull. J. Morph. 114, 1–42.";
+  biro:references <https://doi.org/10.1002/jmor.1051140102> .
+
+# BIBLIOGRAPHY 2
+:bibliography_2
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Bock, W.J. (1966). An approach to the functional analysis of bill shape. Auk 83, 10–51.";
+  biro:references <https://www.jstor.org/stable/4082976> .
+
+# BIBLIOGRAPHY 3
+:bibliography_3
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Bock, W.J. (1999a). Functional and evolutionary morphology of woodpeckers. Ostrich 70, 23–31.";
+  biro:references <https://doi.org/10.1080/00306525.1999.9639746> .
+
+# BIBLIOGRAPHY 4
+:bibliography_4
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Bock, W.J. (1999b). Cranial kinesis revisited. Zool. Anzeiger 238, 27–39.";
+  biro:references <http://rcin.org.pl/dlibra/docmetadata?id=45207>.
+
+# BIBLIOGRAPHY 5
+:bibliography_5 
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Elphick, C., Dunning, J.B. & Sibley, D.A. (Eds). (2001). The Sibley guide to bird life and bird behavior. New York: Alfred A. Knopf.";
+  biro:references <http://www.worldcat.org/oclc/863051110>.
+
+# BIBLIOGRAPHY 6
+:bibliography_6
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Holbourn, A.H.S. (1943). Mechanics of head injuries. Lancet 242, 438–441.";
+  biro:references <https://doi.org/10.1016/S0140-6736(00)87453-X>.
+
+# BIBLIOGRAPHY 7
+:bibliography_7 
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "May, P.R.A., Fuster, J.M., Haber, J. & Hirschman, A. (1979). Woodpecker drilling behaviour: an endorsement of the rotational theory of impact brain injury. Arch. Neurol. 36, 370–373.";
+  biro:references <https://www.ncbi.nlm.nih.gov/pubmed/454236>.
+
+# BIBLIOGRAPHY 8
+:bibliography_8
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "May, P.R.A., Fuster, J.M., Newman, P.A. & Hirschman, A. (1976). Woodpeckers and head injury. Lancet 307, 454–455.";
+  biro:references <https://www.ncbi.nlm.nih.gov/pubmed/55721>.
+
+# BIBLIOGRAPHY 9
+:bibliography_9
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "McLean, A.J. & Anderson, R.W.G. (1997). Biomechanics of closed head injury. Chapter 2. In Head injury: 25–37. Reilly, P. & Bullock, R. (Eds). London: Chapman & Hall.";
+  biro:references <https://doi.org/10.1016/j.cma.2008.06.006>.
+
+# BIBLIOGRAPHY 10
+:bibliography_10
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Mlikovsky, J. (1989). Brain size in birds: 3. Columbiformes through Piciformes. Vestn. Cesk. Spol. Zool. 53, 252–264.";
+  biro:references <https://eurekamag.com/research/007/069/007069293.php>.
+
+# BIBLIOGRAPHY 11
+:bibliography_11
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Ommaya, A.K., Goldsmith, W. & Thibault, L. (2002). Bio-mechanics and neuropathology of adult and paediatric head injury. Br. J. Neurosurg. 16, 220–242.";
+  biro:references <https://www.ncbi.nlm.nih.gov/pubmed/12201393>.
+
+# BIBLIOGRAPHY 12
+:bibliography_12
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Ommaya, A.K. & Hirsch, A.E. (1971). Tolerances for cerebral concussion from head impact and whiplash in primates. J. Biomech. 4, 13–21.";
+  biro:references <https://doi.org/10.1016/0021-9290(71)90011-X>.
+
+# BIBLIOGRAPHY 13
+:bibliography_13
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Ommaya, A.K., Yarnell, P., Hirsch, A.E. & Harris, E.H. (1967). Scaling of experimental data on cerebral concussion in sub-human primates to concussion threshold for man. In Proceedings of the 11th Stapp car crash conference: 47–52. New York: Society of Automotive Engineers.";
+  biro:references <https://doi.org/10.4271/670906>.
+
+# BIBLIOGRAPHY 14
+:bibliography_14 
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Ono, K., Kikuchi, A., Nakamura, M., Kobayashi, H. & Nakamura, N. (1980). Human head tolerance to sagittal impact: reliable estimation deduced from experimental head injury using subhuman primates and human cadaver skulls. In Proceedings of the 24th Stapp car crash conference: 101–160. Warrendale, PA: Society of Automotive Engineers.";
+  biro:references <https://www.jstor.org/stable/44632635>.
+
+# BIBLIOGRAPHY 15
+:bibliography_15
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Pellman, E.J., Viano, D.C., Tucker, A.M., Casson, I.R. & Waeckerle, J.F. (2003). Concussion in professional foot-ball: reconstruction of game impacts and injuries. Neuro-surgery 53, 799–814.";
+  biro:references <https://doi.org/10.1093/neurosurgery/53.3.799>.
+
+# BIBLIOGRAPHY 16
+:bibliography_16
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Shaw, N.A. (2002). The neurophysiology of concussion. Prog. Neurobiol. 67, 281–344.";
+  biro:references <https://doi.org/10.1016/S0301-0082(02)00018-7>.
+
+# BIBLIOGRAPHY 17
+:bibliography_17
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Spring, L.W. (1965). Climbing and pecking adaptations in some North American woodpeckers. Condor 67, 457–488.";
+  biro:references <https://www.jstor.org/stable/1365612>.
+
+# BIBLIOGRAPHY 18
+:bibliography_18
+  a biro:BibliographicReference;
+  dcterms:bibliographicCitation "Winkler, H., Christie, D.A. & Nurney, D. (1995). Woodpeckers: a guide to the woodpeckers of the world. Boston: Houghton Mifflin.";
+  biro:references <http://www.worldcat.org/oclc/751504766>.
 
 
-:sentence_1 a doco:Sentence
-  c4o:hasContent "Most woodpeckers drill holes into trees to forage for insects and their larvae."
 
-:sentence_2 a doco:Sentence
-  c4o:hasContent "One group of woodpeckers, the sapsuckers, draws sap out of the holes they drill with the brush-like ends of their long tongues."
 
-:sentence_3 a doco:Sentence
-  c4o:hasContent "The acorn woodpecker excavates larger holes to store individual acorns; social groups of acorn woodpeckers have been known to store more than 60000 acorns, each in its individual hole, in a dead tree trunk or limb, known as a ‘granary’ (Elphick, Dunning & Sibley, 2001)."
 
-:sentence_4 a doco:Sentence
-  c4o:hasContent "All woodpeckers excavate cavity nests with a horizontal entry leading to an enlarged opening below it to lay their eggs."
 
-:sentence_5 a doco:Sentence
-  c4o:hasContent "Woodpeckers drum on hollow branches, beating quickly and loudly, but less forcefully than during drilling, to attract a mate or to maintain their territory."
 
-:sentence_6 a doco:Sentence
-  c4o:hasContent "With all of this drilling, excavating and drumming, how do woodpeckers avoid brain injury?"
 
-:sentence_7 a doco:Sentence
-  c4o:hasContent "The most detailed study of woodpecker drilling behaviour remains that of May et al. (1979), who made high-speed films of an acorn woodpecker Melanerpes formicivorus pecking into a tree."
 
-:sentence_8 a doco:Sentence
-  c4o:hasContent "(The bird, which was unable to fly as a result of injuries from a broken wing, lived in the office of a park ranger in California and would reliably peck on a tree trunk in the office when it heard the tapping of typewriter keys)."
 
-:sentence_9 a doco:Sentence
-  c4o:hasContent "Quantitative analysis of the film images showed that the woodpecker’s head moved forward in a straight trajectory, reaching maximum speeds of roughly 6–7.5 m s􏰀1, and decelerating at about 600–1500 g on impact, in 0.5–1.0ms."
 
-:sentence_10 a doco:Sentence
-  c4o:hasContent "The entire forward trajectory took between 8 and 25 ms."
 
-:sentence_11 a doco:Sentence
-  c4o:hasContent "The tolerance of the human head to impact depends on both the acceleration and the duration of that acceleration."
 
-:sentence_12 a doco:Sentence
-  c4o:hasContent "The Japan Head Tolerance Curve, the lower curve in Fig. 1, shows the threshold combinations of impact acceleration and duration for concussion; accelerations above the curve cause concussion whereas those below do not (Ono et al., 1980; McLean & Anderson, 1997)."
 
-:sentence_13 a doco:Sentence
-  c4o:hasContent "For shorter impact durations, higher accelerations can be tolerated."
 
-:sentence_14 a doco:Sentence
-  c4o:hasContent "Note that, for a 1 ms duration impact, the threshold acceleration for concussion in humans is about 300 g: the human brain is injured at accelerations of about 1/5–1/2 of those routinely attained in repeated woodpecker drilling."
 
-:sentence_15 a doco:Sentence
-  c4o:hasContent "A number of suggestions have been made to explain the ability of woodpeckers to withstand the repeated impacts from drilling."
 
-:sentence_16 a doco:Sentence
-  c4o:hasContent "The classic argument made in the ornithology literature focuses on an unusual feature of birds: cranial kinesis, or the ability to move the upper portion of the beak relative to the brain case."
 
-:sentence_17 a doco:Sentence
-  c4o:hasContent "Bock (1964, 1966, 1999a,b) used a static analysis of the anatomical features of birds that give rise to cranial kinesis to show that, during pecking, the force of the impact is directed away from the dorsal portion of the brain case (which is lightly constructed) and towards the ventral base of the brain case (which consists of more massive bone), so that the brain itself is protected from the impact."
 
-:sentence_18 a doco:Sentence
-  c4o:hasContent "This analysis appears to miss the dynamic effect: the brain itself accelerates during the impact."
 
-:sentence_19 a doco:Sentence
-  c4o:hasContent "Bock (1999a) does note that the brain may move forward and hit the inner wall of the skull if it is not firmly anchored in some way, possibly causing brain injury, and that there is little information on the morphological relationship of the brain to the brain case."
 
-:sentence_20 a doco:Sentence
-  c4o:hasContent "Simple scaling arguments indicate that small size is an advantage: as brain size decreases, the ratio of the brain mass to surface area decreases (assuming that the brain tissue density is similar across species), reducing the stress on the brain tissue associated with a given acceleration (May et al., 1979; Winkler, Christie & Nurney, 1995)."
-
-:sentence_21 a doco:Sentence
-  c4o:hasContent "I examine the scaling argument in more detail below."
-
-:sentence_22 a doco:Sentence
-  c4o:hasContent "The centripetal theory of concussion suggests that rotational, rather than translational, accelerations produce concussion (Holbourn, 1943; Ommaya et al., 1967; Ommaya & Hirsch, 1971), leading May et al. (1979) to argue that the straight-line trajectory protects the woodpecker from injury."
-
-:sentence_23 a doco:Sentence
-  c4o:hasContent "However, later studies demonstrated that translational accelerations in non-human primates also lead to concussion (Ono et al., 1980)."
-
-:sentence_24 a doco:Sentence
-  c4o:hasContent "In addition, the centripetal model predicts a progression of injury from cortex to subcortex to brain stem that does not always correspond to clinical observations of concussion (Shaw, 2002)."
-
-:sentence_25 a doco:Sentence
-  c4o:hasContent "In light of these observations, the centripetal theory of concussion is no longer thought to be valid so that May’s argument, that the straight trajectory prevents brain injury in woodpeckers, is doubtful."
-
-:sentence_26 a doco:Sentence
-  c4o:hasContent "The convulsive theory proposes that concussion occurs when mechanical stresses produce depolarization in neurons."
-
-:sentence_27 a doco:Sentence
-  c4o:hasContent "The brain of the woodpecker is tightly packed within the skull, and there is relatively little cerebrospinal fluid (May et al., 1976)."
-
-:sentence_28 a doco:Sentence
-  c4o:hasContent "Shaw (2002) has proposed that the woodpecker avoids injury through the tight packing of the brain in the skull, which he suggests prevents rotation and mechanical stressing of the brain within the skull."
-
-:sentence_29 a doco:Sentence
-  c4o:hasContent "Various shock absorption mechanisms, involving the muscles attached at the rear end of the mandible (Bock, 1964; Spring, 1965; May et al., 1976) or those connected to the tongue, which wraps around the back of the head (May et al., 1976), have been proposed."
-
-:sentence_30 a doco:Sentence
-  c4o:hasContent "Yet all of these suffer from the difficulty that such shock absorption mechanisms work by increasing the duration of the impact, decreasing the force and, consequently, the efficiency of drilling (Bock, 1999a)."
 
 :sentence_31 a doco:Sentence
   c4o:hasContent "Here, I re-examine scaling effects in brain injury to explain how woodpeckers are able to withstand such high decelerations during pecking."
@@ -393,105 +609,3 @@ po:containsAsHeader :section_references_title ;
 
 :sentence_55 a doco:Sentence
   c4o:hasContent "The ability of woodpeckers to withstand high accelerations associated with drilling for food and excavating nests is due to three factors: their small size, which reduces the stress on the brain for a given acceleration; the short duration of the impact, which increases the tolerable acceleration; and the orientation of the brain within the skull, which increases the area of contact between the brain and the skull."
-
-:sentence_56 a doco:Sentence
-  c4o:hasContent "I am grateful to Professors Trey Crisco of the Department of Orthopaedics and Sharon Swartz of the Department of Ecology and Evolutionary Biology, both at Brown University, who commented on an earlier draft of this paper."
-
-:sentence_57 a doco:Sentence
-  c4o:hasContent "I also appreciate early discussions with Professor Andy Biewener of the Department of Organismic and Evolutionary Biology at Harvard University."
-
-:sentence_58 a doco:Sentence
-  c4o:hasContent "Mr Matt Dawson assisted with the preparation of Fig. 1. The photographs of the skulls in Fig. 2 were kindly provided by Mr Jeremiah Trimble of the Ornithology Department of the Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard College."
-
-:bibliographies a doco:BibliographicReferenceList
-  po:contains :bibliography_1, :bibliography_2, :bibliography_3, :bibliography_4, :bibliography_5, :bibliography_6, :bibliography_7, :bibliography_8, :bibliography_9, :bibliography_10, :bibliography_11, :bibliography_12, :bibliography_13, :bibliography_14, :bibliography_15, :bibliography_16, :bibliography_17, :bibliography_18; 
-
-:bibliography_1
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Bock, W.J. (1964). Kinetics of the avian skull. J. Morph. 114, 1–42.";
-  biro:references <https://doi.org/10.1002/jmor.1051140102> .
-
-:bibliography_2
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Bock, W.J. (1966). An approach to the functional analysis of bill shape. Auk 83, 10–51.";
-  biro:references <https://www.jstor.org/stable/4082976> .
-
-:bibliography_3
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Bock, W.J. (1999a). Functional and evolutionary morphology of woodpeckers. Ostrich 70, 23–31.";
-  biro:references <https://doi.org/10.1080/00306525.1999.9639746> .
-
-:bibliography_4
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Bock, W.J. (1999b). Cranial kinesis revisited. Zool. Anzeiger 238, 27–39.";
-  biro:references <http://rcin.org.pl/dlibra/docmetadata?id=45207>.
-
-:bibliography_5 
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Elphick, C., Dunning, J.B. & Sibley, D.A. (Eds). (2001). The Sibley guide to bird life and bird behavior. New York: Alfred A. Knopf.";
-  biro:references <http://www.worldcat.org/oclc/863051110>.
-
-:bibliography_6
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Holbourn, A.H.S. (1943). Mechanics of head injuries. Lancet 242, 438–441.";
-  biro:references <https://doi.org/10.1016/S0140-6736(00)87453-X>.
-
-:bibliography_7 
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "May, P.R.A., Fuster, J.M., Haber, J. & Hirschman, A. (1979). Woodpecker drilling behaviour: an endorsement of the rotational theory of impact brain injury. Arch. Neurol. 36, 370–373.";
-  biro:references <https://www.ncbi.nlm.nih.gov/pubmed/454236>.
-
-:bibliography_8
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "May, P.R.A., Fuster, J.M., Newman, P.A. & Hirschman, A. (1976). Woodpeckers and head injury. Lancet 307, 454–455.";
-  biro:references <https://www.ncbi.nlm.nih.gov/pubmed/55721>.
-
-:bibliography_9
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "McLean, A.J. & Anderson, R.W.G. (1997). Biomechanics of closed head injury. Chapter 2. In Head injury: 25–37. Reilly, P. & Bullock, R. (Eds). London: Chapman & Hall.";
-  biro:references <https://doi.org/10.1016/j.cma.2008.06.006>.
-
-:bibliography_10
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Mlikovsky, J. (1989). Brain size in birds: 3. Columbiformes through Piciformes. Vestn. Cesk. Spol. Zool. 53, 252–264.";
-  biro:references <https://eurekamag.com/research/007/069/007069293.php>.
-
-:bibliography_11
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Ommaya, A.K., Goldsmith, W. & Thibault, L. (2002). Bio-mechanics and neuropathology of adult and paediatric head injury. Br. J. Neurosurg. 16, 220–242.";
-  biro:references <https://www.ncbi.nlm.nih.gov/pubmed/12201393>.
-
-:bibliography_12
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Ommaya, A.K. & Hirsch, A.E. (1971). Tolerances for cerebral concussion from head impact and whiplash in primates. J. Biomech. 4, 13–21.";
-  biro:references <https://doi.org/10.1016/0021-9290(71)90011-X>.
-
-:bibliography_13
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Ommaya, A.K., Yarnell, P., Hirsch, A.E. & Harris, E.H. (1967). Scaling of experimental data on cerebral concussion in sub-human primates to concussion threshold for man. In Proceedings of the 11th Stapp car crash conference: 47–52. New York: Society of Automotive Engineers.";
-  biro:references <https://doi.org/10.4271/670906>.
-
-:bibliography_14 
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Ono, K., Kikuchi, A., Nakamura, M., Kobayashi, H. & Nakamura, N. (1980). Human head tolerance to sagittal impact: reliable estimation deduced from experimental head injury using subhuman primates and human cadaver skulls. In Proceedings of the 24th Stapp car crash conference: 101–160. Warrendale, PA: Society of Automotive Engineers.";
-  biro:references <https://www.jstor.org/stable/44632635>.
-
-:bibliography_15
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Pellman, E.J., Viano, D.C., Tucker, A.M., Casson, I.R. & Waeckerle, J.F. (2003). Concussion in professional foot-ball: reconstruction of game impacts and injuries. Neuro-surgery 53, 799–814.";
-  biro:references <https://doi.org/10.1093/neurosurgery/53.3.799>.
-
-:bibliography_16
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Shaw, N.A. (2002). The neurophysiology of concussion. Prog. Neurobiol. 67, 281–344.";
-  biro:references <https://doi.org/10.1016/S0301-0082(02)00018-7>.
-
-:bibliography_17
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Spring, L.W. (1965). Climbing and pecking adaptations in some North American woodpeckers. Condor 67, 457–488.";
-  biro:references <https://www.jstor.org/stable/1365612>.
-
-:bibliography_18
-  a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Winkler, H., Christie, D.A. & Nurney, D. (1995). Woodpeckers: a guide to the woodpeckers of the world. Boston: Houghton Mifflin.";
-  biro:references <http://www.worldcat.org/oclc/751504766>.
