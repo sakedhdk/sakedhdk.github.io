@@ -1,4 +1,4 @@
-@prefix : <http://www.sparontologies.net/example/>.
+@prefix : <https://sakedhdk.github.io/sake#>.
 @prefix doco: <http://purl.org/spar/doco/>.
 @prefix deo: <http://purl.org/spar/deo/>.
 @prefix po: <http://www.essepuntato.it/2008/12/pattern#>.
@@ -17,11 +17,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix cito: <http://purl.org/spar/cito/2018-02-16>.
 @prefix sake: <https://sakedhdk.github.io/sake#>.
+@prefix biro: <http://purl.org/spar/biro> .
 
 # DOI is the URI
 <doi:10.1111/j.1469-7998.2006.00166.x> 
 
-  # rdf:type
   a fabio:JournalArticle;
 
   # Structure
@@ -79,7 +79,7 @@
   c4o:hasContent "Lorna J. Gibson, Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA. Email: ljgibson@mit.edu".
 
 # List of keywords
-:keywords_list 
+:keyword_list 
   a doco:Section, co:List;
   doco:SectionTitle "Keywords";
   co:Item
@@ -130,7 +130,7 @@
 
 :abstract_sentence3 
   a doco:Sentence;
-  c4o:hasContent "I find that there are three keys to woodpeckers’ ability to withstand high decelerations: their small size, which reduces the stress on the brain for a given acceleration; the short duration of the impact, which increases the tolerable acceleration; and the orientation of the brain within the skull, which increases the area of contact between the brain and the skull." 
+  c4o:hasContent "I find that there are three keys to woodpeckers’ ability to withstand high decelerations: their small size, which reduces the stress on the brain for a given acceleration; the short duration of the impact, which increases the tolerable acceleration; and the orientation of the brain within the skull, which increases the area of contact between the brain and the skull.".
 
 # Author
 :L_J_Gibson 
@@ -181,7 +181,7 @@
 
 :figure_1
   a doco:FigureBox;
-  dc:title "Figure 1";
+  dcterms:title "Figure 1";
   po:contains [
     a deo:Caption;
     c4o:hasContent "Tolerance curves for human and acorn woodpecker Melanerpes formicivorus head impact. The lower curve gives the threshold acceleration for concussion in humans and is adapted from Ono et al. (1980); accelerations below the curve can be tolerated without brain injury. The upper curve, for acorn woodpecker head impact, is obtained using the scaling relationship equation (3). The duration of human head impacts in accidents is typically 3–15 ms, corresponding to tolerable accelerations of 80g to 160g. The duration of acorn woodpecker head impacts has been measured to be 0.5–1.0 ms (May et al., 1979), suggesting that acorn woodpeckers can tolerate impact accelerations of 4600 g to 6000 g, well in excess of measured values of 634 g to 1525 g."
@@ -189,7 +189,7 @@
 
 :figure_2
   a doco:FigureBox;
-  dc:title "Figure 2";
+  dcterms:title "Figure 2";
   po:contains [
     a deo:Caption;
     c4o:hasContent "Photographs of (a, c) acorn woodpecker Melanerpes formicivorus (MCZ 347602) and (b, d) human skulls (MCZ 7299). (e, f) Schematics showing approximately the different orientations of the brain within each skull. All images by kind courtesy of Jeremiah Trimble, Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard University. Scale bars: (a) 20mm, (b) 135 mm."
@@ -472,7 +472,7 @@
   ].
 # SENTENCE 25
 :sentence_25 a doco:Sentence;
-  c4o:hasContent "In light of these observations, the centripetal theory of concussion is no longer thought to be valid so that May’s argument, that the straight trajectory prevents brain injury in woodpeckers, is doubtful.";
+  c4o:hasContent "In light of these observations, the centripetal theory of concussion is no longer thought to be valid so that May’s argument, that the straight trajectory prevents brain injury in woodpeckers, is doubtful.".
 
 # PARAGRAPH 7
 :paragraph_7 a doco:Paragraph;
@@ -612,7 +612,7 @@
     c4o:hasContent "Ommaya & Hirsch, 1971";
   ].
 :sentence_36 a doco:Sentence;
-  c4o:hasContent "May et al. (1979) use Holbourn’s scaling relationship for rotational acceleration to suggest that woodpeckers (with brain masses between 1.25 and 3.95 g) should be 50–100 times less susceptible to concussion than humans (brain mass of 1400 g)."
+  c4o:hasContent "May et al. (1979) use Holbourn’s scaling relationship for rotational acceleration to suggest that woodpeckers (with brain masses between 1.25 and 3.95 g) should be 50–100 times less susceptible to concussion than humans (brain mass of 1400 g).";
   po:contains [
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_7;
@@ -718,7 +718,7 @@
     c4o:hasContent "Pellman et al., 2003";
   ].
 :sentence_51 a doco:Sentence;
-  c40:hasContent "For this range of duration of human head impact (3–15 ms), the tolerable acceleration ranges from 80 g to 160 g.".
+  c4o:hasContent "For this range of duration of human head impact (3–15 ms), the tolerable acceleration ranges from 80 g to 160 g.".
 
 :sentence_52 a doco:Sentence;
   c4o:hasContent "The duration of impact for the acorn woodpecker is remarkably short: 0.5–1.0 ms (May et al., 1979).";
@@ -734,10 +734,8 @@
 :sentence_54 a doco:Sentence;
   c4o:hasContent "As noted above, other species of woodpeckers, with somewhat smaller or larger brains, would be expected to tolerate accelerations of about 11/16 = 69% to 20/16=125% that of the acorn woodpecker (assuming that they, too, have similarly short durations of the impact).".
 
-
-
 # Paragraph_12
-:Paragraph_12 a doco:Paragraph; 
+:paragraph_12 a doco:Paragraph; 
   po:contains
 		:sentence_55.
 
@@ -753,14 +751,14 @@
     c4o:hasContent "Acknowledgements";
   ];
   po:contains
-    :paragraph_13;
+    :paragraph_13,
     [a doco:ListOfContributors;
     po:contains :Trey_Crisco, :Sharon_Swartz, :Andy_Biewener, :Matt_Dawson, :Jeremiah_Trimble;
   ].
 
 # SECTION ACKNOWLEDGEMENTS TITLE
 :section_acknowledgements_title a doco:SectionTitle;
-  c40:hasContent "Acknowledgements".
+  c4o:hasContent "Acknowledgements".
 
 # PARAGRAPH 13
 :paragraph_13 a doco:Paragraph;
@@ -874,7 +872,7 @@
 
 # SECTION REFERENCES TITLE
 :section_references_title a doco:SectionTitle;
-  c40:hasContent "References".
+  c4o:hasContent "References".
 
 # BIBLIOGRAPHY 1
 :bibliography_1
