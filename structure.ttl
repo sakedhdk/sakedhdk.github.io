@@ -175,7 +175,25 @@
     :section_literature_review,
     :section_analysis,
     :section_acknowledgements,
-    :section_references.
+    :section_references,
+    :figure_1,
+    :figure_2.
+
+:figure_1
+  a doco:FigureBox;
+  dc:title "Figure 1";
+  po:contains [
+    a deo:Caption;
+    c4o:hasContent "Tolerance curves for human and acorn woodpecker Melanerpes formicivorus head impact. The lower curve gives the threshold acceleration for concussion in humans and is adapted from Ono et al. (1980); accelerations below the curve can be tolerated without brain injury. The upper curve, for acorn woodpecker head impact, is obtained using the scaling relationship equation (3). The duration of human head impacts in accidents is typically 3–15 ms, corresponding to tolerable accelerations of 80g to 160g. The duration of acorn woodpecker head impacts has been measured to be 0.5–1.0 ms (May et al., 1979), suggesting that acorn woodpeckers can tolerate impact accelerations of 4600 g to 6000 g, well in excess of measured values of 634 g to 1525 g."
+  ].
+
+:figure_2
+  a doco:FigureBox;
+  dc:title "Figure 2";
+  po:contains [
+    a deo:Caption;
+    c4o:hasContent "Photographs of (a, c) acorn woodpecker Melanerpes formicivorus (MCZ 347602) and (b, d) human skulls (MCZ 7299). (e, f) Schematics showing approximately the different orientations of the brain within each skull. All images by kind courtesy of Jeremiah Trimble, Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard University. Scale bars: (a) 20mm, (b) 135 mm."
+  ].
 
 # Introduction
 :section_introduction 
