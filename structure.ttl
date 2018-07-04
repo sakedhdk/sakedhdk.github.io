@@ -25,6 +25,19 @@
         :front_matter ,
         :body_matter ,
         :back_matter ;
+    prism:doi "10.1111/j.1469-7998.2006.00166.x";
+    dcterms:creator :L_J_Gibson;
+    fabio:hasDateReceived "31 August 2005"^^xsd:date;
+    fabio:dateAccepted "23 February 2006"^^xsd:date;
+    fabio:hasPublicationYear "2006"^^xsd:gYear;
+    prism:ISSN "ISSN 0952-8369";
+    #The article is contained inside of this Journal
+    frbr:partOf :Journal_of_Zoology_270;
+
+    #starting-ending of the article
+    prism:pageRange [prism:startingPage 462; prism:endingPage 465; ] ;
+
+
 
 :front_matter a doco:FrontMatter ;
     po:contains
@@ -105,8 +118,6 @@
   foaf:name "Department of Materials Science and Engineering, Massachusetts Institute of Technology";
   dbo:affiliation dbpedia:Massachusetts_Institute_of_Technology;
   foaf:member :L_J_Gibson.
-
-
 
 # BODY MATTER
 :body_matter a doco:BodyMatter ;
