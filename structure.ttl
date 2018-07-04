@@ -18,6 +18,72 @@
 @prefix cito: <http://purl.org/spar/cito/2018-02-16> .
 @prefix sake: <https://sakedhdk.github.io/sake#> .
 
+# DOI is the URI
+<doi:10.1111/j.1469-7998.2006.00166.x> a fabio:JournalArticle ;
+    po:contains
+        :front_matter ,
+        :body_matter ,
+        :back_matter ;
+
+:front_matter a doco:FrontMatter ;
+    po:contains
+        :title,
+        :author,
+        :affiliation,
+        :affiliation,
+        :keywords,
+        :correspondence,
+        :abstract;
+#TITLE
+:title a doco:Title ;
+    c4o:hasContent "Woodpecker pecking: how woodpeckers avoid brain injury" .
+#AUTHOR
+:author a doco:ListOfAuthors ;
+    po:contains :L_J_Gibson.
+#AFFILIATION
+:affiliation a doco:ListOfAuthors ;
+    po:contains :L_J_Gibson.
+#KEYWORDS   
+:keywords a co:List ;
+    doco:SectionTitle "Keywords";
+    co:Item
+        :woodpeckers,
+        :pecking,
+        :brain_injury,
+        :biomechanics.
+:woodpeckers a prism:keyword ;
+    skos:prefLabel "woodpeckers" ;
+    fabio:hasDiscipline
+        dbpedia:Ornithology .
+:pecking a prism:keyword ;
+    skos:prefLabel "pecking" ;
+    fabio:hasDiscipline
+        dbpedia:Ornithology .        
+:brain_injury a prism:keyword ;
+    skos:prefLabel "brain injury" ;
+    fabio:hasDiscipline
+        dbpedia:Neurosurgery .
+:biomechanics a prism:keyword ;
+    skos:prefLabel "biomechanics" ;
+    fabio:hasDiscipline
+        dbpedia:Biomechanic .
+#CORRESPONDENCE
+:correspondence a doco:Section ;
+    doco:SectionTitle "Correspondence";
+    c4o:hasContent "Lorna J. Gibson, Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA. Email: ljgibson@mit.edu".
+#ABSTRACT
+:abstract a fabio:abstract ;
+    doco:SectionTitle "Abstract";
+    c4o:hasContent 
+      "Woodpeckers are capable of repeated pecking on a tree at remarkably high
+      decelerations (on the order of 10 000 m s2 or 1000 g). In this paper, I re-examine
+      previous studies of pecking and scaling effects in brain injury. I find that there are
+      three keys to woodpeckers’ ability to withstand high decelerations: their small size,
+      which reduces the stress on the brain for a given acceleration; the short duration of
+      the impact, which increases the tolerable acceleration; and the orientation of the
+      brain within the skull, which increases the area of contact between the brain and
+      the skull." .
+
 :sentence_1 a doco:Sentence
   c4o:hasContent "Most woodpeckers drill holes into trees to forage for insects and their larvae."
 
