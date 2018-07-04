@@ -27,6 +27,49 @@
     :section_acknowledgements ,
     :section_references .
 
+# SECTION ACKNOWLEDGEMENTS
+:section_acknowledgements a doco:Section , deo:Acknowledgements ;
+po:containsAsHeader :section_acknowledgements_title ;
+  po:contains
+        :sentence_53 ,
+        :sentence_54 ,
+        :sentence_55 ,
+        :sentence_56 ,
+        :sentence_57 ,
+        :sentence_58 .
+
+# SECTION ACKNOWLEDGEMENTS TITLE
+:section_acknowledgements_title a doco:SectionTitle ;
+  c40:hasContent "Acknowledgements" .
+
+# SECTION REFERENCES 
+:section_references a doco:Section , doco:BibliographicReference ;
+po:containsAsHeader :section_references_title ;
+  po:contains
+        :bibliography_1 ,
+        :bibliography_2 ,
+        :bibliography_3 ,
+        :bibliography_4 ,
+        :bibliography_5 ,
+        :bibliography_6 ,
+        :bibliography_7 ,
+        :bibliography_8 ,
+        :bibliography_9 ,
+        :bibliography_10 ,
+        :bibliography_11 ,
+        :bibliography_12 ,
+        :bibliography_13 ,
+        :bibliography_14 ,
+        :bibliography_15 ,
+        :bibliography_16 ,
+        :bibliography_17 ,
+        :bibliography_18 .
+
+# SECTION REFERENCES TITLE
+:section_references_title a doco:SectionTitle ;
+  c40:hasContent "References" .
+
+
 # SECTION INTRODUCTION
 :section_introduction a doco:Section , deo:Introduction ;
   po:containsAsHeader :section_introduction_title ;
