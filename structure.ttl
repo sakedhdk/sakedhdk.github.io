@@ -1,231 +1,261 @@
-@prefix : <http://www.sparontologies.net/example/> .
-@prefix doco: <http://purl.org/spar/doco/> .
-@prefix deo: <http://purl.org/spar/deo/> .
-@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix fabio: <http://purl.org/spar/fabio/> .
-@prefix co: <http://purl.org/co/> .
-@prefix c4o: <http://purl.org/spar/c4o> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix dbo: <http://dbpedia.org/ontology/> .
-@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix org:  <http://www.w3.org/ns/org#> .
-@prefix frbr: <http://purl.org/vocab/frbr/core> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix cito: <http://purl.org/spar/cito/2018-02-16> .
-@prefix sake: <https://sakedhdk.github.io/sake#> .
+@prefix : <http://www.sparontologies.net/example/>.
+@prefix doco: <http://purl.org/spar/doco/>.
+@prefix deo: <http://purl.org/spar/deo/>.
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix fabio: <http://purl.org/spar/fabio/>.
+@prefix co: <http://purl.org/co/>.
+@prefix c4o: <http://purl.org/spar/c4o>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dbpedia: <http://dbpedia.org/resource/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix org:  <http://www.w3.org/ns/org#>.
+@prefix frbr: <http://purl.org/vocab/frbr/core>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix cito: <http://purl.org/spar/cito/2018-02-16>.
+@prefix sake: <https://sakedhdk.github.io/sake#>.
 
 # DOI is the URI
 <doi:10.1111/j.1469-7998.2006.00166.x> 
-    a fabio:JournalArticle ;
-    po:contains
-        :front_matter ,
-        :body_matter ,
-        :back_matter ;
-    prism:doi "10.1111/j.1469-7998.2006.00166.x";
-    dcterms:creator :L_J_Gibson;
-    fabio:hasDateReceived "31 August 2005"^^xsd:date;
-    fabio:dateAccepted "23 February 2006"^^xsd:date;
-    fabio:hasPublicationYear "2006"^^xsd:gYear;
-    prism:ISSN "ISSN 0952-8369";
-    #The article is contained inside of this Journal
-    frbr:partOf :Journal_of_Zoology_270;
 
-    #starting-ending of the article
-    prism:pageRange [prism:startingPage 462; prism:endingPage 465; ] ;
+  # rdf:type
+  a fabio:JournalArticle;
 
+  # Structure
+  po:contains
+    :front_matter,
+    :body_matter,
+    :back_matter;
+  
+  prism:doi "10.1111/j.1469-7998.2006.00166.x";
+  
+  dcterms:creator :L_J_Gibson;
+  
+  # Dates
+  fabio:hasDateReceived "31 August 2005"^^xsd:date;
+  fabio:dateAccepted "23 February 2006"^^xsd:date;
+  fabio:hasPublicationYear "2006"^^xsd:gYear;
+  
+  prism:ISSN "ISSN 0952-8369";
 
+  #The article is contained inside of this Journal
+  frbr:partOf :Journal_of_Zoology_270;
 
-:front_matter a doco:FrontMatter ;
-    po:contains
-        :title,
-        :author,
-        :affiliation,
-        :affiliation,
-        :keywords,
-        :correspondence,
-        :abstract;
-#TITLE
-:title a doco:Title ;
-    c4o:hasContent "Woodpecker pecking: how woodpeckers avoid brain injury" .
-#AUTHOR
-:author a doco:ListOfAuthors ;
-    po:contains :L_J_Gibson.
-#AFFILIATION
-:affiliation a doco:ListOfOrganizations ;
-    po:contains :L_J_Gibson.
-#KEYWORDS   
-:keywords a doco:Section, co:List ;
-    doco:SectionTitle "Keywords";
-    co:Item
-        :woodpeckers,
-        :pecking,
-        :brain_injury,
-        :biomechanics.
-:woodpeckers a prism:keyword ;
-    skos:prefLabel "woodpeckers" ;
-    fabio:hasDiscipline
-        dbpedia:Ornithology .
-:pecking a prism:keyword ;
-    skos:prefLabel "pecking" ;
-    fabio:hasDiscipline
-        dbpedia:Ornithology .        
-:brain_injury a prism:keyword ;
-    skos:prefLabel "brain injury" ;
-    fabio:hasDiscipline
-        dbpedia:Neurosurgery .
-:biomechanics a prism:keyword ;
-    skos:prefLabel "biomechanics" ;
-    fabio:hasDiscipline
-        dbpedia:Biomechanic .
-#CORRESPONDENCE
-:correspondence a doco:Section ;
-    doco:SectionTitle "Correspondence";
-    c4o:hasContent "Lorna J. Gibson, Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA. Email: ljgibson@mit.edu".
-#ABSTRACT
-:abstract a doco:Section, fabio:abstract ;
-    doco:SectionTitle "Abstract";
-    c4o:hasContent
-    po:contains
-        :abstract_sentence1,
-        :abstract_sentence2,
-        :abstract_sentence3.
+  #starting/ending pages of the article
+  prism:pageRange [
+    prism:startingPage 462; 
+    prism:endingPage 465; 
+  ].
 
-:abstract_sentence1 a doco:Sentence
+:front_matter a doco:FrontMatter;
+  po:contains
+    :title,
+    :author_list,
+    :affiliation_list,
+    :keyword_list,
+    :correspondence,
+    :abstract;
+
+# Metadata of the front_matter
+:title 
+  a doco:Title;
+  c4o:hasContent "Woodpecker pecking: how woodpeckers avoid brain injury".
+
+:author_list 
+  a doco:ListOfAuthors;
+  po:contains :L_J_Gibson.
+
+:affiliation_list 
+  a doco:ListOfOrganizations;
+  po:contains :L_J_Gibson.
+
+:correspondence 
+  a doco:Section;
+  doco:SectionTitle "Correspondence";
+  c4o:hasContent "Lorna J. Gibson, Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA. Email: ljgibson@mit.edu".
+
+# List of keywords
+:keywords_list 
+  a doco:Section, co:List;
+  doco:SectionTitle "Keywords";
+  co:Item
+    :woodpeckers,
+    :pecking,
+    :brain_injury,
+    :biomechanics.
+
+:woodpeckers 
+  a prism:keyword;
+  skos:prefLabel "woodpeckers";
+  fabio:hasDiscipline dbpedia:Ornithology.
+
+:pecking 
+  a prism:keyword;
+  skos:prefLabel "pecking";
+  fabio:hasDiscipline dbpedia:Ornithology.
+
+:brain_injury 
+  a prism:keyword;
+  skos:prefLabel "brain injury";
+  fabio:hasDiscipline dbpedia:Neurosurgery.
+
+:biomechanics 
+  a prism:keyword;
+  skos:prefLabel "biomechanics";
+  fabio:hasDiscipline dbpedia:Biomechanic.
+
+# Abstract section
+:abstract 
+  a doco:Section, fabio:abstract;
+  po:containsAsHeader [
+    a doco:SectionTitle;
+    c4o:hasContent "Abstract";
+  ];
+  po:contains
+    :abstract_sentence1,
+    :abstract_sentence2,
+    :abstract_sentence3.
+
+:abstract_sentence1 
+  a doco:Sentence;
   c4o:hasContent "Woodpeckers are capable of repeated pecking on a tree at remarkably high decelerations (on the order of 10 000 m s2 or 1000 g).".
 
-:abstract_sentence2 a doco:Sentence
+:abstract_sentence2 
+  a doco:Sentence;
   c4o:hasContent "In this paper, I re-examine previous studies of pecking and scaling effects in brain injury.".
 
-:abstract_sentence3 a doco:Sentence
-  c4o:hasContent "I find that there are three keys to woodpeckers’ ability to withstand high decelerations: their small size, which reduces the stress on the brain for a given acceleration; the short duration of the impact, which increases the tolerable acceleration; and the orientation of the brain within the skull, which increases the area of contact between the brain and the skull." .
+:abstract_sentence3 
+  a doco:Sentence;
+  c4o:hasContent "I find that there are three keys to woodpeckers’ ability to withstand high decelerations: their small size, which reduces the stress on the brain for a given acceleration; the short duration of the impact, which increases the tolerable acceleration; and the orientation of the brain within the skull, which increases the area of contact between the brain and the skull." 
 
-#GIBSON
+# People
 :L_J_Gibson 
-  a foaf:Person ;
+  a foaf:Person;
   foaf:firstName "Lorna J.";
   foaf:familyName "Gibson";
   foaf:gender "Female";
   foaf:mbox "ljgibson@mit.edu";
   org:memberOf :MSE_MIT.
   
-#MSE_MIT
+# Affiliations
 :MSE_MIT 
-  a foaf:Organization ;
+  a foaf:Organization;
   foaf:name "Department of Materials Science and Engineering, Massachusetts Institute of Technology";
   dbo:affiliation dbpedia:Massachusetts_Institute_of_Technology;
   foaf:member :L_J_Gibson.
 
-# BODY MATTER
-:body_matter a doco:BodyMatter ;
+# Body matter
+:body_matter 
+  a doco:BodyMatter;
   po:contains
-    :section_introduction ,
-    :section_literature_review ,
-    :section_analysis ,
-    :section_acknowledgements ,
-    :section_references .
+    :section_introduction,
+    :section_literature_review,
+    :section_analysis,
+    :section_acknowledgements,
+    :section_references.
 
-# SECTION INTRODUCTION
-:section_introduction a doco:Section , deo:Introduction ;
-  po:containsAsHeader :section_introduction_title ;
+# Introduction
+:section_introduction 
+  a doco:Section, deo:Introduction;
+  po:containsAsHeader [
+    a doco:SectionTitle;
+    c4o:hasContent "Introduction";
+  ];
   po:contains
-        :sentence_1 ,
-        :sentence_2 ,
-        :sentence_3 ,
-        :sentence_4 ,
-        :sentence_5 ,
-        :sentence_6 ,
-        :sentence_7 ,
-        :sentence_8 ,
-        :sentence_9 ,
-        :sentence_10 ,
-        :sentence_11 ,
-        :sentence_12 ,
-        :sentence_13 ,
-        :sentence_14 .
-
-# SECTION INTRODUCTION TITLE
-:section_introduction_title a doco:SectionTitle ;
-  c4o:hasContent "Introduction" .
+    :sentence_1,
+    :sentence_2,
+    :sentence_3,
+    :sentence_4,
+    :sentence_5,
+    :sentence_6,
+    :sentence_7,
+    :sentence_8,
+    :sentence_9,
+    :sentence_10,
+    :sentence_11,
+    :sentence_12,
+    :sentence_13,
+    :sentence_14.
 
 # SECTION LITERATURE REVIEW
-:section_literature_review a doco:Section , deo:RelatedWork ;
-  po:containsAsHeader :section_literature_review_title ;
+:section_literature_review 
+  a doco:Section, deo:RelatedWork;
+  po:containsAsHeader[
+    a doco:SectionTitle;
+    c4o:hasContent "Literature Review";
+  ];
   po:contains
-        :sentence_15 ,
-        :sentence_16 ,
-        :sentence_17 ,
-        :sentence_18 ,
-        :sentence_19 ,
-        :sentence_20 ,
-        :sentence_21 ,
-        :sentence_22 ,
-        :sentence_23 ,
-        :sentence_24 ,
-        :sentence_25 ,
-        :sentence_26 ,
-        :sentence_27 ,
-        :sentence_28 ,
-        :sentence_29 ,
-        :sentence_30 .
-
-# SECTION LITERATURE REVIEW TITLE
-:section_literature_review_title a doco:SectionTitle ;
-  c4o:hasContent "Literature Review" .
+    :sentence_15,
+    :sentence_16,
+    :sentence_17,
+    :sentence_18,
+    :sentence_19,
+    :sentence_20,
+    :sentence_21,
+    :sentence_22,
+    :sentence_23,
+    :sentence_24,
+    :sentence_25,
+    :sentence_26,
+    :sentence_27,
+    :sentence_28,
+    :sentence_29,
+    :sentence_30.
 
 # SECTION ANALYSIS to finishhhhh!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DOUDOU
-:section_analysis a doco:Section , deo: ;
-  po:containsAsHeader :section_analysis_title ;
-
-# SECTION ANALYSIS TITLE to finissssssh!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DOUDOU
-:section_analysis_title a doco:
+:section_analysis 
+  a doco:Section, deo:;
+  po:containsAsHeader [
+    a doco:SectionTitle;
+    c4o:hasContent "Analysis";
+  ]
 
 # SECTION ACKNOWLEDGEMENTS
-:section_acknowledgements a doco:Section , deo:Acknowledgements ;
-po:containsAsHeader :section_acknowledgements_title ;
+:section_acknowledgements 
+  a doco:Section, deo:Acknowledgements;
+  po:containsAsHeader [
+    a doco:SectionTitle;
+    c4o:hasContent "Acknowledgements";
+  ];
   po:contains
-        :sentence_53 ,
-        :sentence_54 ,
-        :sentence_55 ,
-        :sentence_56 ,
-        :sentence_57 ,
-        :sentence_58 .
-
-# SECTION ACKNOWLEDGEMENTS TITLE
-:section_acknowledgements_title a doco:SectionTitle ;
-  c40:hasContent "Acknowledgements" .
+    :sentence_53,
+    :sentence_54,
+    :sentence_55,
+    :sentence_56,
+    :sentence_57,
+    :sentence_58.
 
 # SECTION REFERENCES 
-:section_references a doco:Section , doco:BibliographicReference ;
-po:containsAsHeader :section_references_title ;
+:section_references 
+  a doco:Section, doco:BibliographicReference;
+  po:containsAsHeader [
+    a doco:SectionTitle;
+    c4o:hasContent "References";
+  ];
   po:contains
-        :bibliography_1 ,
-        :bibliography_2 ,
-        :bibliography_3 ,
-        :bibliography_4 ,
-        :bibliography_5 ,
-        :bibliography_6 ,
-        :bibliography_7 ,
-        :bibliography_8 ,
-        :bibliography_9 ,
-        :bibliography_10 ,
-        :bibliography_11 ,
-        :bibliography_12 ,
-        :bibliography_13 ,
-        :bibliography_14 ,
-        :bibliography_15 ,
-        :bibliography_16 ,
-        :bibliography_17 ,
-        :bibliography_18 .
+    :bibliography_1,
+    :bibliography_2,
+    :bibliography_3,
+    :bibliography_4,
+    :bibliography_5,
+    :bibliography_6,
+    :bibliography_7,
+    :bibliography_8,
+    :bibliography_9,
+    :bibliography_10,
+    :bibliography_11,
+    :bibliography_12,
+    :bibliography_13,
+    :bibliography_14,
+    :bibliography_15,
+    :bibliography_16,
+    :bibliography_17,
+    :bibliography_18.
 
-# SECTION REFERENCES TITLE
-:section_references_title a doco:SectionTitle ;
-  c40:hasContent "References" .
-
-
+# List of references
 
 :sentence_1 a doco:Sentence
   c4o:hasContent "Most woodpeckers drill holes into trees to forage for insects and their larvae."
@@ -403,23 +433,44 @@ po:containsAsHeader :section_references_title ;
 :sentence_58 a doco:Sentence
   c4o:hasContent "Mr Matt Dawson assisted with the preparation of Fig. 1. The photographs of the skulls in Fig. 2 were kindly provided by Mr Jeremiah Trimble of the Ornithology Department of the Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard College."
 
-:bibliographies a doco:BibliographicReferenceList
-  po:contains :bibliography_1, :bibliography_2, :bibliography_3, :bibliography_4, :bibliography_5, :bibliography_6, :bibliography_7, :bibliography_8, :bibliography_9, :bibliography_10, :bibliography_11, :bibliography_12, :bibliography_13, :bibliography_14, :bibliography_15, :bibliography_16, :bibliography_17, :bibliography_18; 
+# List of Bibliographies
+
+:bibliography_list
+  a doco:BibliographicReferenceList;
+  po:contains 
+    :bibliography_1, 
+    :bibliography_2, 
+    :bibliography_3, 
+    :bibliography_4, 
+    :bibliography_5, 
+    :bibliography_6, 
+    :bibliography_7, 
+    :bibliography_8, 
+    :bibliography_9, 
+    :bibliography_10, 
+    :bibliography_11, 
+    :bibliography_12, 
+    :bibliography_13, 
+    :bibliography_14, 
+    :bibliography_15, 
+    :bibliography_16, 
+    :bibliography_17, 
+    :bibliography_18; 
 
 :bibliography_1
   a biro:BibliographicReference;
   dcterms:bibliographicCitation "Bock, W.J. (1964). Kinetics of the avian skull. J. Morph. 114, 1–42.";
-  biro:references <https://doi.org/10.1002/jmor.1051140102> .
+  biro:references <https://doi.org/10.1002/jmor.1051140102>.
 
 :bibliography_2
   a biro:BibliographicReference;
   dcterms:bibliographicCitation "Bock, W.J. (1966). An approach to the functional analysis of bill shape. Auk 83, 10–51.";
-  biro:references <https://www.jstor.org/stable/4082976> .
+  biro:references <https://www.jstor.org/stable/4082976>.
 
 :bibliography_3
   a biro:BibliographicReference;
   dcterms:bibliographicCitation "Bock, W.J. (1999a). Functional and evolutionary morphology of woodpeckers. Ostrich 70, 23–31.";
-  biro:references <https://doi.org/10.1080/00306525.1999.9639746> .
+  biro:references <https://doi.org/10.1080/00306525.1999.9639746>.
 
 :bibliography_4
   a biro:BibliographicReference;
