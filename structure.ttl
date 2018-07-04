@@ -18,6 +18,80 @@
 @prefix cito: <http://purl.org/spar/cito/2018-02-16> .
 @prefix sake: <https://sakedhdk.github.io/sake#> .
 
+# BODY MATTER
+:body_matter a doco:BodyMatter ;
+  po:contains
+    :section_introduction ,
+    :section_literature_review ,
+    :section_analysis ,
+    :section_acknowledgements ,
+    :section_references .
+
+# SECTION INTRODUCTION
+:section_introduction a doco:Section , deo:Introduction ;
+  po:containsAsHeader :section_introduction_title ;
+  po:contains
+        :sentence_1 ,
+        :sentence_2 ,
+        :sentence_3 ,
+        :sentence_4 ,
+        :sentence_5 ,
+        :sentence_6 ,
+        :sentence_7 ,
+        :sentence_8 ,
+        :sentence_9 ,
+        :sentence_10 ,
+        :sentence_11 ,
+        :sentence_12 ,
+        :sentence_13 ,
+        :sentence_14 .
+
+# SECTION INTRODUCTION TITLE
+:section_introduction_title a doco:SectionTitle ;
+  c4o:hasContent "Introduction" .
+
+# SECTION LITERATURE REVIEW
+:section_literature_review a doco:Section , deo:RelatedWork ;
+  po:containsAsHeader :section_literature_review_title ;
+  po:contains
+        :sentence_15 ,
+        :sentence_16 ,
+        :sentence_17 ,
+        :sentence_18 ,
+        :sentence_19 ,
+        :sentence_20 ,
+        :sentence_21 ,
+        :sentence_22 ,
+        :sentence_23 ,
+        :sentence_24 ,
+        :sentence_25 ,
+        :sentence_26 ,
+        :sentence_27 ,
+        :sentence_28 ,
+        :sentence_29 ,
+        :sentence_30 .
+
+# SECTION LITERATURE REVIEW TITLE
+:section_literature_review_title a doco:SectionTitle ;
+  c4o:hasContent "Literature Review" .
+
+# SECTION ANALYSIS to finishhhhh!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DOUDOU
+:section_analysis a doco:Section , deo: ;
+  po:containsAsHeader :section_analysis_title ;
+
+# SECTION ANALYSIS TITLE to finissssssh!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DOUDOU
+:section_analysis_title a doco:
+
+# SECTION ACKNOWLEDGEMENTS
+:section_acknowledgements a doco:Section , deo:
+
+
+
+
+  
+
+
+
 :sentence_1 a doco:Sentence
   c4o:hasContent "Most woodpeckers drill holes into trees to forage for insects and their larvae."
 
