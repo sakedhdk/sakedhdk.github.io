@@ -1,136 +1,169 @@
-@prefix : <http://www.sparontologies.net/example/> .
-@prefix doco: <http://purl.org/spar/doco/> .
-@prefix deo: <http://purl.org/spar/deo/> .
-@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix fabio: <http://purl.org/spar/fabio/> .
-@prefix co: <http://purl.org/co/> .
-@prefix c4o: <http://purl.org/spar/c4o> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix dbo: <http://dbpedia.org/ontology/> .
-@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix org:  <http://www.w3.org/ns/org#> .
-@prefix frbr: <http://purl.org/vocab/frbr/core> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix cito: <http://purl.org/spar/cito/2018-02-16> .
-@prefix sake: <https://sakedhdk.github.io/sake#> .
+@prefix : <http://www.sparontologies.net/example/>.
+@prefix doco: <http://purl.org/spar/doco/>.
+@prefix deo: <http://purl.org/spar/deo/>.
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix fabio: <http://purl.org/spar/fabio/>.
+@prefix co: <http://purl.org/co/>.
+@prefix c4o: <http://purl.org/spar/c4o>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dbpedia: <http://dbpedia.org/resource/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix org:  <http://www.w3.org/ns/org#>.
+@prefix frbr: <http://purl.org/vocab/frbr/core>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix cito: <http://purl.org/spar/cito/2018-02-16>.
+@prefix sake: <https://sakedhdk.github.io/sake#>.
 
 # DOI is the URI
 <doi:10.1111/j.1469-7998.2006.00166.x> 
-    a fabio:JournalArticle ;
-    po:contains
-        :front_matter ,
-        :body_matter ,
-        :back_matter ;
-    prism:doi "10.1111/j.1469-7998.2006.00166.x";
-    dcterms:creator :L_J_Gibson;
-    fabio:hasDateReceived "31 August 2005"^^xsd:date;
-    fabio:dateAccepted "23 February 2006"^^xsd:date;
-    fabio:hasPublicationYear "2006"^^xsd:gYear;
-    prism:ISSN "ISSN 0952-8369";
-    #The article is contained inside of this Journal
-    frbr:partOf :Journal_of_Zoology_270;
 
-    #starting-ending of the article
-    prism:pageRange [prism:startingPage 462; prism:endingPage 465; ] ;
+  # rdf:type
+  a fabio:JournalArticle;
 
+  # Structure
+  po:contains
+    :front_matter,
+    :body_matter,
+    :back_matter;
+  
+  prism:doi "10.1111/j.1469-7998.2006.00166.x";
+  
+  dcterms:creator :L_J_Gibson;
+  
+  # Dates
+  fabio:hasDateReceived "31 August 2005"^^xsd:date;
+  fabio:dateAccepted "23 February 2006"^^xsd:date;
+  fabio:hasPublicationYear "2006"^^xsd:gYear;
+  
+  prism:ISSN "ISSN 0952-8369";
 
+  #The article is contained inside of this Journal
+  frbr:partOf :Journal_of_Zoology_270;
 
-:front_matter a doco:FrontMatter ;
-    po:contains
-        :title,
-        :author,
-        :affiliation,
-        :affiliation,
-        :keywords,
-        :correspondence,
-        :abstract;
-#TITLE
-:title a doco:Title ;
-    c4o:hasContent "Woodpecker pecking: how woodpeckers avoid brain injury" .
-#AUTHOR
-:author a doco:ListOfAuthors ;
-    po:contains :L_J_Gibson.
-#AFFILIATION
-:affiliation a doco:ListOfOrganizations ;
-    po:contains :L_J_Gibson.
-#KEYWORDS   
-:keywords a doco:Section, co:List ;
-    doco:SectionTitle "Keywords";
-    co:Item
-        :woodpeckers,
-        :pecking,
-        :brain_injury,
-        :biomechanics.
-:woodpeckers a prism:keyword ;
-    skos:prefLabel "woodpeckers" ;
-    fabio:hasDiscipline
-        dbpedia:Ornithology .
-:pecking a prism:keyword ;
-    skos:prefLabel "pecking" ;
-    fabio:hasDiscipline
-        dbpedia:Ornithology .        
-:brain_injury a prism:keyword ;
-    skos:prefLabel "brain injury" ;
-    fabio:hasDiscipline
-        dbpedia:Neurosurgery .
-:biomechanics a prism:keyword ;
-    skos:prefLabel "biomechanics" ;
-    fabio:hasDiscipline
-        dbpedia:Biomechanic .
-#CORRESPONDENCE
-:correspondence a doco:Section ;
-    doco:SectionTitle "Correspondence";
-    c4o:hasContent "Lorna J. Gibson, Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA. Email: ljgibson@mit.edu".
-#ABSTRACT
-:abstract a doco:Section, fabio:abstract ;
-    doco:SectionTitle "Abstract";
-    c4o:hasContent
-    po:contains
-        :abstract_sentence1,
-        :abstract_sentence2,
-        :abstract_sentence3.
+  #starting/ending pages of the article
+  prism:pageRange [
+    prism:startingPage 462; 
+    prism:endingPage 465; 
+  ].
 
-:abstract_sentence1 a doco:Sentence
+:front_matter a doco:FrontMatter;
+  po:contains
+    :title,
+    :author_list,
+    :affiliation_list,
+    :keyword_list,
+    :correspondence,
+    :abstract;
+
+# Metadata of the front_matter
+:title 
+  a doco:Title;
+  c4o:hasContent "Woodpecker pecking: how woodpeckers avoid brain injury".
+
+:author_list 
+  a doco:ListOfAuthors;
+  po:contains :L_J_Gibson.
+
+:affiliation_list 
+  a doco:ListOfOrganizations;
+  po:contains :L_J_Gibson.
+
+:correspondence 
+  a doco:Section;
+  doco:SectionTitle "Correspondence";
+  c4o:hasContent "Lorna J. Gibson, Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA. Email: ljgibson@mit.edu".
+
+# List of keywords
+:keywords_list 
+  a doco:Section, co:List;
+  doco:SectionTitle "Keywords";
+  co:Item
+    :woodpeckers,
+    :pecking,
+    :brain_injury,
+    :biomechanics.
+
+:woodpeckers 
+  a prism:keyword;
+  skos:prefLabel "woodpeckers";
+  fabio:hasDiscipline dbpedia:Ornithology.
+
+:pecking 
+  a prism:keyword;
+  skos:prefLabel "pecking";
+  fabio:hasDiscipline dbpedia:Ornithology.
+
+:brain_injury 
+  a prism:keyword;
+  skos:prefLabel "brain injury";
+  fabio:hasDiscipline dbpedia:Neurosurgery.
+
+:biomechanics 
+  a prism:keyword;
+  skos:prefLabel "biomechanics";
+  fabio:hasDiscipline dbpedia:Biomechanic.
+
+# Abstract section
+:abstract 
+  a doco:Section, fabio:abstract;
+  po:containsAsHeader [
+    a doco:SectionTitle;
+    c4o:hasContent "Abstract";
+  ];
+  po:contains
+    :abstract_sentence1,
+    :abstract_sentence2,
+    :abstract_sentence3.
+
+:abstract_sentence1 
+  a doco:Sentence;
   c4o:hasContent "Woodpeckers are capable of repeated pecking on a tree at remarkably high decelerations (on the order of 10 000 m s2 or 1000 g).".
 
-:abstract_sentence2 a doco:Sentence
+:abstract_sentence2 
+  a doco:Sentence;
   c4o:hasContent "In this paper, I re-examine previous studies of pecking and scaling effects in brain injury.".
 
-:abstract_sentence3 a doco:Sentence
-  c4o:hasContent "I find that there are three keys to woodpeckers’ ability to withstand high decelerations: their small size, which reduces the stress on the brain for a given acceleration; the short duration of the impact, which increases the tolerable acceleration; and the orientation of the brain within the skull, which increases the area of contact between the brain and the skull." .
+:abstract_sentence3 
+  a doco:Sentence;
+  c4o:hasContent "I find that there are three keys to woodpeckers’ ability to withstand high decelerations: their small size, which reduces the stress on the brain for a given acceleration; the short duration of the impact, which increases the tolerable acceleration; and the orientation of the brain within the skull, which increases the area of contact between the brain and the skull." 
 
-#GIBSON
+# People
 :L_J_Gibson 
-  a foaf:Person ;
+  a foaf:Person;
   foaf:firstName "Lorna J.";
   foaf:familyName "Gibson";
   foaf:gender "Female";
   foaf:mbox "ljgibson@mit.edu";
   org:memberOf :MSE_MIT.
   
-#MSE_MIT
+# Affiliations
 :MSE_MIT 
-  a foaf:Organization ;
+  a foaf:Organization;
   foaf:name "Department of Materials Science and Engineering, Massachusetts Institute of Technology";
   dbo:affiliation dbpedia:Massachusetts_Institute_of_Technology;
   foaf:member :L_J_Gibson.
 
-# BODY MATTER
-:body_matter a doco:BodyMatter ;
+# Body matter
+:body_matter 
+  a doco:BodyMatter;
   po:contains
-    :section_introduction ,
-    :section_literature_review ,
-    :section_analysis ,
-    :section_acknowledgements ,
-    :section_references .
+    :section_introduction,
+    :section_literature_review,
+    :section_analysis,
+    :section_acknowledgements,
+    :section_references.
 
-# SECTION INTRODUCTION
-:section_introduction a doco:Section , deo:Introduction ;
-  po:containsAsHeader :section_introduction_title ;
+# Introduction
+:section_introduction 
+  a doco:Section, deo:Introduction;
+  po:containsAsHeader [
+    a doco:SectionTitle;
+    c4o:hasContent "Introduction";
+  ];
   po:contains
     :paragraph_1 ,
     :paragraph_2 ,
@@ -223,8 +256,12 @@
   c4o:hasContent "Note that, for a 1 ms duration impact, the threshold acceleration for concussion in humans is about 300 g: the human brain is injured at accelerations of about 1/5–1/2 of those routinely attained in repeated woodpecker drilling."
 
 # SECTION LITERATURE REVIEW
-:section_literature_review a doco:Section , deo:RelatedWork ;
-  po:containsAsHeader :section_literature_review_title ;
+:section_literature_review 
+  a doco:Section, deo:RelatedWork;
+  po:containsAsHeader[
+    a doco:SectionTitle;
+    c4o:hasContent "Literature Review";
+  ];
   po:contains
     :paragraph_4 ,
     :paragraph_5 ,
@@ -337,15 +374,20 @@
     c4o:hasContent "Yet all of these suffer from the difficulty that such shock absorption mechanisms work by increasing the duration of the impact, decreasing the force and, consequently, the efficiency of drilling (Bock, 1999a)."
 
 # SECTION ANALYSIS to finishhhhh!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DOUDOU
-:section_analysis a doco:Section , deo: ;
-  po:containsAsHeader :section_analysis_title ;
-
-# SECTION ANALYSIS TITLE to finissssssh!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DOUDOU
-:section_analysis_title a doco:
+:section_analysis 
+  a doco:Section, deo:;
+  po:containsAsHeader [
+    a doco:SectionTitle;
+    c4o:hasContent "Analysis";
+  ]
 
 # SECTION ACKNOWLEDGEMENTS
-:section_acknowledgements a doco:Section , deo:Acknowledgements ;
-po:containsAsHeader :section_acknowledgements_title ;
+:section_acknowledgements 
+  a doco:Section, deo:Acknowledgements;
+  po:containsAsHeader [
+    a doco:SectionTitle;
+    c4o:hasContent "Acknowledgements";
+  ];
   po:contains
     :paragraph_13.
 
@@ -354,7 +396,7 @@ po:containsAsHeader :section_acknowledgements_title ;
   c40:hasContent "Acknowledgements" .
 
 # PARAGRAPH 13
-:paragraph_8 a doco:Paragraph ;
+:paragraph_13 a doco:Paragraph ;
   po:contains
     :sentence_56 ,
     :sentence_57 ,
@@ -378,8 +420,12 @@ po:containsAsHeader :section_acknowledgements_title ;
     :section_references .
 
 # SECTION REFERENCES 
-:section_references a doco:Section , doco:BibliographicReference ;
-po:containsAsHeader :section_references_title ;
+:section_references 
+  a doco:Section, doco:BibliographicReference;
+  po:containsAsHeader [
+    a doco:SectionTitle;
+    c4o:hasContent "References";
+  ];
   po:contains
         :bibliography_1 ,
         :bibliography_2 ,
