@@ -41,7 +41,7 @@
 :author a doco:ListOfAuthors ;
     po:contains :L_J_Gibson.
 #AFFILIATION
-:affiliation a doco:ListOfAuthors ;
+:affiliation a doco:ListOfOrganizations ;
     po:contains :L_J_Gibson.
 #KEYWORDS   
 :keywords a co:List ;
@@ -83,6 +83,21 @@
       the impact, which increases the tolerable acceleration; and the orientation of the
       brain within the skull, which increases the area of contact between the brain and
       the skull." .
+#GIBSON
+:L_J_Gibson 
+  a foaf:Person ;
+  foaf:firstName "Lorna J.";
+  foaf:familyName "Gibson";
+  foaf:gender "Female";
+  foaf:mbox "ljgibson@mit.edu";
+  org:memberOf :MSE_MIT.
+#MSE_MIT
+:MSE_MIT 
+  a foaf:Organization ;
+  foaf:name "Department of Materials Science and Engineering, Massachusetts Institute of Technology";
+  dbo:affiliation dbpedia:Massachusetts_Institute_of_Technology;
+  foaf:member :L_J_Gibson.
+
 
 :sentence_1 a doco:Sentence
   c4o:hasContent "Most woodpeckers drill holes into trees to forage for insects and their larvae."
