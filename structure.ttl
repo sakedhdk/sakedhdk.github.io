@@ -42,10 +42,10 @@
   
   prism:ISSN "ISSN 0952-8369";
 
-  #The article is contained inside of this Journal
+  # The article is contained inside of this Journal
   frbr:partOf :Journal_of_Zoology_270;
 
-  #starting/ending pages of the article
+  # starting/ending pages of the article
   prism:pageRange [
     prism:startingPage 462; 
     prism:endingPage 465; 
@@ -148,15 +148,15 @@
   dbo:affiliation dbpedia:Massachusetts_Institute_of_Technology;
   foaf:member :L_J_Gibson.
 
-#PUBLISHER
+# PUBLISHER
 
-#Zoological society london
+# Zoological society london
 :ZSL 
   a foaf:Organization;
   skos:sameAs dbpedia:Zoological_Society_of_London;
   foaf:name "The Zoological Society of London".
 
-#JOURNAL_OF_ZOOLOGY
+# JOURNAL_OF_ZOOLOGY
 :Journal_of_Zoology_270 
   a fabio:JournalIssue;
   dcterms:title "Journal of Zoology";
@@ -324,15 +324,17 @@
       :sentence_17,
       :sentence_18,
       :sentence_19.
-  
+# SENTENCE 15 
 :sentence_15 
   a doco:Sentence;
   c4o:hasContent "A number of suggestions have been made to explain the ability of woodpeckers to withstand the repeated impacts from drilling.".
 
+# SENTENCE 16
 :sentence_16 
   a doco:Sentence;
   c4o:hasContent "The classic argument made in the ornithology literature focuses on an unusual feature of birds: cranial kinesis, or the ability to move the upper portion of the beak relative to the brain case.".
 
+# SENTENCE 17
 :sentence_17 
   a doco:Sentence;
   c4o:hasContent "Bock (1964, 1966, 1999a,b) used a static analysis of the anatomical features of birds that give rise to cranial kinesis to show that, during pecking, the force of the impact is directed away from the dorsal portion of the brain case (which is lightly constructed) and towards the ventral base of the brain case (which consists of more massive bone), so that the brain itself is protected from the impact.";
@@ -358,10 +360,12 @@
     c4o:hasContent "Bock 1999b";
   ].
 
+# SENTENCE 18
 :sentence_18 
   a doco:Sentence;
   c4o:hasContent "This analysis appears to miss the dynamic effect: the brain itself accelerates during the impact.".
 
+# SENTENCE 19
 :sentence_19 
   a doco:Sentence;
   c4o:hasContent "Bock (1999a) does note that the brain may move forward and hit the inner wall of the skull if it is not firmly anchored in some way, possibly causing brain injury, and that there is little information on the morphological relationship of the brain to the brain case.";
@@ -377,7 +381,8 @@
   po:contains
     :sentence_20,
     :sentence_21.
-  
+
+# SENTENCE 20 
 :sentence_20 
   a doco:Sentence;
   c4o:hasContent "Simple scaling arguments indicate that small size is an advantage: as brain size decreases, the ratio of the brain mass to surface area decreases (assuming that the brain tissue density is similar across species), reducing the stress on the brain tissue associated with a given acceleration (May et al., 1979; Winkler, Christie & Nurney, 1995).";
@@ -514,10 +519,23 @@
     c4o:hasContent "Bock, 1999a";
   ].
 # SECTION ANALYSIS 
-:section_analysis a doco:Section, deo:Discussion;
-  deo:ProblemStatement, doco:Paragraph_9, Paragraph_10, Paragraph_11, Paragraph_12;
+:section_analysis
+  a doco:Section, deo:Discussion;
+  po:containsAsHeader[
+    a doco:SectionTitle;
+    c4o:hasContent "Analysis";
+  ];
+  po:contains
+    :paragraph_9,
+    :paragraph_10,
+    :paragraph_11,
+    :paragraph_12.
   
-#Paragraph_9  
+# SECTION LITERATURE REVIEW TITLE
+:section_literature_review_title a doco:SectionTitle;
+  c4o:hasContent "Literature Review".
+
+# Paragraph_9  
 :Paragraph_9 a doco:Paragraph; 
   po:contains
         :sentence_31,
@@ -528,10 +546,12 @@
         :sentence_36,
         :sentence_37,
         :sentence_38. 
-		
+
+# SENTENCE 31	
 :sentence_31 a doco:Sentence
   c4o:hasContent "Here, I re-examine scaling effects in brain injury to explain how woodpeckers are able to withstand such high decelerations during pecking."
 
+# SENTENCE 32
 :sentence_32 a doco:Sentence
   c4o:hasContent "Studies of brain injury have shown that both rotational and translational accelerations lead to brain injury (Ommaya & Hirsch, 1971; Ono et al., 1980; McLean & Anderson, 1997)."
   po:contains [
@@ -550,6 +570,8 @@
     c4o:hasContext :sentence_32;
     c4o:hasContent "McLean & Anderson, 1997";
   ].
+
+# SENTENCE 33
 :sentence_33 a doco:Sentence, doco: Formula; -----------------------------------to do
   c4o:hasContent "A. H. S. Holbourn (unpubl. data, cited by Ommaya et al., 1967 and Ommaya & Hirsch, 1971) proposed a scaling relationship that the tolerable rotational acceleration, €y, for a given duration of impact, for geometrically similar brains of similar properties (e.g. density, stiffness, strain threshold for injury) but different sizes, is inversely proportional to the 2/3 power of the mass, M, of the brains: where subscripts 1 and 2 refer to brains of sizes 1 and 2." 
    po:contains [
@@ -563,9 +585,12 @@
     c4o:hasContext :sentence_33;
     c4o:hasContent "Ommaya & Hirsch, 1971";
   ].
+
+# SENTENCE 34
 :sentence_34 a doco:Sentence
   c4o:hasContent "Tolerable accelerations can be defined either for a particular duration or as the asymptotic acceleration that does not cause injury at long durations."
 
+# SENTENCE 35
 :sentence_35 a doco:Sentence
   c4o:hasContent "Equation (1) has been experimentally confirmed, using some approximations, in whiplash experiments on three species of non-human primates with brain masses ranging from 20 to 500 g (Ommaya & Hirsch, 1971)."
   po:contains [
@@ -574,6 +599,8 @@
     c4o:hasContext :sentence_35;
     c4o:hasContent "Ommaya & Hirsch, 1971";
   ].
+
+# SENTENCE 36
 :sentence_36 a doco:Sentence
   c4o:hasContent "May et al. (1979) use Holbourn’s scaling relationship for rotational acceleration to suggest that woodpeckers (with brain masses between 1.25 and 3.95 g) should be 50–100 times less susceptible to concussion than humans (brain mass of 1400 g)."
   po:contains [
@@ -582,6 +609,8 @@
     c4o:hasContext :sentence_36;
     c4o:hasContent "May et al. (1979)";
   ].
+
+# SENTENCE 37
 :sentence_37 a doco:Sentence
   c4o:hasContent "However, May et al.’s (1979) high-speed film observations (up to 2000 frames s^(-1)) indicate that the trajectory of the acorn woodpecker is a straight-line translation rather than a rotation."
   po:contains [
@@ -590,6 +619,8 @@
     c4o:hasContext :sentence_37;
     c4o:hasContent "May et al. (1979)";
   ].
+
+# SENTENCE 38
 :sentence_38 a doco:Sentence
   c4o:hasContent "Limited data from slower films (at 64 frames s^(-1)) suggest that the yellow-bellied sapsucker Sphyrapicus varius also made a straight-line trajectory during pecking whereas the black-backed woodpecker Picoides arcticus made a slightly rotational trajectory, with the entire body rotating as the pelvis rotated about the femoral head (Spring, 1965)."
   po:contains [
@@ -599,7 +630,8 @@
     c4o:hasContent "Spring, 1965";
   ].
 
-#Paragraph_10  
+# Paragraph_10  
+:Paragraph_10 a doco:Paragraph; 
   po:contains       
     :sentence_39,
     :sentence_40,
@@ -608,20 +640,25 @@
     :sentence_43,
     :sentence_44,
     :sentence_45.
-		
+
+# SENTENCE 39		
 :sentence_39 a doco:Sentence
   c4o:hasContent "I next write a scaling relationship for the tolerable translational acceleration, a, of both woodpecker and human brains, for a given duration of impact."
 
+# SENTENCE 40
 :sentence_40 a doco:Sentence
   c4o:hasContent "I assume that the properties, such as the density r, of the brain tissue are the same in both woodpeckers and humans."
 
+# SENTENCE 41
 :sentence_41 a doco:Sentence
   c4o:hasContent "I note that both woodpecker and human brains are roughly hemispherical, but that they have different orientations within the skull (Fig. 2), so that the projected contact area, Aw, of the woodpecker brain against the skull is approximately (inline1) whereas that of the human brain, Ah, is (inline_2), where Rw and Rh are the radii of the woodpecker and human brains, respectively."
 
+# SENTENCE 42
 :sentence_42 a doco:Sentence
   c4o:hasContent "Assuming that brain injury occurs at the same stress, s, in both the woodpecker and the human, then or where F is the force on the brain and subscripts w and h refer to woodpecker and human, respectively."
   #TODO: add the formulas (2,3)---------------------------------------------to do
 
+# SENTENCE 43
 :sentence_43 a doco:Sentence
   c4o:hasContent "The brain mass of the acorn woodpecker is about 2.5g (Mlikovsky, 1989) whereas that of a human is about 1400 g, suggesting that the ratio of the brain radii, rw/rh, is about 0.12 and that the translational acceleration the acorn woodpecker can with-stand without injury is 16 times that of a human (for a given duration of impact)."
   po:contains [
@@ -630,13 +667,17 @@
     c4o:hasContext :sentence_43;
     c4o:hasContent "Mlikovsky, 1989";
   ].
+
+# SENTENCE 44
 :sentence_44 a doco:Sentence
   c4o:hasContent "The brain masses of a number of species of woodpeckers have been measured to range from 1.2 g (Dendrocopos minor) to 7.7 g (Dryocopus martius) (Mlikovsky, 1989), corresponding to tolerable accelerations of the woodpecker brain about 11–20 times that of the human brain (again, for a given duration of impact)."
 
+# SENTENCE 45
 :sentence_45 a doco:Sentence
   c4o:hasContent "Video imaging experiments measure head accelerations during impact rather than brain accelerations; I use the measured head accelerations as an indicator of the brain acceleration."
 
-#Paragraph_11  
+# Paragraph_11 
+:Paragraph_11 a doco:Paragraph; 
   po:contains
 		:sentence_46,
 		:sentence_47,
@@ -648,9 +689,11 @@
     :sentence_53,
     :sentence_54.
 
+# SENTENCE 46
 :sentence_46 a doco:Sentence
   c4o:hasContent "The maximum acceleration that the human head can withstand without brain injury depends on the duration of the acceleration."
 
+# SENTENCE 47
 :sentence_47 a doco:Sentence
   c4o:hasContent "The lower curve in Fig. 1 (adapted from Ono et al., 1980) shows a tolerance curve for human head impact: accelerations below the curve can be tolerated without concussion."
   po:contains [
@@ -659,9 +702,12 @@
     c4o:hasContext :sentence_47;
     c4o:hasContent "Ono et al., 1980";
   ].
+
+# SENTENCE 48 
 :sentence_48 a doco:Sentence
   c4o:hasContent "A similar tolerance curve for the acorn woodpecker can be estimated using the scaling relationship equation (3) (the upper curve in Fig. 1)."
 
+# SENTENCE 49
 :sentence_49 a doco:Sentence
   c4o:hasContent "In automobile crashes, the duration of the contact time between an unbelted vehicular occupant and a component of the vehicle is typically 3–7 ms (Ommaya, Goldsmith & Thibault, 2002)."
   po:contains [
@@ -670,6 +716,8 @@
     c4o:hasContext :sentence_49;
     c4o:hasContent "Ommaya, Goldsmith & Thibault, 2002";
   ].
+
+# SENTENCE 50
 :sentence_50 a doco:Sentence
   c4o:hasContent "The duration of head impacts in National Football League players who suffer concussion is typically 15ms (Pellman et al., 2003)."
   po:contains [
@@ -678,9 +726,12 @@
     c4o:hasContext :sentence_50;
     c4o:hasContent "Pellman et al., 2003";
   ].
+
+# SENTENCE 51
 :sentence_51 a doco:Sentence
   c40:hasContent "For this range of duration of human head impact (3–15 ms), the tolerable acceleration ranges from 80 g to 160 g."
 
+# SENTENCE 52
 :sentence_52 a doco:Sentence
   c4o:hasContent "The duration of impact for the acorn woodpecker is remarkably short: 0.5–1.0 ms (May et al., 1979)."
   po:contains [
@@ -689,26 +740,25 @@
     c4o:hasContext :sentence_52;
     c4o:hasContent "May et al., 1979";
   ].
+
+#SENTENCE 53
 :sentence_53 a doco:Sentence
   c4o:hasContent "The scaled tolerance curve for the acorn woodpecker suggests that for these short impact durations, the woodpecker head can tolerate translational accelerations of 4600 g–6000 g, well above the values of 634 g to 1525 g measured by May and his co-workers."
 
+# SENTENCE 54
 :sentence_54 a doco:Sentence
   c4o:hasContent "As noted above, other species of woodpeckers, with somewhat smaller or larger brains, would be expected to tolerate accelerations of about 11/16 = 69% to 20/16=125% that of the acorn woodpecker (assuming that they, too, have similarly short durations of the impact)."
 
 
 
-#Paragraph_12  
+# Paragraph_12
+:Paragraph_12 a doco:Paragraph; 
   po:contains
 		:sentence_55.
 
+# SENTENCE 55
 :sentence_55 a doco:Sentence
-  c4o:hasContent "The ability of woodpeckers to withstand high accelerations associated with drilling for food and excavating nests is due to three factors: their small size, which reduces the stress on the brain for a given acceleration; the short duration of the impact, which increases the tolerable acceleration; and the orientation of the brain within the skull, which increases the area of contact between the brain and the skull."
-		
-  
-
-# SECTION ANALYSIS TITLE to finissssssh!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DOUDOU
-:section_analysis_title a doco:
-	
+  c4o:hasContent "The ability of woodpeckers to withstand high accelerations associated with drilling for food and excavating nests is due to three factors: their small size, which reduces the stress on the brain for a given acceleration; the short duration of the impact, which increases the tolerable acceleration; and the orientation of the brain within the skull, which increases the area of contact between the brain and the skull.".
 
 # SECTION ACKNOWLEDGEMENTS
 :section_acknowledgements 
@@ -776,28 +826,28 @@
   foaf:familyName "Trimble";
   org:memberOf :ODMCZ_HU.
 
-#EEB_BU
+# EEB_BU
 :EEB_BU
   a foaf:Organization;
   foaf:name "Department of Ecology and Evolutionary Biology, Brown University";
   dbo:affiliation dbpedia:Brown_University;
   foaf:member :Sharon_Swartz.
 
-#DO_BU
+# DO_BU
 :DO_BU
   a foaf:Organization;
   foaf:name "Department of Orthopaedics, Brown University";
   dbo:affiliation dbpedia:Brown_University;
   foaf:member :Trey_Crisco.
 
-#OEB_HU
+# OEB_HU
 :OEB_HU
   a foaf:Organization;
   foaf:name "Department of Organismic and Evolutionary Biology, Harvard University";
   dbo:affiliation dbpedia:Harvard_University;
   foaf:member :Andy_Biewener.
 
-  #ODMCZ_HU
+# ODMCZ_HU
 :ODMCZ_HU
   a foaf:Organization;
   foaf:name "Ornithology Department of the Museum of Comparative Zoology, Harvard University";
