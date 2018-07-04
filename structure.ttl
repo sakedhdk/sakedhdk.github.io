@@ -148,6 +148,25 @@
   dbo:affiliation dbpedia:Massachusetts_Institute_of_Technology;
   foaf:member :L_J_Gibson.
 
+#PUBLISHER
+
+#Zoological society london
+:ZSL 
+  a foaf:Organization;
+  skos:sameAs dbpedia:Zoological_Society_of_London;
+  foaf:name "The Zoological Society of London".
+
+#JOURNAL_OF_ZOOLOGY
+:Journal_of_Zoology_270 
+  a fabio:JournalIssue;
+  dcterms:title "Journal of Zoology";
+  fabio:issueIdentifier "270"^^rdf:value;
+  fabio:publicationDate "2006"^^xsd:gYear;
+  fabio:hasCopyrightYear "2006"^^xsd:gYear;
+  dcterms:publisher :ZSL.
+
+
+
 # Body matter
 :body_matter 
   a doco:BodyMatter;
@@ -595,7 +614,7 @@
   dbo:affiliation dbpedia:Harvard_University;
   foaf:member :Jeremiah_Trimble.
 
-       
+
 # BACK MATTER
 :back_matter a doco:BackMatter ;
   po:contains
