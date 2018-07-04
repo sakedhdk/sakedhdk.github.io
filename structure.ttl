@@ -33,6 +33,7 @@
   prism:doi "10.1111/j.1469-7998.2006.00166.x";
   
   dcterms:creator :L_J_Gibson;
+  dcterms:title  "Woodpecker pecking: how woodpeckers avoid brain injury";
   
   # Dates
   fabio:hasDateReceived "31 August 2005"^^xsd:date;
@@ -70,7 +71,7 @@
 
 :affiliation_list 
   a doco:ListOfOrganizations;
-  po:contains :L_J_Gibson.
+  po:contains :MSE_MIT.
 
 :correspondence 
   a doco:Section;
@@ -131,7 +132,7 @@
   a doco:Sentence;
   c4o:hasContent "I find that there are three keys to woodpeckers’ ability to withstand high decelerations: their small size, which reduces the stress on the brain for a given acceleration; the short duration of the impact, which increases the tolerable acceleration; and the orientation of the brain within the skull, which increases the area of contact between the brain and the skull." 
 
-# People
+# Author
 :L_J_Gibson 
   a foaf:Person;
   foaf:firstName "Lorna J.";
@@ -508,7 +509,10 @@
     c4o:hasContent "Acknowledgements";
   ];
   po:contains
-    :paragraph_13.
+    :paragraph_13;
+    [a doco:ListOfContributors;
+    po:contains :Trey_Crisco, :Sharon_Swartz, :Andy_Biewener, :Matt_Dawson, :Jeremiah_Trimble;
+  ].
 
 # SECTION ACKNOWLEDGEMENTS TITLE
 :section_acknowledgements_title a doco:SectionTitle ;
@@ -532,6 +536,65 @@
 # SENTENCE 58
 :sentence_58 a doco:Sentence
   c4o:hasContent "Mr Matt Dawson assisted with the preparation of Fig. 1. The photographs of the skulls in Fig. 2 were kindly provided by Mr Jeremiah Trimble of the Ornithology Department of the Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard College."
+
+# CONTRIBUTORS
+:Trey_Crisco 
+  a foaf:Person;
+  foaf:firstName "Trey";
+  foaf:familyName "Crisco";
+  org:memberOf :DO_BU.
+
+:Sharon_Swartz
+  a foaf:Person;
+  foaf:firstName "Sharon";
+  foaf:familyName "Swartz";
+  org:memberOf :EEB_BU.
+
+:Andy_Biewener
+  a foaf:Person;
+  foaf:firstName "Andy";
+  foaf:familyName "Biewener";
+  org:memberOf :OEB_HU.
+
+:Matt_Dawson
+  a foaf:Person;
+  foaf:firstName "Matt";
+  foaf:familyName "Dawson".
+
+:Jeremiah_Trimble
+  a foaf:Person;
+  foaf:firstName "Jeremiah";
+  foaf:familyName "Trimble";
+  org:memberOf :ODMCZ_HU.
+
+#EEB_BU
+:EEB_BU
+  a foaf:Organization ;
+  foaf:name "Department of Ecology and Evolutionary Biology, Brown University";
+  dbo:affiliation dbpedia:Brown_University;
+  foaf:member :Sharon_Swartz.
+
+#DO_BU
+:DO_BU
+  a foaf:Organization ;
+  foaf:name "Department of Orthopaedics, Brown University";
+  dbo:affiliation dbpedia:Brown_University;
+  foaf:member :Trey_Crisco.
+
+#OEB_HU
+:OEB_HU
+  a foaf:Organization ;
+  foaf:name "Department of Organismic and Evolutionary Biology, Harvard University";
+  dbo:affiliation dbpedia:Harvard_University;
+  foaf:member :Andy_Biewener.
+
+  #ODMCZ_HU
+:ODMCZ_HU
+  a foaf:Organization ;
+  foaf:name "Ornithology Department of the Museum of Comparative Zoology, Harvard University";
+  dbo:affiliation dbpedia:Harvard_University;
+  foaf:member :Jeremiah_Trimble.
+
        
 # BACK MATTER
 :back_matter a doco:BackMatter ;
