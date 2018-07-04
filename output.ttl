@@ -318,22 +318,63 @@ figure1: dc:description "Figure 1 Tolerance curves for human and acorn woodpecke
 			1999a).";
 		c40:hasContext :bibliography_3;
 		amo:hasClaim :sentence11.
-		
-	
+
 # Elements (figures)
 :figure_1 
   a doco:FigureBox;
   dc:description "Tolerance curves for human and acorn woodpecker Melanerpes formicivorus head impact. The lower curve gives the threshold acceleration for concussion in humans and is adapted from Ono et al. (1980); accelerations below the curve can be tolerated without brain injury. The upper curve, for acorn woodpecker head impact, is obtained using the scaling relationship equation (3). The duration of human head impacts in accidents is typically 3–15 ms, corresponding to tolerable accelerations of 80g to 160g. The duration of acorn woodpecker head impacts has been measured to be 0.5–1.0 ms (May et al., 1979), suggesting that acorn woodpeckers can tolerate impact accelerations of 4600 g to 6000 g, well in excess of measured values of 634 g to 1525 g.";
   po:contains [
-    a: c4o:InTextReferencePointer;
+    a c4o:InTextReferencePointer;
     c4o:denotes :figure_1;
     c4o:hasContext :bibliography_14
   ],[
-    a: c4o:InTextReferencePointer;
+    a c4o:InTextReferencePointer;
     c4o:denotes :figure_1;
     c4o:hasContext :bibliography_7
   ].
 
+# Analysis
+:section_analysis
+  a doco:Section;
+  dcterms:title "Analysis";
+  po:contains :theory.
+
+# Theory
+:theory 
+  a sake:Theory;
+  sake:hasAsIdea ;
+  sake:isDemonstratedBy :demonstration_1, :demonstation_2, :demonstration_3.
+
+# Thesis
+:thesis
+  a sake:Thesis;
+  # I don't know if I have to repete isIdeaOf
+  sake:isSupportedBy :demonstration_1, :demonstation_2, :demonstration_3;
+  c40:hasContent 
+  "The ability of woodpeckers to withstand high accelera-
+  tions associated with drilling for food and excavating nests
+  is due to three factors: their small size, which reduces the
+  stress on the brain for a given acceleration; the short
+  duration of the impact, which increases the tolerable accel-
+  eration; and the orientation of the brain within the skull,
+  which increases the area of contact between the brain and
+  the skull.".
+
+# Demonstration 1 
+:demonstration_1
+  a sake:Demonstration;
+  # I don't know if I have to insert demonstrates and supports
+  sake:isProvedBy :evidence_1, :evidence_2, :evidence_3;
+  c40:hasContent
+  "the orientation of the brain within the skull,
+  which increases the area of contact between the brain and
+  the skull.".
+
+# Demonstration 2
+:demonstation_2
+  a sake:Demonstration;
+
+# Acknowledments 
 :section_acknowledgements 
   a deo:acknowledgements;
   dc:title "Acknowledgements";
