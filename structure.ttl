@@ -393,7 +393,7 @@
     c4o:hasContent "Winkler, Christie & Nurney, 1995";
   ].
 # SENTENCE 21
-:sentence_21 a doco:Sentence
+:sentence_21 a doco:Sentence;
   c4o:hasContent "I examine the scaling argument in more detail below.".
 
 # PARAGRAPH 6
