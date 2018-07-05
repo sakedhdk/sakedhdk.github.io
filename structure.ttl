@@ -226,12 +226,14 @@
 :sentence_3 
   a doco:Sentence;
   c4o:hasContent "The acorn woodpecker excavates larger holes to store individual acorns; social groups of acorn woodpeckers have been known to store more than 60000 acorns, each in its individual hole, in a dead tree trunk or limb, known as a ‘granary’ (Elphick, Dunning & Sibley, 2001).";
-  po:contains [
-    a c4o:InTextReferencePointer;
-    c4o:denotes :bibliography_5;
-    c4o:hasContext :sentence_3;
-    c4o:hasContent "(Elphick, Dunning & Sibley, 2001)";
-  ].
+  po:contains
+    :sentence_3_reference1.
+
+:sentence_3_reference1
+  a c4o:InTextReferencePointer;
+  c4o:denotes :bibliography_5;
+  c4o:hasContext :sentence_3;
+  c4o:hasContent "(Elphick, Dunning & Sibley, 2001)".
 
 # SENTENCE 4
 :sentence_4 
@@ -260,12 +262,14 @@
 :sentence_7 
   a doco:Sentence;
   c4o:hasContent "The most detailed study of woodpecker drilling behaviour remains that of May et al. (1979), who made high-speed films of an acorn woodpecker Melanerpes formicivorus pecking into a tree.";
-  po:contains [
-    a c4o:InTextReferencePointer;
-    c4o:denotes :bibliography_7;
-    c4o:hasContext :sentence_7;
-    c4o:hasContent "May et al. (1979)";
-  ].
+  po:contains 
+    :sentence_7_reference1
+
+:sentence_7_reference1
+  a c4o:InTextReferencePointer;
+  c4o:denotes :bibliography_7;
+  c4o:hasContext :sentence_7;
+  c4o:hasContent "May et al. (1979)".
 
 # SENTENCE 8
 :sentence_8 
@@ -299,17 +303,21 @@
 :sentence_12 
   a doco:Sentence;
   c4o:hasContent "The Japan Head Tolerance Curve, the lower curve in Fig. 1, shows the threshold combinations of impact acceleration and duration for concussion; accelerations above the curve cause concussion whereas those below do not (Ono et al., 1980; McLean & Anderson, 1997).";
-  po:contains [
-    a c4o:InTextReferencePointer;
-    c4o:denotes :bibliography_14;
-    c4o:hasContext :sentence_12;
-    c4o:hasContent "Ono et al., 1980";
-  ],[
-    a c4o:InTextReferencePointer;
-    c4o:denotes :bibliography_9;
-    c4o:hasContext :sentence_12;
-    c4o:hasContent "McLean & Anderson, 1997";
-  ].
+  po:contains 
+    :sentence_12_reference1,
+    :sentence_12_reference2.
+  
+:sentence_12_reference1
+  a c4o:InTextReferencePointer;
+  c4o:denotes :bibliography_14;
+  c4o:hasContext :sentence_12;
+  c4o:hasContent "Ono et al., 1980".
+  
+:sentence_12_reference2
+  a c4o:InTextReferencePointer;
+  c4o:denotes :bibliography_9;
+  c4o:hasContext :sentence_12;
+  c4o:hasContent "McLean & Anderson, 1997".
 
 # SENTENCE 13
 :sentence_13 
