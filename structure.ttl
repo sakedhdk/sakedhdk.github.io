@@ -208,10 +208,6 @@
     :paragraph_2,
     :paragraph_3.
 
-# SECTION INTRODUCTION TITLE
-:section_introduction_title a doco:SectionTitle;
-  c4o:hasContent "Introduction".
-
 # PARAGRAPH 1
 :paragraph_1 a doco:Paragraph;
   po:contains
@@ -344,10 +340,6 @@
     :paragraph_6,
     :paragraph_7,
     :paragraph_8.
-  
-  # SECTION LITERATURE REVIEW TITLE
-  :section_literature_review_title a doco:SectionTitle;
-    c4o:hasContent "Literature Review".
   
   # PARAGRAPH 4
   :paragraph_4 a doco:Paragraph;
@@ -564,13 +556,9 @@
     :paragraph_10,
     :paragraph_11,
     :paragraph_12.
-  
-# SECTION LITERATURE REVIEW TITLE
-:section_literature_review_title a doco:SectionTitle;
-  c4o:hasContent "Literature Review".
 
 # Paragraph_9  
-:Paragraph_9 a doco:Paragraph; 
+:paragraph_9 a doco:Paragraph; 
   po:contains
         :sentence_31,
         :sentence_32,
@@ -665,7 +653,7 @@
   ].
 
 # Paragraph_10  
-:Paragraph_10 a doco:Paragraph; 
+:paragraph_10 a doco:Paragraph; 
   po:contains       
     :sentence_39,
     :sentence_40,
@@ -711,7 +699,7 @@
   c4o:hasContent "Video imaging experiments measure head accelerations during impact rather than brain accelerations; I use the measured head accelerations as an indicator of the brain acceleration.".
 
 # Paragraph_11 
-:Paragraph_11 a doco:Paragraph; 
+:paragraph_11 a doco:Paragraph; 
   po:contains
 		:sentence_46,
 		:sentence_47,
@@ -804,10 +792,6 @@
     [a doco:ListOfContributors;
     po:contains :Trey_Crisco, :Sharon_Swartz, :Andy_Biewener, :Matt_Dawson, :Jeremiah_Trimble;
   ].
-
-# SECTION ACKNOWLEDGEMENTS TITLE
-:section_acknowledgements_title a doco:SectionTitle;
-  c4o:hasContent "Acknowledgements".
 
 # PARAGRAPH 13
 :paragraph_13 a doco:Paragraph;
@@ -918,10 +902,6 @@
         :bibliography_16,
         :bibliography_17,
         :bibliography_18.
-
-# SECTION REFERENCES TITLE
-:section_references_title a doco:SectionTitle;
-  c4o:hasContent "References".
 
 # BIBLIOGRAPHY 1
 :bibliography_1
