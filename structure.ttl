@@ -360,27 +360,31 @@
 :sentence_17 
   a doco:Sentence;
   c4o:hasContent "Bock (1964, 1966, 1999a,b) used a static analysis of the anatomical features of birds that give rise to cranial kinesis to show that, during pecking, the force of the impact is directed away from the dorsal portion of the brain case (which is lightly constructed) and towards the ventral base of the brain case (which consists of more massive bone), so that the brain itself is protected from the impact.";
-  po:contains [
+  po:contains :sentence_17_reference1, :sentence_17_reference2, :sentence_17_reference3, :sentence_17_reference4.
+  
+:sentence_17_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_1;
     c4o:hasContext :sentence_17;
-    c4o:hasContent "Bock 1964";
-  ],[
+    c4o:hasContent "Bock 1964".
+
+:sentence_17_reference2
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_2;
     c4o:hasContext :sentence_17;
-    c4o:hasContent "Bock 1966";
-  ],[
+    c4o:hasContent "Bock 1966".
+
+:sentence_17_reference3
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_3;
     c4o:hasContext :sentence_17;
-    c4o:hasContent "Bock 1999a";
-  ],[
+    c4o:hasContent "Bock 1999a".
+
+:sentence_17_reference4
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_4;
     c4o:hasContext :sentence_17;
-    c4o:hasContent "Bock 1999b";
-  ].
+    c4o:hasContent "Bock 1999b".
 
 # SENTENCE 18
 :sentence_18 
@@ -391,12 +395,13 @@
 :sentence_19 
   a doco:Sentence;
   c4o:hasContent "Bock (1999a) does note that the brain may move forward and hit the inner wall of the skull if it is not firmly anchored in some way, possibly causing brain injury, and that there is little information on the morphological relationship of the brain to the brain case.";
-  po:contains [
+  po:contains :sentence_19_reference1.
+
+:sentence_19_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_3;
     c4o:hasContext :sentence_19;
-    c4o:hasContent "Bock 1999a";
-  ].
+    c4o:hasContent "Bock 1999a".
 
 # PARAGRAPH 5
 :paragraph_5 a doco:Paragraph;
@@ -408,17 +413,20 @@
 :sentence_20 
   a doco:Sentence;
   c4o:hasContent "Simple scaling arguments indicate that small size is an advantage: as brain size decreases, the ratio of the brain mass to surface area decreases (assuming that the brain tissue density is similar across species), reducing the stress on the brain tissue associated with a given acceleration (May et al., 1979; Winkler, Christie & Nurney, 1995).";
-  po:contains [
+  po:contains :sentence_20_reference1, :sentence_20_reference2.
+
+:sentence_20_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_7;
     c4o:hasContext :sentence_20;
-    c4o:hasContent "May et al., 1979";
-  ],[
+    c4o:hasContent "May et al., 1979".
+
+:sentence_20_reference2
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_18;
     c4o:hasContext :sentence_20;
-    c4o:hasContent "Winkler, Christie & Nurney, 1995";
-  ].
+    c4o:hasContent "Winkler, Christie & Nurney, 1995".
+
 # SENTENCE 21
 :sentence_21 a doco:Sentence;
   c4o:hasContent "I examine the scaling argument in more detail below.".
@@ -434,45 +442,54 @@
 # SENTENCE 22
 :sentence_22 a doco:Sentence;
   c4o:hasContent "The centripetal theory of concussion suggests that rotational, rather than translational, accelerations produce concussion (Holbourn, 1943; Ommaya et al., 1967; Ommaya & Hirsch, 1971), leading May et al. (1979) to argue that the straight-line trajectory protects the woodpecker from injury.";
-  po:contains [
+  po:contains :sentence_22_reference1, :sentence_22_reference2, :sentence_22_reference3, :sentence_20_reference4.
+
+:sentence_22_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_6;
     c4o:hasContext :sentence_22;
-    c4o:hasContent "Holbourn, 1943";
-  ],[
+    c4o:hasContent "Holbourn, 1943".
+
+:sentence_22_reference2
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_13;
     c4o:hasContext :sentence_22;
-    c4o:hasContent "Ommaya et al., 1967";
-  ],[
+    c4o:hasContent "Ommaya et al., 1967".
+
+:sentence_22_reference3
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_12;
     c4o:hasContext :sentence_22;
-    c4o:hasContent "Ommaya & Hirsch, 1971";
-  ],[
+    c4o:hasContent "Ommaya & Hirsch, 1971".
+
+:sentence_22_reference4
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_7;
     c4o:hasContext :sentence_22;
-    c4o:hasContent "May et al. (1979)";
-  ].
+    c4o:hasContent "May et al. (1979)".
+
 # SENTENCE 23
 :sentence_23 a doco:Sentence;
   c4o:hasContent "However, later studies demonstrated that translational accelerations in non-human primates also lead to concussion (Ono et al., 1980).";
-  po:contains [
+  po:contains :sentence_23_reference1.
+
+:sentence_23_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_14;
     c4o:hasContext :sentence_23;
-    c4o:hasContent "Ono et al., 1980";
-  ].
+    c4o:hasContent "Ono et al., 1980".
+
 # SENTENCE 24
 :sentence_24 a doco:Sentence;
   c4o:hasContent "In addition, the centripetal model predicts a progression of injury from cortex to subcortex to brain stem that does not always correspond to clinical observations of concussion (Shaw, 2002).";
-  po:contains [
+  po:contains :sentence_24_reference1.
+
+:sentence_24_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_16;
     c4o:hasContext :sentence_24;
-    c4o:hasContent "Shaw, 2002";
-  ].
+    c4o:hasContent "Shaw, 2002".
+
 # SENTENCE 25
 :sentence_25 a doco:Sentence;
   c4o:hasContent "In light of these observations, the centripetal theory of concussion is no longer thought to be valid so that May’s argument, that the straight trajectory prevents brain injury in woodpeckers, is doubtful.".
@@ -491,21 +508,25 @@
 # SENTENCE 27
 :sentence_27 a doco:Sentence;
   c4o:hasContent "The brain of the woodpecker is tightly packed within the skull, and there is relatively little cerebrospinal fluid (May et al., 1976).";
-  po:contains [
+  po:contains :sentence_27_reference1.
+
+:sentence_27_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_8;
     c4o:hasContext :sentence_27;
-    c4o:hasContent "May et al., 1976";
-  ].
+    c4o:hasContent "May et al., 1976".
+
 # SENTENCE 28
 :sentence_28 a doco:Sentence;
   c4o:hasContent "Shaw (2002) has proposed that the woodpecker avoids injury through the tight packing of the brain in the skull, which he suggests prevents rotation and mechanical stressing of the brain within the skull.";
-  po:contains [
+  po:contains :sentence_28_reference1.
+
+:sentence_28_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_16;
     c4o:hasContext :sentence_28;
-    c4o:hasContent "Shaw (2002)";
-  ].
+    c4o:hasContent "Shaw (2002)".
+
 # PARAGRAPH 8
 :paragraph_8 a doco:Paragraph;
   po:contains
@@ -515,31 +536,37 @@
 # SENTENCE 29
 :sentence_29 a doco:Sentence;
   c4o:hasContent "Various shock absorption mechanisms, involving the muscles attached at the rear end of the mandible (Bock, 1964; Spring, 1965; May et al., 1976) or those connected to the tongue, which wraps around the back of the head (May et al., 1976), have been proposed.";
-  po:contains [
+  po:contains :sentence_29_reference1, :sentence_29_reference2, :sentence_29_reference3.
+
+:sentence_29_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_1;
     c4o:hasContext :sentence_29;
-    c4o:hasContent "Bock, 1964";
-  ],[
+    c4o:hasContent "Bock, 1964".
+
+:sentence_29_reference2
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_17;
     c4o:hasContext :sentence_29;
-    c4o:hasContent "Spring, 1965";
-  ],[
+    c4o:hasContent "Spring, 1965".
+
+:sentence_29_reference3
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_8;
     c4o:hasContext :sentence_29;
-    c4o:hasContent "May et al., 1976";
-  ].
+    c4o:hasContent "May et al., 1976".
+
 # SENTENCE 30
 :sentence_30 a doco:Sentence;
   c4o:hasContent "Yet all of these suffer from the difficulty that such shock absorption mechanisms work by increasing the duration of the impact, decreasing the force and, consequently, the efficiency of drilling (Bock, 1999a).";
-  po:contains [
+  po:contains :sentence_30_reference1.
+
+:sentence_30_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_3;
     c4o:hasContext :sentence_30;
-    c4o:hasContent "Bock, 1999a";
-  ].
+    c4o:hasContent "Bock, 1999a".
+
 # SECTION ANALYSIS 
 :section_analysis
   a doco:Section, deo:Discussion;
@@ -569,37 +596,42 @@
 # SENTENCE 32
 :sentence_32 a doco:Sentence;
   c4o:hasContent "Studies of brain injury have shown that both rotational and translational accelerations lead to brain injury (Ommaya & Hirsch, 1971; Ono et al., 1980; McLean & Anderson, 1997).";
-  po:contains [
+  po:contains :sentence_32_reference1, :sentence_32_reference2, :sentence_32_reference3.
+
+:sentence_32_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_12;
     c4o:hasContext :sentence_32;
-    c4o:hasContent "Ommaya & Hirsch, 1971";
-  ],[
+    c4o:hasContent "Ommaya & Hirsch, 1971".
+
+:sentence_32_reference2
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_14;
     c4o:hasContext :sentence_32;
-    c4o:hasContent "Ono et al., 1980";
-  ],[
+    c4o:hasContent "Ono et al., 1980".
+
+:sentence_32_reference3
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_9;
     c4o:hasContext :sentence_32;
-    c4o:hasContent "McLean & Anderson, 1997";
-  ].
+    c4o:hasContent "McLean & Anderson, 1997".
 
 # SENTENCE 33
 :sentence_33 a doco:Sentence; #doco: Formula; -----------------------------------to do
   c4o:hasContent "A. H. S. Holbourn (unpubl. data, cited by Ommaya et al., 1967 and Ommaya & Hirsch, 1971) proposed a scaling relationship that the tolerable rotational acceleration, €y, for a given duration of impact, for geometrically similar brains of similar properties (e.g. density, stiffness, strain threshold for injury) but different sizes, is inversely proportional to the 2/3 power of the mass, M, of the brains: where subscripts 1 and 2 refer to brains of sizes 1 and 2."; 
-   po:contains [
+   po:contains :sentence_33_reference1, :sentence_33_reference2.
+
+:sentence_33_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_13;
     c4o:hasContext :sentence_33;
-    c4o:hasContent "Ommaya et al., 1967";
-  ],[
+    c4o:hasContent "Ommaya et al., 1967".
+
+:sentence_33_reference2
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_12;
     c4o:hasContext :sentence_33;
-    c4o:hasContent "Ommaya & Hirsch, 1971";
-  ].
+    c4o:hasContent "Ommaya & Hirsch, 1971".
 
 # SENTENCE 34
 :sentence_34 a doco:Sentence;
@@ -608,42 +640,46 @@
 # SENTENCE 35
 :sentence_35 a doco:Sentence;
   c4o:hasContent "Equation (1) has been experimentally confirmed, using some approximations, in whiplash experiments on three species of non-human primates with brain masses ranging from 20 to 500 g (Ommaya & Hirsch, 1971).";
-  po:contains [
+  po:contains :sentence_35_reference1.
+
+:sentence_35_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_12;
     c4o:hasContext :sentence_35;
-    c4o:hasContent "Ommaya & Hirsch, 1971";
-  ].
+    c4o:hasContent "Ommaya & Hirsch, 1971".
 
 # SENTENCE 36
 :sentence_36 a doco:Sentence;
   c4o:hasContent "May et al. (1979) use Holbourn’s scaling relationship for rotational acceleration to suggest that woodpeckers (with brain masses between 1.25 and 3.95 g) should be 50–100 times less susceptible to concussion than humans (brain mass of 1400 g).";
-  po:contains [
+  po:contains :sentence_36_reference1.
+
+:sentence_36_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_7;
     c4o:hasContext :sentence_36;
-    c4o:hasContent "May et al. (1979)";
-  ].
+    c4o:hasContent "May et al. (1979)".
 
 # SENTENCE 37
 :sentence_37 a doco:Sentence;
   c4o:hasContent "However, May et al.’s (1979) high-speed film observations (up to 2000 frames s^(-1)) indicate that the trajectory of the acorn woodpecker is a straight-line translation rather than a rotation.";
-  po:contains [
+  po:contains :sentence_37_reference1.
+
+:sentence_37_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_7;
     c4o:hasContext :sentence_37;
-    c4o:hasContent "May et al. (1979)";
-  ].
+    c4o:hasContent "May et al. (1979)".
 
 # SENTENCE 38
 :sentence_38 a doco:Sentence;
   c4o:hasContent "Limited data from slower films (at 64 frames s^(-1)) suggest that the yellow-bellied sapsucker Sphyrapicus varius also made a straight-line trajectory during pecking whereas the black-backed woodpecker Picoides arcticus made a slightly rotational trajectory, with the entire body rotating as the pelvis rotated about the femoral head (Spring, 1965).";
-  po:contains [
+  po:contains :sentence_38_reference1.
+
+:sentence_38_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_17;
     c4o:hasContext :sentence_38;
-    c4o:hasContent "Spring, 1965";
-  ].
+    c4o:hasContent "Spring, 1965".
 
 # Paragraph_10  
 :paragraph_10 a doco:Paragraph; 
@@ -676,12 +712,13 @@
 # SENTENCE 43
 :sentence_43 a doco:Sentence;
   c4o:hasContent "The brain mass of the acorn woodpecker is about 2.5g (Mlikovsky, 1989) whereas that of a human is about 1400 g, suggesting that the ratio of the brain radii, rw/rh, is about 0.12 and that the translational acceleration the acorn woodpecker can with-stand without injury is 16 times that of a human (for a given duration of impact).";
-  po:contains [
+  po:contains :sentence_43_reference1.
+
+:sentence_43_reference1.
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_10;
     c4o:hasContext :sentence_43;
-    c4o:hasContent "Mlikovsky, 1989";
-  ].
+    c4o:hasContent "Mlikovsky, 1989".
 
 # SENTENCE 44
 :sentence_44 a doco:Sentence;
@@ -711,12 +748,13 @@
 # SENTENCE 47
 :sentence_47 a doco:Sentence;
   c4o:hasContent "The lower curve in Fig. 1 (adapted from Ono et al., 1980) shows a tolerance curve for human head impact: accelerations below the curve can be tolerated without concussion.";
-  po:contains [
+  po:contains :sentence_47_reference1.
+
+:sentence_47_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_14;
     c4o:hasContext :sentence_47;
-    c4o:hasContent "Ono et al., 1980";
-  ].
+    c4o:hasContent "Ono et al., 1980".
 
 # SENTENCE 48
 :sentence_48 a doco:Sentence;
@@ -725,22 +763,24 @@
 # SENTENCE 49
 :sentence_49 a doco:Sentence;
   c4o:hasContent "In automobile crashes, the duration of the contact time between an unbelted vehicular occupant and a component of the vehicle is typically 3–7 ms (Ommaya, Goldsmith & Thibault, 2002).";
-  po:contains [
+  po:contains :sentence_49_reference1.
+
+:sentence_49_reference1.
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_11;
     c4o:hasContext :sentence_49;
-    c4o:hasContent "Ommaya, Goldsmith & Thibault, 2002";
-  ].
+    c4o:hasContent "Ommaya, Goldsmith & Thibault, 2002".
 
 # SENTENCE 50
 :sentence_50 a doco:Sentence;
   c4o:hasContent "The duration of head impacts in National Football League players who suffer concussion is typically 15ms (Pellman et al., 2003).";
-  po:contains [
+  po:contains :sentence_50_reference1.
+
+:sentence_50_reference1.
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_15;
     c4o:hasContext :sentence_50;
-    c4o:hasContent "Pellman et al., 2003";
-  ].
+    c4o:hasContent "Pellman et al., 2003".
 
 # SENTENCE 51
 :sentence_51 a doco:Sentence;
@@ -749,12 +789,13 @@
 # SENTENCE 52
 :sentence_52 a doco:Sentence;
   c4o:hasContent "The duration of impact for the acorn woodpecker is remarkably short: 0.5–1.0 ms (May et al., 1979).";
-  po:contains [
+  po:contains :sentence_52_reference1.
+
+:sentence_52_reference1
     a c4o:InTextReferencePointer;
     c4o:denotes :bibliography_7;
     c4o:hasContext :sentence_52;
-    c4o:hasContent "May et al., 1979";
-  ].
+    c4o:hasContent "May et al., 1979".
 
 # SENTENCE 53
 :sentence_53 a doco:Sentence;
