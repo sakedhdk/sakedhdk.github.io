@@ -35,6 +35,8 @@
   dcterms:creator :L_J_Gibson;
   dcterms:title  "Woodpecker pecking: how woodpeckers avoid brain injury";
   
+  #ARTICLE'S THEORY
+  sake:formulate :L_J_Gibson_Theory;
   # Dates
   fabio:hasDateReceived "31 August 2005"^^xsd:date;
   fabio:dateAccepted "23 February 2006"^^xsd:date;
@@ -1038,3 +1040,48 @@
   a biro:BibliographicReference;
   c4o:hasContent "Winkler, H., Christie, D.A. & Nurney, D. (1995). Woodpeckers: a guide to the woodpeckers of the world. Boston: Houghton Mifflin.";
   biro:references <http://www.worldcat.org/oclc/751504766>.
+
+#THEORY!
+:L_J_Gibson_Theory a sake:Theory;
+#LOOOOOOOK!!!!!
+  sake:isFormulatedBy <http://dx.doi.org/10.1111/j.1469-7998.2006.00166.x>;
+  dcterms:creator :L_J_Gibson;
+  sake:hasField dbpedia:Ornithology;
+  sake:expressedIn :abstract_sentence3, :sentence_55.
+  sake:hasAsIdea
+    :woodpecker_thesis_size,
+    :woodpecker_thesis_duration,
+    :woodpecker_thesis_orientation.
+
+#THESIS
+#THESIS-SIZE
+:woodpecker_thesis_size a sake:Thesis;
+  sake:isIdeaOf :L_J_Gibson_Theory;
+  c4o:hasContent "their small size, which reduces the stress on the brain for a given acceleration";
+  sake:isDemonstratedBy :woodpecker_demonstration_size.
+
+#THESIS-DURATION
+:woodpecker_thesis_duration a sake:Thesis;
+  sake:isIdeaOf :L_J_Gibson_Theory;
+  c4o:hasContent "the short duration of the impact, which increases the tolerable acceleration;";
+  sake:isDemonstratedBy :woodpecker_demonstration_duration.
+
+#THESIS-ORIENTATION
+:woodpecker_thesis_orientation a sake:Thesis;
+  sake:isIdeaOf :L_J_Gibson_Theory;
+  c4o:hasContent "the orientation of the brain within the skull, which increases the area of contact between the brain and the skull.";
+  sake:isDemonstratedBy :woodpecker_demonstration_orientation.
+
+#DEMONSTRATION
+#DEMONSTRATION-size
+:woodpecker_demonstration_size a sake:Demonstration;
+  sake:expressedIn :sentence_43, :sentence_44, :sentence_54.
+
+#DEMONSTRATION-duration
+:woodpecker_demonstration_duration a sake:Demonstration;
+  sake:expressedIn :sentence_46, :sentence_52, :sentence_53.
+
+#DEMONSTRATION-orientation
+:woodpecker_demonstration_orientation a sake:Demonstration;
+  sake:expressedIn :sentence_41, :sentence_42.
+
