@@ -106,7 +106,7 @@
 :biomechanics 
   a fabio:SubjectTerm;
   skos:prefLabel "biomechanics";
-  fabio:hasDiscipline dbpedia:Biomechanic.
+  fabio:hasDiscipline dbpedia:Biomechanics.
 
 # Abstract section
 :abstract 
@@ -1063,12 +1063,19 @@
 #LOOOOOOOK!!!!!
   sake:isFormulatedBy <http://dx.doi.org/10.1111/j.1469-7998.2006.00166.x>;
   dcterms:creator :L_J_Gibson;
-  sake:hasField dbpedia:Ornithology;
+  sake:BasedOn :Holbourn_Theory, :May_Theory;
+  sake:answersTo :woodpecker_behaviour;
+  sake:hasField dbpedia:Ornithology, dbpedia:Biomechanics, dbpedia:Neurosurgery;
   sake:expressedIn :abstract_sentence3, :sentence_55.
   sake:hasAsIdea
     :woodpecker_thesis_size,
     :woodpecker_thesis_duration,
     :woodpecker_thesis_orientation.
+
+
+#Phenomena
+:woodpecker_behaviour a sake:Phenomenon;
+  sake:expressedIn :abstract_sentence1 .
 
 #THESIS
 #THESIS-SIZE
@@ -1109,12 +1116,13 @@
 :Holbourn_Theory a sake:ExternalTheory;
   sake:isFormulatedBy :bibliography_12, :bibliography_13;
   dcterms:creator "A. H. S. Holbourn";
-  sake:hasField dbpedia:Neurosurgery;
+  sake:hasField dbpedia:Neurosurgery, dbpedia:Biomechanics;
   sake:expressedIn :sentence_33.
 
 #THEORY MAY
 :May_Theory a sake:ExternalTheory;
   sake:isFormulatedBy :bibliography_7;
   dcterms:creator "P. R. A. May";
-  sake:hasField dbpedia:Ornithology;
+  sake:BasedOn :Holbourn_Theory;
+  sake:hasField dbpedia:Ornithology, dbpedia:Biomechanics, dbpedia:Neurosurgery;
   sake:expressedIn :sentence_36.
