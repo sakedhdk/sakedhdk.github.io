@@ -1093,12 +1093,28 @@
 #DEMONSTRATION-size
 :woodpecker_demonstration_size a sake:Demonstration;
   sake:expressedIn :sentence_43, :sentence_44, :sentence_54.
+  sake:isSupportedBy :sentence_43_reference1
 
 #DEMONSTRATION-duration
 :woodpecker_demonstration_duration a sake:Demonstration;
-  sake:expressedIn :sentence_46, :sentence_52, :sentence_53.
+  sake:expressedIn :sentence_46, :sentence_47, :sentence_48, :sentence_49, :sentence_50, :sentence_51, :sentence_52, :sentence_53.
+  sake:isSupportedBy :sentence_47_reference1, :sentence_49_reference1, :sentence_50_reference1, :sentence_52_reference1
 
 #DEMONSTRATION-orientation
 :woodpecker_demonstration_orientation a sake:Demonstration;
   sake:expressedIn :sentence_41, :sentence_42.
+  sake:isSupportedBy 
 
+#THEORY HOLBOURN
+:Holbourn_Theory a sake:ExternalTheory;
+  sake:isFormulatedBy :bibliography_12, :bibliography_13;
+  dcterms:creator "A. H. S. Holbourn";
+  sake:hasField dbpedia:Neurosurgery;
+  sake:expressedIn :sentence_33.
+
+#THEORY MAY
+:May_Theory a sake:ExternalTheory;
+  sake:isFormulatedBy :bibliography_7;
+  dcterms:creator "P. R. A. May";
+  sake:hasField dbpedia:Ornithology;
+  sake:expressedIn :sentence_36.
