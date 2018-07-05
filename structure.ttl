@@ -20,7 +20,7 @@
 @prefix biro: <http://purl.org/spar/biro> .
 
 # DOI is the URI
-<doi:10.1111/j.1469-7998.2006.00166.x> 
+<http://dx.doi.org/10.1111/j.1469-7998.2006.00166.x> 
 
   a fabio:JournalArticle;
 
@@ -39,6 +39,12 @@
   fabio:hasDateReceived "31 August 2005"^^xsd:date;
   fabio:dateAccepted "23 February 2006"^^xsd:date;
   fabio:hasPublicationYear "2006"^^xsd:gYear;
+
+  fabio:hasSubjectTerm
+    :woodpeckers,
+    :pecking,
+    :brain_injury,
+    :biomechanics;
   
   prism:ISSN "ISSN 0952-8369";
 
@@ -46,10 +52,11 @@
   frbr:partOf :Journal_of_Zoology_270;
 
   # starting/ending pages of the article
-  prism:pageRange [
+  prism:pageRange :page_range.
+
+:page_range  
     prism:startingPage 462; 
-    prism:endingPage 465; 
-  ].
+    prism:endingPage 465.
 
 # FRONT MATTER
 :front_matter a doco:FrontMatter;
@@ -57,7 +64,6 @@
     :title,
     :author_list,
     :affiliation_list,
-    :keyword_list,
     :correspondence,
     :abstract.
 
@@ -80,32 +86,23 @@
   c4o:hasContent "Lorna J. Gibson, Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA. Email: ljgibson@mit.edu".
 
 # List of keywords
-:keyword_list 
-  a doco:Section, co:List;
-  doco:SectionTitle "Keywords";
-  co:Item
-    :woodpeckers,
-    :pecking,
-    :brain_injury,
-    :biomechanics.
-
 :woodpeckers 
-  a prism:keyword;
+  a fabio:SubjectTerm;
   skos:prefLabel "woodpeckers";
   fabio:hasDiscipline dbpedia:Ornithology.
 
 :pecking 
-  a prism:keyword;
+  a fabio:SubjectTerm;
   skos:prefLabel "pecking";
   fabio:hasDiscipline dbpedia:Ornithology.
 
 :brain_injury 
-  a prism:keyword;
+  a fabio:SubjectTerm;
   skos:prefLabel "brain injury";
   fabio:hasDiscipline dbpedia:Neurosurgery.
 
 :biomechanics 
-  a prism:keyword;
+  a fabio:SubjectTerm;
   skos:prefLabel "biomechanics";
   fabio:hasDiscipline dbpedia:Biomechanic.
 
@@ -926,107 +923,107 @@
 # BIBLIOGRAPHY 1
 :bibliography_1
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Bock, W.J. (1964). Kinetics of the avian skull. J. Morph. 114, 1–42.";
+  c4o:hasContent "Bock, W.J. (1964). Kinetics of the avian skull. J. Morph. 114, 1–42.";
   biro:references <https://doi.org/10.1002/jmor.1051140102>.
 
 # BIBLIOGRAPHY 2
 :bibliography_2
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Bock, W.J. (1966). An approach to the functional analysis of bill shape. Auk 83, 10–51.";
+  c4o:hasContent "Bock, W.J. (1966). An approach to the functional analysis of bill shape. Auk 83, 10–51.";
   biro:references <https://www.jstor.org/stable/4082976>.
 
 # BIBLIOGRAPHY 3
 :bibliography_3
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Bock, W.J. (1999a). Functional and evolutionary morphology of woodpeckers. Ostrich 70, 23–31.";
+  c4o:hasContent "Bock, W.J. (1999a). Functional and evolutionary morphology of woodpeckers. Ostrich 70, 23–31.";
   biro:references <https://doi.org/10.1080/00306525.1999.9639746>.
 
 # BIBLIOGRAPHY 4
 :bibliography_4
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Bock, W.J. (1999b). Cranial kinesis revisited. Zool. Anzeiger 238, 27–39.";
+  c4o:hasContent "Bock, W.J. (1999b). Cranial kinesis revisited. Zool. Anzeiger 238, 27–39.";
   biro:references <http://rcin.org.pl/dlibra/docmetadata?id=45207>.
 
 # BIBLIOGRAPHY 5
 :bibliography_5 
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Elphick, C., Dunning, J.B. & Sibley, D.A. (Eds). (2001). The Sibley guide to bird life and bird behavior. New York: Alfred A. Knopf.";
+  c4o:hasContent "Elphick, C., Dunning, J.B. & Sibley, D.A. (Eds). (2001). The Sibley guide to bird life and bird behavior. New York: Alfred A. Knopf.";
   biro:references <http://www.worldcat.org/oclc/863051110>.
 
 # BIBLIOGRAPHY 6
 :bibliography_6
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Holbourn, A.H.S. (1943). Mechanics of head injuries. Lancet 242, 438–441.";
+  c4o:hasContent "Holbourn, A.H.S. (1943). Mechanics of head injuries. Lancet 242, 438–441.";
   biro:references <https://doi.org/10.1016/S0140-6736(00)87453-X>.
 
 # BIBLIOGRAPHY 7
 :bibliography_7 
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "May, P.R.A., Fuster, J.M., Haber, J. & Hirschman, A. (1979). Woodpecker drilling behaviour: an endorsement of the rotational theory of impact brain injury. Arch. Neurol. 36, 370–373.";
+  c4o:hasContent "May, P.R.A., Fuster, J.M., Haber, J. & Hirschman, A. (1979). Woodpecker drilling behaviour: an endorsement of the rotational theory of impact brain injury. Arch. Neurol. 36, 370–373.";
   biro:references <https://www.ncbi.nlm.nih.gov/pubmed/454236>.
 
 # BIBLIOGRAPHY 8
 :bibliography_8
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "May, P.R.A., Fuster, J.M., Newman, P.A. & Hirschman, A. (1976). Woodpeckers and head injury. Lancet 307, 454–455.";
+  c4o:hasContent "May, P.R.A., Fuster, J.M., Newman, P.A. & Hirschman, A. (1976). Woodpeckers and head injury. Lancet 307, 454–455.";
   biro:references <https://www.ncbi.nlm.nih.gov/pubmed/55721>.
 
 # BIBLIOGRAPHY 9
 :bibliography_9
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "McLean, A.J. & Anderson, R.W.G. (1997). Biomechanics of closed head injury. Chapter 2. In Head injury: 25–37. Reilly, P. & Bullock, R. (Eds). London: Chapman & Hall.";
+  c4o:hasContent "McLean, A.J. & Anderson, R.W.G. (1997). Biomechanics of closed head injury. Chapter 2. In Head injury: 25–37. Reilly, P. & Bullock, R. (Eds). London: Chapman & Hall.";
   biro:references <https://doi.org/10.1016/j.cma.2008.06.006>.
 
 # BIBLIOGRAPHY 10
 :bibliography_10
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Mlikovsky, J. (1989). Brain size in birds: 3. Columbiformes through Piciformes. Vestn. Cesk. Spol. Zool. 53, 252–264.";
+  c4o:hasContent "Mlikovsky, J. (1989). Brain size in birds: 3. Columbiformes through Piciformes. Vestn. Cesk. Spol. Zool. 53, 252–264.";
   biro:references <https://eurekamag.com/research/007/069/007069293.php>.
 
 # BIBLIOGRAPHY 11
 :bibliography_11
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Ommaya, A.K., Goldsmith, W. & Thibault, L. (2002). Bio-mechanics and neuropathology of adult and paediatric head injury. Br. J. Neurosurg. 16, 220–242.";
+  c4o:hasContent "Ommaya, A.K., Goldsmith, W. & Thibault, L. (2002). Bio-mechanics and neuropathology of adult and paediatric head injury. Br. J. Neurosurg. 16, 220–242.";
   biro:references <https://www.ncbi.nlm.nih.gov/pubmed/12201393>.
 
 # BIBLIOGRAPHY 12
 :bibliography_12
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Ommaya, A.K. & Hirsch, A.E. (1971). Tolerances for cerebral concussion from head impact and whiplash in primates. J. Biomech. 4, 13–21.";
+  c4o:hasContent "Ommaya, A.K. & Hirsch, A.E. (1971). Tolerances for cerebral concussion from head impact and whiplash in primates. J. Biomech. 4, 13–21.";
   biro:references <https://doi.org/10.1016/0021-9290(71)90011-X>.
 
 # BIBLIOGRAPHY 13
 :bibliography_13
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Ommaya, A.K., Yarnell, P., Hirsch, A.E. & Harris, E.H. (1967). Scaling of experimental data on cerebral concussion in sub-human primates to concussion threshold for man. In Proceedings of the 11th Stapp car crash conference: 47–52. New York: Society of Automotive Engineers.";
+  c4o:hasContent "Ommaya, A.K., Yarnell, P., Hirsch, A.E. & Harris, E.H. (1967). Scaling of experimental data on cerebral concussion in sub-human primates to concussion threshold for man. In Proceedings of the 11th Stapp car crash conference: 47–52. New York: Society of Automotive Engineers.";
   biro:references <https://doi.org/10.4271/670906>.
 
 # BIBLIOGRAPHY 14
 :bibliography_14 
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Ono, K., Kikuchi, A., Nakamura, M., Kobayashi, H. & Nakamura, N. (1980). Human head tolerance to sagittal impact: reliable estimation deduced from experimental head injury using subhuman primates and human cadaver skulls. In Proceedings of the 24th Stapp car crash conference: 101–160. Warrendale, PA: Society of Automotive Engineers.";
+  c4o:hasContent "Ono, K., Kikuchi, A., Nakamura, M., Kobayashi, H. & Nakamura, N. (1980). Human head tolerance to sagittal impact: reliable estimation deduced from experimental head injury using subhuman primates and human cadaver skulls. In Proceedings of the 24th Stapp car crash conference: 101–160. Warrendale, PA: Society of Automotive Engineers.";
   biro:references <https://www.jstor.org/stable/44632635>.
 
 # BIBLIOGRAPHY 15
 :bibliography_15
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Pellman, E.J., Viano, D.C., Tucker, A.M., Casson, I.R. & Waeckerle, J.F. (2003). Concussion in professional foot-ball: reconstruction of game impacts and injuries. Neuro-surgery 53, 799–814.";
+  c4o:hasContent "Pellman, E.J., Viano, D.C., Tucker, A.M., Casson, I.R. & Waeckerle, J.F. (2003). Concussion in professional foot-ball: reconstruction of game impacts and injuries. Neuro-surgery 53, 799–814.";
   biro:references <https://doi.org/10.1093/neurosurgery/53.3.799>.
 
 # BIBLIOGRAPHY 16
 :bibliography_16
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Shaw, N.A. (2002). The neurophysiology of concussion. Prog. Neurobiol. 67, 281–344.";
+  c4o:hasContent "Shaw, N.A. (2002). The neurophysiology of concussion. Prog. Neurobiol. 67, 281–344.";
   biro:references <https://doi.org/10.1016/S0301-0082(02)00018-7>.
 
 # BIBLIOGRAPHY 17
 :bibliography_17
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Spring, L.W. (1965). Climbing and pecking adaptations in some North American woodpeckers. Condor 67, 457–488.";
+  c4o:hasContent "Spring, L.W. (1965). Climbing and pecking adaptations in some North American woodpeckers. Condor 67, 457–488.";
   biro:references <https://www.jstor.org/stable/1365612>.
 
 # BIBLIOGRAPHY 18
 :bibliography_18
   a biro:BibliographicReference;
-  dcterms:bibliographicCitation "Winkler, H., Christie, D.A. & Nurney, D. (1995). Woodpeckers: a guide to the woodpeckers of the world. Boston: Houghton Mifflin.";
+  c4o:hasContent "Winkler, H., Christie, D.A. & Nurney, D. (1995). Woodpeckers: a guide to the woodpeckers of the world. Boston: Houghton Mifflin.";
   biro:references <http://www.worldcat.org/oclc/751504766>.
