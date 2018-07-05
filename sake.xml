@@ -31,11 +31,40 @@
     
 
 
+    <!-- https://sakedhdk.github.io/sake#BasedOn -->
+
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#BasedOn"/>
+    
+
+
+    <!-- https://sakedhdk.github.io/sake#answersTo -->
+
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#answersTo"/>
+    
+
+
     <!-- https://sakedhdk.github.io/sake#demonstrates -->
 
     <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#demonstrates">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://sakedhdk.github.io/sake#isDemonstratedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sakedhdk.github.io/sake#expressedIn -->
+
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#expressedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sakedhdk.github.io/sake#formulate -->
+
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#formulate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://sakedhdk.github.io/sake#isFormulatedBy"/>
     </owl:ObjectProperty>
     
 
@@ -49,9 +78,25 @@
     
 
 
+    <!-- https://sakedhdk.github.io/sake#hasField -->
+
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#hasField">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://sakedhdk.github.io/sake#isDemonstratedBy -->
 
     <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isDemonstratedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sakedhdk.github.io/sake#isFormulatedBy -->
+
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isFormulatedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -146,6 +191,18 @@
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Evidence is something that scientifically proves the Demonstration</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- https://sakedhdk.github.io/sake#ExternalTheory -->
+
+    <owl:Class rdf:about="https://sakedhdk.github.io/sake#ExternalTheory"/>
+    
+
+
+    <!-- https://sakedhdk.github.io/sake#Phenomenon -->
+
+    <owl:Class rdf:about="https://sakedhdk.github.io/sake#Phenomenon"/>
     
 
 
