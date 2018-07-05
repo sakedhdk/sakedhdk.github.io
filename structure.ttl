@@ -113,18 +113,15 @@
   po:contains
     :abstract_sentence1,
     :abstract_sentence2,
-    :abstract_sentence3;
-  co:firstItem :abstract_sentence1.
+    :abstract_sentence3.
 
 :abstract_sentence1 
   a doco:Sentence;
-  c4o:hasContent "Woodpeckers are capable of repeated pecking on a tree at remarkably high decelerations (on the order of 10 000 m s2 or 1000 g).";
-  co:nextItem :abstract_sentence2.
+  c4o:hasContent "Woodpeckers are capable of repeated pecking on a tree at remarkably high decelerations (on the order of 10 000 m s2 or 1000 g).".
 
 :abstract_sentence2 
   a doco:Sentence;
-  c4o:hasContent "In this paper, I re-examine previous studies of pecking and scaling effects in brain injury.";
-  co:nextItem :abstract_sentence3.
+  c4o:hasContent "In this paper, I re-examine previous studies of pecking and scaling effects in brain injury.".
 
 :abstract_sentence3 
   a doco:Sentence;
