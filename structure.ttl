@@ -76,7 +76,7 @@
 
 :correspondence 
   a doco:Section;
-  doco:SectionTitle "Correspondence";
+  dcterms:title "Correspondence";
   c4o:hasContent "Lorna J. Gibson, Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA. Email: ljgibson@mit.edu".
 
 # List of keywords
@@ -112,10 +112,7 @@
 # Abstract section
 :abstract 
   a doco:Section, fabio:abstract;
-  po:containsAsHeader [
-    a doco:SectionTitle;
-    c4o:hasContent "Abstract";
-  ];
+  dcterms:title "Abstract";
   po:contains
     :abstract_sentence1,
     :abstract_sentence2,
@@ -199,10 +196,7 @@
 # Introduction
 :section_introduction 
   a doco:Section, deo:Introduction;
-  po:containsAsHeader [
-    a doco:SectionTitle;
-    c4o:hasContent "Introduction";
-  ];
+  dcterms:title "Introduction";
   po:contains
     :paragraph_1,
     :paragraph_2,
@@ -330,10 +324,7 @@
 # SECTION LITERATURE REVIEW
 :section_literature_review 
   a doco:Section, deo:RelatedWork;
-  po:containsAsHeader[
-    a doco:SectionTitle;
-    c4o:hasContent "Literature Review";
-  ];
+  dcterms:title "Literature Review";
   po:contains
     :paragraph_4,
     :paragraph_5,
@@ -547,10 +538,7 @@
 # SECTION ANALYSIS 
 :section_analysis
   a doco:Section, deo:Discussion;
-  po:containsAsHeader[
-    a doco:SectionTitle;
-    c4o:hasContent "Analysis";
-  ];
+  dcterms:title "Analysis";
   po:contains
     :paragraph_9,
     :paragraph_10,
@@ -783,10 +771,7 @@
 # SECTION ACKNOWLEDGEMENTS
 :section_acknowledgements 
   a doco:Section, deo:Acknowledgements;
-  po:containsAsHeader [
-    a doco:SectionTitle;
-    c4o:hasContent "Acknowledgements";
-  ];
+  dcterms:title "Acknowledgements";
   po:contains
     :paragraph_13,
     [a doco:ListOfContributors;
@@ -879,10 +864,7 @@
 # SECTION REFERENCES 
 :section_references 
   a doco:Section, doco:BibliographicReference;
-  po:containsAsHeader [
-    a doco:SectionTitle;
-    c4o:hasContent "References";
-  ];
+  dcterms:title "References";
   po:contains
         :bibliography_1,
         :bibliography_2,
