@@ -176,6 +176,21 @@
     :figure_1,
     :figure_2.
 
+:formula_1
+  a doco:Formula;
+  dcterms:title "(1)";
+  c4o:hasContent "<mfrac><msub><mi>&#x3B8;</mi><mn>1</mn></msub><msub><mi>&#x3B8;</mi><mn>2</mn></msub></mfrac><mo>=</mo><msup><mrow><mo>(</mo><mfrac><msub><mi>M</mi><mn>2</mn></msub><msub><mi>M</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></msup>".
+
+:formula_2
+  a doco:Formula;
+  dcterms:title "(2)";
+  c4o:hasContent "<mfrac><msub><mi>&#x3C3;</mi><mi>w</mi></msub><mrow><msub><mi>&#x3C3;</mi><mi>h</mi></msub></mrow></mfrac><mo>&#x221E;</mo><mfrac><mrow><msub><mi>F</mi><mi>w</mi></msub></mrow><mrow><msub><mi>A</mi><mi>w</mi></msub></mrow></mfrac><mfrac><mrow><msub><mi>A</mi><mi>h</mi></msub></mrow><msub><mi>F</mi><mi>h</mi></msub></mfrac><mo>&#x221E;</mo><mfrac><mrow><msub><mi>p</mi><mi>w</mi></msub><mrow><msubsup><mi>r</mi><mi>w</mi><mn>3</mn></msubsup></mrow><msub><mi>a</mi><mi>w</mi></msub></mrow><mrow><msubsup><mi>r</mi><mi>w</mi><mn>2</mn></msubsup></mrow></mfrac><mfrac><mrow><mrow><msubsup><mi>r</mi><mi>h</mi><mn>3</mn></msubsup></mrow></mrow><mrow><mn>2</mn><msub><mi>p</mi><mi>h</mi></msub><mrow><msubsup><mi>r</mi><mi>h</mi><mn>3</mn></msubsup></mrow><msub><mi>a</mi><mi>h</mi></msub></mrow></mfrac>".
+
+:formula_3
+  a doco:Formula;
+  dcterms:title "(2)";
+  c4o:hasContent "<mfrac><msub><mi>a</mi><mi>w</mi></msub><msub><mi>a</mi><mi>h</mi></msub></mfrac><mo>&#x221E;</mo><mfrac><mrow><mn>2</mn><msub><mi>r</mi><mi>h</mi></msub></mrow><mrow><msub><mi>r</mi><mi>w</mi></msub></mrow></mfrac>".
+
 :figure_1
   a doco:FigureBox;
   dcterms:title "Figure 1";
@@ -642,13 +657,15 @@
 # SENTENCE 35
 :sentence_35 a doco:Sentence;
   c4o:hasContent "Equation (1) has been experimentally confirmed, using some approximations, in whiplash experiments on three species of non-human primates with brain masses ranging from 20 to 500 g (Ommaya & Hirsch, 1971).";
-  po:contains :sentence_35_reference1.
+  po:contains 
+    :sentence_35_reference1,
+    :sentence_35_reference2.
 
 :sentence_35_reference1
-    a c4o:InTextReferencePointer;
-    c4o:denotes :bibliography_12;
-    c4o:hasContext :sentence_35;
-    c4o:hasContent "Ommaya & Hirsch, 1971".
+  a c4o:InTextReferencePointer;
+  c4o:denotes :bibliography_12;
+  c4o:hasContext :sentence_35;
+  c4o:hasContent "Ommaya & Hirsch, 1971".
 
 # SENTENCE 36
 :sentence_36 a doco:Sentence;
