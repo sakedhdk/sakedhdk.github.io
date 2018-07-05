@@ -332,6 +332,7 @@ const rash = {
 
   initAnnotationSidebar() {
 
+    /*
     let annotation_sidebar = $(`
       <aside id="annotations" data-rash-original-content="" style="height:${$('html').outerHeight(true)}px">
         <header>
@@ -354,7 +355,7 @@ const rash = {
     $('#toggleSidebar').on('click', function () {
 
       rash.toggleSidebar()
-    })
+    })*/
   },
 
   /* /END Init annotation sidebar */
@@ -1045,11 +1046,11 @@ class Annotation {
         // If the element is a block element, wrap its content inside a wrapper
         //data-rash-original-parent-content="${text}"
         if ($(node).is('p,:header'))
-          $(node).html(`<span data-rash-annotation-index="${++index}" data-rash-annotation-type="wrap" title="#${this.semanticAnnotation.id}" data-rash-annotation-id="${this.semanticAnnotation.id}" class="cgen annotation_hilight">${$(text).html()}</span>`)
+          $(node).html(`<span data-rash-annotation-index="${++index}" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="${this.semanticAnnotation.bodyValue}" data-rash-annotation-type="wrap" title="#${this.semanticAnnotation.bodyValue}" data-rash-annotation-id="${this.semanticAnnotation.id}" class="cgen annotation_hilight">${$(text).html()}</span>`)
 
         // Or wrap its content in a note
         else
-          $(node).replaceWith(`<span data-rash-original-content="${text}" data-rash-annotation-index="${++index}" data-rash-annotation-type="wrap" title="#${this.semanticAnnotation.id}" data-rash-annotation-id="${this.semanticAnnotation.id}" class="cgen annotation_hilight">${text}</span>`)
+          $(node).replaceWith(`<span data-rash-original-content="${text}" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="${this.semanticAnnotation.bodyValue}" data-rash-annotation-index="${++index}" data-rash-annotation-type="wrap" title="#${this.semanticAnnotation.id}" data-rash-annotation-id="${this.semanticAnnotation.id}" class="cgen annotation_hilight">${text}</span>`)
       }
 
     })

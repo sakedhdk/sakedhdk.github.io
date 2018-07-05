@@ -4,6 +4,7 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/rash.css">
+  <link rel="stylesheet" href="css/exam.css">
   <!-- Local MathJax -->
   <!-- <script src="js/MathJax/MathJax.js"></script> -->
 
@@ -28,24 +29,23 @@
   
 
     <!-- Semantic annotations (https://www.w3.org/TR/annotation-vocab/) -->
-    <!--
     <script id="annotation_01" type="application/ld+json">
       {
         "id": "annotation_01",
         "@context": "http://www.w3.org/ns/anno.jsonld",
         "created": "2018-06-22T14:00:00",
-        "bodyValue": "Example of a single annotation",
-        "creator": "gspinaci",
+        "bodyValue": "dcterms:title",
+        "creator": "sake",
         "Motivation": "commenting",
         "target": {
           "selector": {
             "startSelector": {
               "@type": "XPathSelector",
-              "@value": "//section[1]/p[1]"
+              "@value": "//header//h1"
             },
             "endSelector": {
               "@type": "XPathSelector",
-              "@value": "//section[1]/p[1]"
+              "@value": "//header//h1"
             },
             "start": {
               "@type": "DataPositionSelector",
@@ -53,13 +53,43 @@
             },
             "end": {
               "@type": "DataPositionSelector",
-              "@value": "3"
+              "@value": "54"
             }
           }
         }
       }
     </script>
-    -->
+
+    <script id="annotation_02" type="application/ld+json">
+      {
+        "id": "annotation_02",
+        "@context": "http://www.w3.org/ns/anno.jsonld",
+        "created": "2018-06-22T14:00:00",
+        "bodyValue": "a foaf:Person",
+        "creator": "sake",
+        "Motivation": "commenting",
+        "target": {
+          "selector": {
+            "startSelector": {
+              "@type": "XPathSelector",
+              "@value": "//header//strong[1]"
+            },
+            "endSelector": {
+              "@type": "XPathSelector",
+              "@value": "//header//strong[1]"
+            },
+            "start": {
+              "@type": "DataPositionSelector",
+              "@value": "0"
+            },
+            "end": {
+              "@type": "DataPositionSelector",
+              "@value": "12"
+            }
+          }
+        }
+      }
+    </script>
     
     <!-- /END Semantic annotations -->
 
