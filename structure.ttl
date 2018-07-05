@@ -82,7 +82,7 @@
 
 :correspondence 
   a doco:Section;
-  doco:SectionTitle "Correspondence";
+  dcterms:title "Correspondence";
   c4o:hasContent "Lorna J. Gibson, Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA. Email: ljgibson@mit.edu".
 
 # List of keywords
@@ -109,10 +109,7 @@
 # Abstract section
 :abstract 
   a doco:Section, fabio:abstract;
-  po:containsAsHeader [
-    a doco:SectionTitle;
-    c4o:hasContent "Abstract";
-  ];
+  dcterms:title "Abstract";
   po:contains
     :abstract_sentence1,
     :abstract_sentence2,
@@ -196,18 +193,11 @@
 # Introduction
 :section_introduction 
   a doco:Section, deo:Introduction;
-  po:containsAsHeader [
-    a doco:SectionTitle;
-    c4o:hasContent "Introduction";
-  ];
+  dcterms:title "Introduction";
   po:contains
     :paragraph_1,
     :paragraph_2,
     :paragraph_3.
-
-# SECTION INTRODUCTION TITLE
-:section_introduction_title a doco:SectionTitle;
-  c4o:hasContent "Introduction".
 
 # PARAGRAPH 1
 :paragraph_1 a doco:Paragraph;
@@ -331,20 +321,13 @@
 # SECTION LITERATURE REVIEW
 :section_literature_review 
   a doco:Section, deo:RelatedWork;
-  po:containsAsHeader[
-    a doco:SectionTitle;
-    c4o:hasContent "Literature Review";
-  ];
+  dcterms:title "Literature Review";
   po:contains
     :paragraph_4,
     :paragraph_5,
     :paragraph_6,
     :paragraph_7,
     :paragraph_8.
-  
-  # SECTION LITERATURE REVIEW TITLE
-  :section_literature_review_title a doco:SectionTitle;
-    c4o:hasContent "Literature Review".
   
   # PARAGRAPH 4
   :paragraph_4 a doco:Paragraph;
@@ -552,22 +535,15 @@
 # SECTION ANALYSIS 
 :section_analysis
   a doco:Section, deo:Discussion;
-  po:containsAsHeader[
-    a doco:SectionTitle;
-    c4o:hasContent "Analysis";
-  ];
+  dcterms:title "Analysis";
   po:contains
     :paragraph_9,
     :paragraph_10,
     :paragraph_11,
     :paragraph_12.
-  
-# SECTION LITERATURE REVIEW TITLE
-:section_literature_review_title a doco:SectionTitle;
-  c4o:hasContent "Literature Review".
 
 # Paragraph_9  
-:Paragraph_9 a doco:Paragraph; 
+:paragraph_9 a doco:Paragraph; 
   po:contains
         :sentence_31,
         :sentence_32,
@@ -662,7 +638,7 @@
   ].
 
 # Paragraph_10  
-:Paragraph_10 a doco:Paragraph; 
+:paragraph_10 a doco:Paragraph; 
   po:contains       
     :sentence_39,
     :sentence_40,
@@ -708,7 +684,7 @@
   c4o:hasContent "Video imaging experiments measure head accelerations during impact rather than brain accelerations; I use the measured head accelerations as an indicator of the brain acceleration.".
 
 # Paragraph_11 
-:Paragraph_11 a doco:Paragraph; 
+:paragraph_11 a doco:Paragraph; 
   po:contains
 		:sentence_46,
 		:sentence_47,
@@ -792,19 +768,12 @@
 # SECTION ACKNOWLEDGEMENTS
 :section_acknowledgements 
   a doco:Section, deo:Acknowledgements;
-  po:containsAsHeader [
-    a doco:SectionTitle;
-    c4o:hasContent "Acknowledgements";
-  ];
+  dcterms:title "Acknowledgements";
   po:contains
     :paragraph_13,
     [a doco:ListOfContributors;
     po:contains :Trey_Crisco, :Sharon_Swartz, :Andy_Biewener, :Matt_Dawson, :Jeremiah_Trimble;
   ].
-
-# SECTION ACKNOWLEDGEMENTS TITLE
-:section_acknowledgements_title a doco:SectionTitle;
-  c4o:hasContent "Acknowledgements".
 
 # PARAGRAPH 13
 :paragraph_13 a doco:Paragraph;
@@ -892,10 +861,7 @@
 # SECTION REFERENCES 
 :section_references 
   a doco:Section, doco:BibliographicReference;
-  po:containsAsHeader [
-    a doco:SectionTitle;
-    c4o:hasContent "References";
-  ];
+  dcterms:title "References";
   po:contains
         :bibliography_1,
         :bibliography_2,
@@ -915,10 +881,6 @@
         :bibliography_16,
         :bibliography_17,
         :bibliography_18.
-
-# SECTION REFERENCES TITLE
-:section_references_title a doco:SectionTitle;
-  c4o:hasContent "References".
 
 # BIBLIOGRAPHY 1
 :bibliography_1
