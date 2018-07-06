@@ -1175,12 +1175,12 @@
 #DEMONSTRATION-duration
 :woodpecker_demonstration_duration a sake:Demonstration;
   sake:expressedIn :sentence_46, :sentence_47, :sentence_48, :sentence_49, :sentence_50, :sentence_51, :sentence_52, :sentence_53.
-  sake:isSupportedBy :sentence_47_reference1, :sentence_49_reference1, :sentence_50_reference1, :sentence_52_reference1
+  sake:isSupportedBy :sentence_47_reference1, :sentence_49_reference1, :sentence_50_reference1, :sentence_52_reference1, :figure_1.
 
 #DEMONSTRATION-orientation
 :woodpecker_demonstration_orientation a sake:Demonstration;
   sake:expressedIn :sentence_41, :sentence_42.
-  sake:isSupportedBy 
+  sake:isSupportedBy :figure_2.
 
 #THEORY HOLBOURN
 :Holbourn_Theory a sake:ExternalTheory;

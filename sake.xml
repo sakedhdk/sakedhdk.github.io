@@ -1,13 +1,19 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://sakedhdk.github.io/sake#"
      xml:base="https://sakedhdk.github.io/sake"
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:fabio="http://purl.org/spar/fabio"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://sakedhdk.github.io/sake">
         <owl:versionIRI rdf:resource="https://sakedhdk.github.io/sake"/>
+        <owl:imports rdf:resource="http://purl.org/spar/doco/2015-07-03"/>
+        <owl:imports rdf:resource="http://purl.org/spar/fabio/2018-05-02"/>
     </owl:Ontology>
     
 
@@ -23,26 +29,6 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
-        <owl:inverseOf rdf:resource="https://sakedhdk.github.io/sake#isSupportedBy"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://sakedhdk.github.io/sake#BasedOn -->
-
-    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#BasedOn"/>
-    
-
-
-    <!-- https://sakedhdk.github.io/sake#answersTo -->
-
-    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#answersTo"/>
-    
-
-
     <!-- https://sakedhdk.github.io/sake#demonstrates -->
 
     <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#demonstrates">
@@ -52,17 +38,18 @@
     
 
 
-    <!-- https://sakedhdk.github.io/sake#expressedIn -->
+    <!-- https://sakedhdk.github.io/sake#explains -->
 
-    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#expressedIn">
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#explains">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://sakedhdk.github.io/sake#isExplainedBy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://sakedhdk.github.io/sake#formulate -->
+    <!-- https://sakedhdk.github.io/sake#formulates -->
 
-    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#formulate">
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#formulates">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://sakedhdk.github.io/sake#isFormulatedBy"/>
     </owl:ObjectProperty>
@@ -86,9 +73,34 @@
     
 
 
+    <!-- https://sakedhdk.github.io/sake#isBasedOn -->
+
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isBasedOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://sakedhdk.github.io/sake#isUsedBy"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://sakedhdk.github.io/sake#isDemonstratedBy -->
 
     <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isDemonstratedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sakedhdk.github.io/sake#isExplainedBy -->
+
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isExplainedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sakedhdk.github.io/sake#isExpressedIn -->
+
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isExpressedIn">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -110,26 +122,18 @@
     
 
 
-    <!-- https://sakedhdk.github.io/sake#isProvedBy -->
-
-    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isProvedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="https://sakedhdk.github.io/sake#proves"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://sakedhdk.github.io/sake#isSupportedBy -->
 
     <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isSupportedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://sakedhdk.github.io/sake#supports"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://sakedhdk.github.io/sake#proves -->
+    <!-- https://sakedhdk.github.io/sake#isUsedBy -->
 
-    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#proves">
+    <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isUsedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -154,25 +158,38 @@
     
 
 
+    <!-- http://purl.org/spar/fabio/Article -->
+
+    <rdf:Description rdf:about="http://purl.org/spar/fabio/Article">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#formulates"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- https://sakedhdk.github.io/sake#Demonstration -->
 
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Demonstration">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#demonstrates"/>
-                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isProvedBy"/>
-                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#supports"/>
                 <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Thesis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isExpressedIn"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/doco/Sentence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isSupportedBy"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Demonstration is the intellectual procedure made by one or more scholars to demonstrate the scientifical validity of the Idea</rdfs:comment>
@@ -185,7 +202,7 @@
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Evidence">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#proves"/>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#supports"/>
                 <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Demonstration"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -194,15 +211,16 @@
     
 
 
-    <!-- https://sakedhdk.github.io/sake#ExternalTheory -->
-
-    <owl:Class rdf:about="https://sakedhdk.github.io/sake#ExternalTheory"/>
-    
-
-
     <!-- https://sakedhdk.github.io/sake#Phenomenon -->
 
-    <owl:Class rdf:about="https://sakedhdk.github.io/sake#Phenomenon"/>
+    <owl:Class rdf:about="https://sakedhdk.github.io/sake#Phenomenon">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isExplainedBy"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -211,17 +229,40 @@
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Theory">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#explains"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Phenomenon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#hasAsIdea"/>
                 <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Thesis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isDemonstratedBy"/>
-                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Demonstration"/>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#hasField"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Theory is an Idea proposed and demonstrated by one or more scholars</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isBasedOn"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isFormulatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Article"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -231,18 +272,32 @@
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Thesis">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isIdeaOf"/>
-                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isDemonstratedBy"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Demonstration"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isSupportedBy"/>
-                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Demonstration"/>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isIdeaOf"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Thesis is an Idea proposed by one or more scholars</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAKE: Scientific Articles Knowledge Extraction</dc:title>
+    </rdf:Description>
     
 
 
@@ -255,12 +310,22 @@
      -->
 
     <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Demonstration"/>
-            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Evidence"/>
-            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Theory"/>
-            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Thesis"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#demonstrates"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#explains"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#formulates"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#hasAsIdea"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#hasField"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#isBasedOn"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#isDemonstratedBy"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#isExplainedBy"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#isExpressedIn"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#isFormulatedBy"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#isIdeaOf"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#isSupportedBy"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#isUsedBy"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#supports"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
