@@ -188,24 +188,87 @@
 
 :formula_3
   a doco:Formula;
-  dcterms:title "(2)";
+  dcterms:title "(3)";
   c4o:hasContent "<mfrac><msub><mi>a</mi><mi>w</mi></msub><msub><mi>a</mi><mi>h</mi></msub></mfrac><mo>&#x221E;</mo><mfrac><mrow><mn>2</mn><msub><mi>r</mi><mi>h</mi></msub></mrow><mrow><msub><mi>r</mi><mi>w</mi></msub></mrow></mfrac>".
 
 :figure_1
   a doco:FigureBox;
   dcterms:title "Figure 1";
-  po:contains [
+  po:contains :caption_fig_1.
+
+:caption_fig_1
     a deo:Caption;
-    c4o:hasContent "Tolerance curves for human and acorn woodpecker Melanerpes formicivorus head impact. The lower curve gives the threshold acceleration for concussion in humans and is adapted from Ono et al. (1980); accelerations below the curve can be tolerated without brain injury. The upper curve, for acorn woodpecker head impact, is obtained using the scaling relationship equation (3). The duration of human head impacts in accidents is typically 3–15 ms, corresponding to tolerable accelerations of 80g to 160g. The duration of acorn woodpecker head impacts has been measured to be 0.5–1.0 ms (May et al., 1979), suggesting that acorn woodpeckers can tolerate impact accelerations of 4600 g to 6000 g, well in excess of measured values of 634 g to 1525 g."
-  ].
+    po:contains
+      :fig1_sentece_1,
+      :fig1_sentece_2,
+      :fig1_sentece_3,
+      :fig1_sentece_4,
+      :fig1_sentece_5.
+      
+:fig1_sentece_1 
+  a doco:Sentence;
+  c4o:hasContent "Tolerance curves for human and acorn woodpecker Melanerpes formicivorus head impact.".
+
+:fig1_sentece_2 
+  a doco:Sentence;
+  c4o:hasContent "The lower curve gives the threshold acceleration for concussion in humans and is adapted from Ono et al. (1980); accelerations below the curve can be tolerated without brain injury.".
+  po:contains
+    :fig1_sentence_2_reference1.
+
+:fig1_sentence_3_reference1
+  a c4o:InTextReferencePointer;
+  c4o:denotes :bibliography_14;
+  c4o:hasContext :fig1_sentece_2;
+  c4o:hasContent "Ono et al. (1980)".
+
+:fig1_sentece_3 
+  a doco:Sentence;
+  c4o:hasContent "The upper curve, for acorn woodpecker head impact, is obtained using the scaling relationship equation (3).".
+
+:fig1_sentece_4 
+  a doco:Sentence;
+  c4o:hasContent "The duration of human head impacts in accidents is typically 3–15 ms, corresponding to tolerable accelerations of 80g to 160g.".
+
+:fig1_sentece_5 
+  a doco:Sentence;
+  c4o:hasContent "The duration of acorn woodpecker head impacts has been measured to be 0.5–1.0 ms (May et al., 1979), suggesting that acorn woodpeckers can tolerate impact accelerations of 4600 g to 6000 g, well in excess of measured values of 634 g to 1525 g.".
+  po:contains
+    :fig1_sentence_5_reference1.
+
+:fig1_sentence_5_reference1
+  a c4o:InTextReferencePointer;
+  c4o:denotes :bibliography_7;
+  c4o:hasContext :fig1_sentece_2;
+  c4o:hasContent "(May et al., 1979)".
 
 :figure_2
   a doco:FigureBox;
   dcterms:title "Figure 2";
-  po:contains [
+  po:contains :caption_fig_2.
+
+:caption_fig_2
     a deo:Caption;
-    c4o:hasContent "Photographs of (a, c) acorn woodpecker Melanerpes formicivorus (MCZ 347602) and (b, d) human skulls (MCZ 7299). (e, f) Schematics showing approximately the different orientations of the brain within each skull. All images by kind courtesy of Jeremiah Trimble, Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard University. Scale bars: (a) 20mm, (b) 135 mm."
-  ].
+    po:contains
+      :fig2_sentece_1,
+      :fig2_sentece_2,
+      :fig2_sentece_3,
+      :fig2_sentece_4.
+
+:fig2_sentece_1 
+  a doco:Sentence;
+  c4o:hasContent "Photographs of (a, c) acorn woodpecker Melanerpes formicivorus (MCZ 347602) and (b, d) human skulls (MCZ 7299).".
+
+:fig2_sentece_2
+  a doco:Sentence;
+  c4o:hasContent "(e, f) Schematics showing approximately the different orientations of the brain within each skull.".
+
+:fig2_sentece_3
+  a doco:Sentence;
+  c4o:hasContent "Tolerance curves for human and acorn woodpecker Melanerpes formicivorus head impact.".
+
+:fig2_sentece_4
+  a doco:Sentence;
+  c4o:hasContent " All images by kind courtesy of Jeremiah Trimble, Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard University. Scale bars: (a) 20mm, (b) 135 mm.".
 
 # Introduction
 :section_introduction 
@@ -659,7 +722,14 @@
   c4o:hasContent "Equation (1) has been experimentally confirmed, using some approximations, in whiplash experiments on three species of non-human primates with brain masses ranging from 20 to 500 g (Ommaya & Hirsch, 1971).";
   po:contains 
     :sentence_35_reference1,
-    :sentence_35_reference2.
+    :sentence_35_reference2,
+    :sentence_35_formula_reference1.
+
+:sentence_35_formula_reference1
+  a c4o:InTextReferencePointer;
+  c4o:denotes :formula_1;
+  c4o:hasContext :sentence_35;
+  c4o:hasContent "Equation (1)".
 
 :sentence_35_reference1
   a c4o:InTextReferencePointer;
