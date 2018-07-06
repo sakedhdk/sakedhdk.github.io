@@ -803,7 +803,7 @@
   po:contains
     :figure_2_reference_sentence_41.
 
-:figure_12_reference_sentence_41
+:figure_2_reference_sentence_41
   a sake:InResourcePointer;
   sake:reliesOn :figure_2;
   sake:isPlaced :sentence_41;
@@ -1253,13 +1253,13 @@
 :woodpecker_demonstration_duration 
   a sake:Demonstration;
   sake:isExpressedIn :sentence_46, :sentence_47, :sentence_48, :sentence_49, :sentence_50, :sentence_51, :sentence_52, :sentence_53;
-  sake:isSupportedBy :sentence_47_reference1, :sentence_49_reference1, :sentence_50_reference1, :sentence_52_reference1, :figure_1.
+  sake:isSupportedBy :sentence_47_reference1, :sentence_49_reference1, :sentence_50_reference1, :sentence_52_reference1, :figure_1_reference_sentence_47, :formula_3_reference_sentence_48, :figure_1_reference_sentence_48.
 
 #DEMONSTRATION-orientation
 :woodpecker_demonstration_orientation 
   a sake:Demonstration;
   sake:isExpressedIn :sentence_41, :sentence_42;
-  sake:isSupportedBy :figure_2.
+  sake:isSupportedBy :figure_2_reference_sentence_41, :formula_2_reference_sentence_42, :formula_3_reference_sentence_42.
 
 #THEORY HOLBOURN
 :Holbourn_Theory 
