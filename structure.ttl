@@ -386,7 +386,7 @@
     :sentence_12_reference2,
     :figure_1_reference_sentence_12.
 
-:fig_1_reference_sentence_12
+:figure_1_reference_sentence_12
   a sake:InResourcePointer;
   sake:reliesOn :figure_1;
   sake:isPlaced :sentence_12;
@@ -731,13 +731,13 @@
   po:contains 
     :sentence_35_reference1,
     :sentence_35_reference2,
-    :sentence_35_formula_reference1.
+    :for_1_reference_sentence_35.
 
-:sentence_35_formula_reference1
-  a c4o:InTextReferencePointer;
-  c4o:denotes :formula_1;
-  c4o:hasContext :sentence_35;
-  c4o:hasContent "Equation (1)".
+:for_1_reference_sentence_35
+  a sake:InResourcePointer;
+  sake:reliesOn :formula_1;
+  sake:isPlaced :sentence_35;
+  sake:hasContent "Equation (1)".
 
 :sentence_35_reference1
   a c4o:InTextReferencePointer;
@@ -803,7 +803,7 @@
   po:contains
     :figure_2_reference_sentence_41.
 
-:fig_12_reference_sentence_41
+:figure_12_reference_sentence_41
   a sake:InResourcePointer;
   sake:reliesOn :figure_2;
   sake:isPlaced :sentence_41;
@@ -812,7 +812,23 @@
 # SENTENCE 42
 :sentence_42 a doco:Sentence;
   c4o:hasContent "Assuming that brain injury occurs at the same stress, s, in both the woodpecker and the human, then or where F is the force on the brain and subscripts w and h refer to woodpecker and human, respectively.".
-  #TODO: add the formulas (2,3)---------------------------------------------to do
+  po:contains
+    :formula_2;
+    :formula_3;
+    :formula_2_reference_sentence_42;
+    :formula_3_reference_sentence_42.
+
+:formula_2_reference_sentence_42
+  a sake:InResourcePointer;
+  sake:reliesOn :formula_2;
+  sake:isPlaced :sentence_42;
+  sake:hasContent "(2)".
+
+:formula_3_reference_sentence_42
+  a sake:InResourcePointer;
+  sake:reliesOn :formula_3;
+  sake:isPlaced :sentence_42;
+  sake:hasContent "(3)".
 
 # SENTENCE 43
 :sentence_43 a doco:Sentence;
@@ -857,7 +873,7 @@
     :sentence_47_reference1,
     :figure_1_reference_sentence_47.
 
-:fig_1_reference_sentence_47
+:figure_1_reference_sentence_47
   a sake:InResourcePointer;
   sake:reliesOn :figure_1;
   sake:isPlaced :sentence_47;
@@ -875,13 +891,20 @@
   c4o:hasContent "A similar tolerance curve for the acorn woodpecker can be estimated using the scaling relationship equation (3) (the upper curve in Fig. 1).".
   po:contains
     :figure_1_reference_sentence_48.
+    :formula_3_reference_sentence_48.
 
-:fig_1_reference_sentence_48
+:formula_3_reference_sentence_48
+  a sake:InResourcePointer;
+  sake:reliesOn :formula_3 ;
+  sake:isPlaced :sentence_48;
+  sake:hasContent "equation(3)".
+
+:figure_1_reference_sentence_48
   a sake:InResourcePointer;
   sake:reliesOn :figure_1;
   sake:isPlaced :sentence_48;
   sake:hasContent "(the upper curve in Fig. 1)".
-  
+
 # SENTENCE 49
 :sentence_49 
   a doco:Sentence;
@@ -970,7 +993,7 @@
     :figure_1_reference_sentence_58,
     :figure_2_reference_sentence_58.
 
-:fig_1_reference_sentence_58
+:figure_1_reference_sentence_58
   a sake:InResourcePointer;
   sake:reliesOn :figure_1;
   sake:isPlaced :sentence_58;
