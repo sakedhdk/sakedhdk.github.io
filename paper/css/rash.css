@@ -256,14 +256,25 @@ aside#annotations.active>div.side_note_body .side_node_date {
   color: #999999;
 }
 
-.annotation_hilight {
+.annotation_hilight1 {
   background-color: rgba(255, 255, 60, .3);
   padding-left: 0;
   padding-right: 0;
+  cursor: pointer;
 }
 
-.annotation_hilight.selected {
-  background-color: rgba(255, 255, 60, .9);
+.annotation_hilight2 {
+  background-color: rgba(60, 255, 60, .3);
+  padding-left: 0;
+  padding-right: 0;
+  cursor: pointer;
+}
+
+.annotation_hilight3 {
+  background-color: rgba(60, 60, 255, .3);
+  padding-left: 0;
+  padding-right: 0;
+  cursor: pointer;
 }
 
 .annotation_element {

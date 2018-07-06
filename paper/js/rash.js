@@ -1149,3 +1149,12 @@ $(document).ready(function () {
   rash.initAnnotationSidebar()
   rash.renderAnnotations()
 })
+
+
+$(document).ready(function () {
+  $(`span[data-toggle="popover"]`).popover({
+    trigger: 'click',
+    placement: 'top',
+    html: true
+  })
+})
