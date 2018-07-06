@@ -804,7 +804,7 @@
     :figure_2_reference_sentence_41.
 
 :figure_2_reference_sentence_41
-  a sake:InResourcePointer;
+  a sake:InResourcePointer, sake:Evidence;
   sake:reliesOn :figure_2;
   sake:isPlaced :sentence_41;
   sake:hasContent "(Fig. 2)".
@@ -819,13 +819,13 @@
     :formula_3_reference_sentence_42.
 
 :formula_2_reference_sentence_42
-  a sake:InResourcePointer;
+  a sake:InResourcePointer, sake:Evidence;
   sake:reliesOn :formula_2;
   sake:isPlaced :sentence_42;
   sake:hasContent "(2)".
 
 :formula_3_reference_sentence_42
-  a sake:InResourcePointer;
+  a sake:InResourcePointer, sake:Evidence;
   sake:reliesOn :formula_3;
   sake:isPlaced :sentence_42;
   sake:hasContent "(3)".
@@ -874,7 +874,7 @@
     :figure_1_reference_sentence_47.
 
 :figure_1_reference_sentence_47
-  a sake:InResourcePointer;
+  a sake:InResourcePointer, sake:Evidence;
   sake:reliesOn :figure_1;
   sake:isPlaced :sentence_47;
   sake:hasContent "Fig. 1".
@@ -894,13 +894,13 @@
     :formula_3_reference_sentence_48.
 
 :formula_3_reference_sentence_48
-  a sake:InResourcePointer;
+  a sake:InResourcePointer, sake:Evidence;
   sake:reliesOn :formula_3 ;
   sake:isPlaced :sentence_48;
   sake:hasContent "equation(3)".
 
 :figure_1_reference_sentence_48
-  a sake:InResourcePointer;
+  a sake:InResourcePointer, sake:Evidence;
   sake:reliesOn :figure_1;
   sake:isPlaced :sentence_48;
   sake:hasContent "(the upper curve in Fig. 1)".
@@ -966,10 +966,12 @@
   a doco:Section, deo:Acknowledgements;
   dcterms:title "Acknowledgements";
   po:contains
-    :paragraph_13,
-    [a doco:ListOfContributors;
-    po:contains :Trey_Crisco, :Sharon_Swartz, :Andy_Biewener, :Matt_Dawson, :Jeremiah_Trimble;
-  ].
+    :paragraph_13, 
+    :contributor_list.
+
+:contributor_list
+  a doco:ListOfContributors;
+  po:contains :Trey_Crisco, :Sharon_Swartz, :Andy_Biewener, :Matt_Dawson, :Jeremiah_Trimble.
 
 # PARAGRAPH 13
 :paragraph_13 a doco:Paragraph;
