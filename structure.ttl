@@ -8,6 +8,7 @@
 @prefix c4o: <http://purl.org/spar/c4o>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix dbpedia: <http://dbpedia.org/resource/>.
+@prefix dbc: <http://dbpedia.org/resource/Category:>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix prism: <http://prismstandard.org/namespaces/basic/2.0/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
@@ -36,7 +37,7 @@
   dcterms:title  "Woodpecker pecking: how woodpeckers avoid brain injury";
   
   #ARTICLE'S THEORY
-  sake:formulate :L_J_Gibson_Theory;
+  sake:formulates :L_J_Gibson_Theory;
   # Dates
   fabio:hasDateReceived "31 August 2005"^^xsd:date;
   fabio:dateAccepted "23 February 2006"^^xsd:date;
@@ -91,22 +92,22 @@
 :woodpeckers 
   a fabio:SubjectTerm;
   skos:prefLabel "woodpeckers";
-  fabio:hasDiscipline dbpedia:Ornithology.
+  fabio:hasDiscipline dbc:Ornithology.
 
 :pecking 
   a fabio:SubjectTerm;
   skos:prefLabel "pecking";
-  fabio:hasDiscipline dbpedia:Ornithology.
+  fabio:hasDiscipline dbc:Ornithology.
 
 :brain_injury 
   a fabio:SubjectTerm;
   skos:prefLabel "brain injury";
-  fabio:hasDiscipline dbpedia:Neurosurgery.
+  fabio:hasDiscipline dbc:Neurosurgery.
 
 :biomechanics 
   a fabio:SubjectTerm;
   skos:prefLabel "biomechanics";
-  fabio:hasDiscipline dbpedia:Biomechanics.
+  fabio:hasDiscipline dbc:Biomechanics.
 
 # Abstract section
 :abstract 
@@ -804,7 +805,7 @@
   po:contains :sentence_43_reference1.
 
 :sentence_43_reference1.
-    a c4o:InTextReferencePointer;
+    a c4o:InTextReferencePointer, sake:Evidence;
     c4o:denotes :bibliography_10;
     c4o:hasContext :sentence_43;
     c4o:hasContent "Mlikovsky, 1989".
@@ -840,7 +841,7 @@
   po:contains :sentence_47_reference1.
 
 :sentence_47_reference1
-    a c4o:InTextReferencePointer;
+    a c4o:InTextReferencePointer, sake:Evidence;
     c4o:denotes :bibliography_14;
     c4o:hasContext :sentence_47;
     c4o:hasContent "Ono et al., 1980".
@@ -855,7 +856,7 @@
   po:contains :sentence_49_reference1.
 
 :sentence_49_reference1.
-    a c4o:InTextReferencePointer;
+    a c4o:InTextReferencePointer, sake:Evidence;
     c4o:denotes :bibliography_11;
     c4o:hasContext :sentence_49;
     c4o:hasContent "Ommaya, Goldsmith & Thibault, 2002".
@@ -866,7 +867,7 @@
   po:contains :sentence_50_reference1.
 
 :sentence_50_reference1.
-    a c4o:InTextReferencePointer;
+    a c4o:InTextReferencePointer, sake:Evidence;
     c4o:denotes :bibliography_15;
     c4o:hasContext :sentence_50;
     c4o:hasContent "Pellman et al., 2003".
@@ -881,7 +882,7 @@
   po:contains :sentence_52_reference1.
 
 :sentence_52_reference1
-    a c4o:InTextReferencePointer;
+    a c4o:InTextReferencePointer, sake:Evidence;
     c4o:denotes :bibliography_7;
     c4o:hasContext :sentence_52;
     c4o:hasContent "May et al., 1979".
@@ -1129,14 +1130,15 @@
   biro:references <http://www.worldcat.org/oclc/751504766>.
 
 #THEORY!
-:L_J_Gibson_Theory a sake:Theory;
-#LOOOOOOOK!!!!!
+:L_J_Gibson_Theory 
+  a sake:Theory;
   sake:isFormulatedBy <http://dx.doi.org/10.1111/j.1469-7998.2006.00166.x>;
   dcterms:creator :L_J_Gibson;
-  sake:BasedOn :Holbourn_Theory, :May_Theory;
-  sake:answersTo :woodpecker_behaviour;
-  sake:hasField dbpedia:Ornithology, dbpedia:Biomechanics, dbpedia:Neurosurgery;
-  sake:expressedIn :abstract_sentence3, :sentence_55.
+  sake:isBasedOn :Holbourn_Theory, :May_Theory;
+  sake:explains :woodpecker_behaviour;
+  #TODO
+  sake:hasField dbc:Ornithology, dbc:Biomechanics, dbc:Neurosurgery;
+  sake:isExpressedIn :abstract_sentence3, :sentence_55.
   sake:hasAsIdea
     :woodpecker_thesis_size,
     :woodpecker_thesis_duration,
@@ -1145,23 +1147,26 @@
 
 #Phenomena
 :woodpecker_behaviour a sake:Phenomenon;
-  sake:expressedIn :abstract_sentence1 .
+  sake:isExpressedIn :abstract_sentence1 .
 
 #THESIS
 #THESIS-SIZE
-:woodpecker_thesis_size a sake:Thesis;
+:woodpecker_thesis_size 
+  a sake:Thesis;
   sake:isIdeaOf :L_J_Gibson_Theory;
   c4o:hasContent "their small size, which reduces the stress on the brain for a given acceleration";
   sake:isDemonstratedBy :woodpecker_demonstration_size.
 
 #THESIS-DURATION
-:woodpecker_thesis_duration a sake:Thesis;
+:woodpecker_thesis_duration 
+  a sake:Thesis;
   sake:isIdeaOf :L_J_Gibson_Theory;
   c4o:hasContent "the short duration of the impact, which increases the tolerable acceleration;";
   sake:isDemonstratedBy :woodpecker_demonstration_duration.
 
 #THESIS-ORIENTATION
-:woodpecker_thesis_orientation a sake:Thesis;
+:woodpecker_thesis_orientation 
+  a sake:Thesis;
   sake:isIdeaOf :L_J_Gibson_Theory;
   c4o:hasContent "the orientation of the brain within the skull, which increases the area of contact between the brain and the skull.";
   sake:isDemonstratedBy :woodpecker_demonstration_orientation.
@@ -1169,30 +1174,33 @@
 #DEMONSTRATION
 #DEMONSTRATION-size
 :woodpecker_demonstration_size a sake:Demonstration;
-  sake:expressedIn :sentence_43, :sentence_44, :sentence_54.
+  sake:isExpressedIn :sentence_43, :sentence_44, :sentence_54.
   sake:isSupportedBy :sentence_43_reference1
 
 #DEMONSTRATION-duration
 :woodpecker_demonstration_duration a sake:Demonstration;
-  sake:expressedIn :sentence_46, :sentence_47, :sentence_48, :sentence_49, :sentence_50, :sentence_51, :sentence_52, :sentence_53.
+  sake:isExpressedIn :sentence_46, :sentence_47, :sentence_48, :sentence_49, :sentence_50, :sentence_51, :sentence_52, :sentence_53.
   sake:isSupportedBy :sentence_47_reference1, :sentence_49_reference1, :sentence_50_reference1, :sentence_52_reference1, :figure_1.
 
 #DEMONSTRATION-orientation
 :woodpecker_demonstration_orientation a sake:Demonstration;
-  sake:expressedIn :sentence_41, :sentence_42.
+  sake:isExpressedIn :sentence_41, :sentence_42.
   sake:isSupportedBy :figure_2.
 
 #THEORY HOLBOURN
-:Holbourn_Theory a sake:ExternalTheory;
-  sake:isFormulatedBy :bibliography_12, :bibliography_13;
+:Holbourn_Theory 
+  a sake:Theory;
+  sake:isFormulatedBy <https://doi.org/10.1016/0021-9290(71)90011-X>, <https://doi.org/10.4271/670906>;
   dcterms:creator "A. H. S. Holbourn";
-  sake:hasField dbpedia:Neurosurgery, dbpedia:Biomechanics;
-  sake:expressedIn :sentence_33.
+  #TODO
+  sake:hasField dbc:Neurosurgery, dbc:Biomechanics;
+  sake:isExpressedIn :sentence_33.
 
 #THEORY MAY
 :May_Theory a sake:ExternalTheory;
   sake:isFormulatedBy :bibliography_7;
   dcterms:creator "P. R. A. May";
   sake:BasedOn :Holbourn_Theory;
-  sake:hasField dbpedia:Ornithology, dbpedia:Biomechanics, dbpedia:Neurosurgery;
-  sake:expressedIn :sentence_36.
+  #TODO
+  sake:hasField dbc:Ornithology, dbc:Biomechanics, dbc:Neurosurgery;
+  sake:isExpressedIn :sentence_36.
