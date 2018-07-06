@@ -212,7 +212,7 @@
 
 :fig1_sentece_2 
   a doco:Sentence;
-  c4o:hasContent "The lower curve gives the threshold acceleration for concussion in humans and is adapted from Ono et al. (1980); accelerations below the curve can be tolerated without brain injury.".
+  c4o:hasContent "The lower curve gives the threshold acceleration for concussion in humans and is adapted from Ono et al. (1980); accelerations below the curve can be tolerated without brain injury.";
   po:contains
     :fig1_sentence_2_reference1.
 
@@ -232,7 +232,7 @@
 
 :fig1_sentece_5 
   a doco:Sentence;
-  c4o:hasContent "The duration of acorn woodpecker head impacts has been measured to be 0.5–1.0 ms (May et al., 1979), suggesting that acorn woodpeckers can tolerate impact accelerations of 4600 g to 6000 g, well in excess of measured values of 634 g to 1525 g.".
+  c4o:hasContent "The duration of acorn woodpecker head impacts has been measured to be 0.5–1.0 ms (May et al., 1979), suggesting that acorn woodpeckers can tolerate impact accelerations of 4600 g to 6000 g, well in excess of measured values of 634 g to 1525 g.";
   po:contains
     :fig1_sentence_5_reference1.
 
@@ -278,7 +278,7 @@
   po:contains
     :paragraph_1,
     :paragraph_2,
-    :paragraph_3;
+    :paragraph_3.
 
 # PARAGRAPH 1
 :paragraph_1 a doco:Paragraph;
@@ -341,7 +341,7 @@
   a doco:Sentence;
   c4o:hasContent "The most detailed study of woodpecker drilling behaviour remains that of May et al. (1979), who made high-speed films of an acorn woodpecker Melanerpes formicivorus pecking into a tree.";
   po:contains 
-    :sentence_7_reference1
+    :sentence_7_reference1.
 
 :sentence_7_reference1
   a c4o:InTextReferencePointer;
@@ -804,7 +804,7 @@
   c4o:hasContent "The brain mass of the acorn woodpecker is about 2.5g (Mlikovsky, 1989) whereas that of a human is about 1400 g, suggesting that the ratio of the brain radii, rw/rh, is about 0.12 and that the translational acceleration the acorn woodpecker can with-stand without injury is 16 times that of a human (for a given duration of impact).";
   po:contains :sentence_43_reference1.
 
-:sentence_43_reference1.
+:sentence_43_reference1
     a c4o:InTextReferencePointer, sake:Evidence;
     c4o:denotes :bibliography_10;
     c4o:hasContext :sentence_43;
@@ -847,26 +847,29 @@
     c4o:hasContent "Ono et al., 1980".
 
 # SENTENCE 48
-:sentence_48 a doco:Sentence;
+:sentence_48 
+  a doco:Sentence;
   c4o:hasContent "A similar tolerance curve for the acorn woodpecker can be estimated using the scaling relationship equation (3) (the upper curve in Fig. 1).".
 
 # SENTENCE 49
-:sentence_49 a doco:Sentence;
+:sentence_49 
+  a doco:Sentence;
   c4o:hasContent "In automobile crashes, the duration of the contact time between an unbelted vehicular occupant and a component of the vehicle is typically 3–7 ms (Ommaya, Goldsmith & Thibault, 2002).";
   po:contains :sentence_49_reference1.
 
-:sentence_49_reference1.
+:sentence_49_reference1
     a c4o:InTextReferencePointer, sake:Evidence;
     c4o:denotes :bibliography_11;
     c4o:hasContext :sentence_49;
     c4o:hasContent "Ommaya, Goldsmith & Thibault, 2002".
 
 # SENTENCE 50
-:sentence_50 a doco:Sentence;
+:sentence_50 
+  a doco:Sentence;
   c4o:hasContent "The duration of head impacts in National Football League players who suffer concussion is typically 15ms (Pellman et al., 2003).";
   po:contains :sentence_50_reference1.
 
-:sentence_50_reference1.
+:sentence_50_reference1
     a c4o:InTextReferencePointer, sake:Evidence;
     c4o:denotes :bibliography_15;
     c4o:hasContext :sentence_50;
@@ -1136,9 +1139,8 @@
   dcterms:creator :L_J_Gibson;
   sake:isBasedOn :Holbourn_Theory, :May_Theory;
   sake:explains :woodpecker_behaviour;
-  #TODO
   sake:hasField dbc:Ornithology, dbc:Biomechanics, dbc:Neurosurgery;
-  sake:isExpressedIn :abstract_sentence3, :sentence_55.
+  sake:isExpressedIn :abstract_sentence3, :sentence_55;
   sake:hasAsIdea
     :woodpecker_thesis_size,
     :woodpecker_thesis_duration,
@@ -1173,18 +1175,21 @@
 
 #DEMONSTRATION
 #DEMONSTRATION-size
-:woodpecker_demonstration_size a sake:Demonstration;
-  sake:isExpressedIn :sentence_43, :sentence_44, :sentence_54.
-  sake:isSupportedBy :sentence_43_reference1
+:woodpecker_demonstration_size 
+  a sake:Demonstration;
+  sake:isExpressedIn :sentence_43, :sentence_44, :sentence_54;
+  sake:isSupportedBy :sentence_43_reference1.
 
 #DEMONSTRATION-duration
-:woodpecker_demonstration_duration a sake:Demonstration;
-  sake:isExpressedIn :sentence_46, :sentence_47, :sentence_48, :sentence_49, :sentence_50, :sentence_51, :sentence_52, :sentence_53.
+:woodpecker_demonstration_duration 
+  a sake:Demonstration;
+  sake:isExpressedIn :sentence_46, :sentence_47, :sentence_48, :sentence_49, :sentence_50, :sentence_51, :sentence_52, :sentence_53;
   sake:isSupportedBy :sentence_47_reference1, :sentence_49_reference1, :sentence_50_reference1, :sentence_52_reference1, :figure_1.
 
 #DEMONSTRATION-orientation
-:woodpecker_demonstration_orientation a sake:Demonstration;
-  sake:isExpressedIn :sentence_41, :sentence_42.
+:woodpecker_demonstration_orientation 
+  a sake:Demonstration;
+  sake:isExpressedIn :sentence_41, :sentence_42;
   sake:isSupportedBy :figure_2.
 
 #THEORY HOLBOURN
@@ -1192,7 +1197,6 @@
   a sake:Theory;
   sake:isFormulatedBy <https://doi.org/10.1016/0021-9290(71)90011-X>, <https://doi.org/10.4271/670906>;
   dcterms:creator "A. H. S. Holbourn";
-  #TODO
   sake:hasField dbc:Neurosurgery, dbc:Biomechanics;
   sake:isExpressedIn :sentence_33.
 
@@ -1201,6 +1205,5 @@
   sake:isFormulatedBy :bibliography_7;
   dcterms:creator "P. R. A. May";
   sake:BasedOn :Holbourn_Theory;
-  #TODO
   sake:hasField dbc:Ornithology, dbc:Biomechanics, dbc:Neurosurgery;
   sake:isExpressedIn :sentence_36.
