@@ -136,9 +136,9 @@
 
     <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isExpressedIn">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://sakedhdk.github.io/sake#Demonstration"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#RethoricalExpression"/>
         <rdfs:range rdf:resource="http://purl.org/spar/doco/Sentence"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Demonstration is expressed in a Sentence of the structure</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RethoricalExpression is expressed in a Sentence of the structure</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -223,19 +223,27 @@
     
 
 
-    <!-- https://sakedhdk.github.io/sake#Demonstration -->
+    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#RethoricalExpression -->
 
-    <owl:Class rdf:about="https://sakedhdk.github.io/sake#Demonstration">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#demonstrates"/>
-                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Thesis"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#RethoricalExpression">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isExpressedIn"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/spar/doco/Sentence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://sakedhdk.github.io/sake#Demonstration -->
+
+    <owl:Class rdf:about="https://sakedhdk.github.io/sake#Demonstration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#RethoricalExpression"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#demonstrates"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Thesis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -252,6 +260,7 @@
     <!-- https://sakedhdk.github.io/sake#Evidence -->
 
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Evidence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#RethoricalExpression"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#supports"/>
@@ -266,6 +275,7 @@
     <!-- https://sakedhdk.github.io/sake#Phenomenon -->
 
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#RethoricalExpression"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isExplainedBy"/>
@@ -280,6 +290,7 @@
     <!-- https://sakedhdk.github.io/sake#Theory -->
 
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Theory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#RethoricalExpression"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#explains"/>
@@ -324,6 +335,7 @@
     <!-- https://sakedhdk.github.io/sake#Thesis -->
 
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Thesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#RethoricalExpression"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isDemonstratedBy"/>
@@ -349,6 +361,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Demonstration"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Evidence"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Phenomenon"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Theory"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Thesis"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
         <owl:members rdf:parseType="Collection">
