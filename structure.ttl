@@ -383,7 +383,14 @@
   c4o:hasContent "The Japan Head Tolerance Curve, the lower curve in Fig. 1, shows the threshold combinations of impact acceleration and duration for concussion; accelerations above the curve cause concussion whereas those below do not (Ono et al., 1980; McLean & Anderson, 1997).";
   po:contains 
     :sentence_12_reference1,
-    :sentence_12_reference2.
+    :sentence_12_reference2,
+    :figure_1_reference_sentence_12.
+
+:fig_1_reference_sentence_12
+  a sake:InResourcePointer;
+  sake:reliesOn :figure_1;
+  sake:isPlaced :sentence_12;
+  sake:hasContent "Fig. 1".
   
 :sentence_12_reference1
   a c4o:InTextReferencePointer;
@@ -793,6 +800,14 @@
 # SENTENCE 41
 :sentence_41 a doco:Sentence;
   c4o:hasContent "I note that both woodpecker and human brains are roughly hemispherical, but that they have different orientations within the skull (Fig. 2), so that the projected contact area, Aw, of the woodpecker brain against the skull is approximately (inline1) whereas that of the human brain, Ah, is (inline_2), where Rw and Rh are the radii of the woodpecker and human brains, respectively.".
+  po:contains
+    :figure_2_reference_sentence_41.
+
+:fig_12_reference_sentence_41
+  a sake:InResourcePointer;
+  sake:reliesOn :figure_2;
+  sake:isPlaced :sentence_41;
+  sake:hasContent "(Fig. 2)".
 
 # SENTENCE 42
 :sentence_42 a doco:Sentence;
@@ -838,7 +853,15 @@
 # SENTENCE 47
 :sentence_47 a doco:Sentence;
   c4o:hasContent "The lower curve in Fig. 1 (adapted from Ono et al., 1980) shows a tolerance curve for human head impact: accelerations below the curve can be tolerated without concussion.";
-  po:contains :sentence_47_reference1.
+  po:contains 
+    :sentence_47_reference1,
+    :figure_1_reference_sentence_47.
+
+:fig_1_reference_sentence_47
+  a sake:InResourcePointer;
+  sake:reliesOn :figure_1;
+  sake:isPlaced :sentence_47;
+  sake:hasContent "Fig. 1".
 
 :sentence_47_reference1
     a c4o:InTextReferencePointer, sake:Evidence;
@@ -850,7 +873,15 @@
 :sentence_48 
   a doco:Sentence;
   c4o:hasContent "A similar tolerance curve for the acorn woodpecker can be estimated using the scaling relationship equation (3) (the upper curve in Fig. 1).".
+  po:contains
+    :figure_1_reference_sentence_48.
 
+:fig_1_reference_sentence_48
+  a sake:InResourcePointer;
+  sake:reliesOn :figure_1;
+  sake:isPlaced :sentence_48;
+  sake:hasContent "(the upper curve in Fig. 1)".
+  
 # SENTENCE 49
 :sentence_49 
   a doco:Sentence;
@@ -935,6 +966,21 @@
 # SENTENCE 58
 :sentence_58 a doco:Sentence;
   c4o:hasContent "Mr Matt Dawson assisted with the preparation of Fig. 1. The photographs of the skulls in Fig. 2 were kindly provided by Mr Jeremiah Trimble of the Ornithology Department of the Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard College.".
+  po:contains:
+    :figure_1_reference_sentence_58,
+    :figure_2_reference_sentence_58.
+
+:fig_1_reference_sentence_58
+  a sake:InResourcePointer;
+  sake:reliesOn :figure_1;
+  sake:isPlaced :sentence_58;
+  sake:hasContent "Mr Matt Dawson assited with the preparation of Fig. 1".
+
+:figure_2_reference_sentence_58
+  a sake:InResourcePointer;
+  sake:reliesOn :figure_2;
+  sake:isPlaced :sentence_58;
+  sake:hasContent "The photographs of skull in Fig.2".
 
 # CONTRIBUTORS
 :Trey_Crisco 
