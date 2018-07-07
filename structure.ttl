@@ -799,7 +799,7 @@
 
 # SENTENCE 41
 :sentence_41 a doco:Sentence;
-  c4o:hasContent "I note that both woodpecker and human brains are roughly hemispherical, but that they have different orientations within the skull (Fig. 2), so that the projected contact area, Aw, of the woodpecker brain against the skull is approximately (inline1) whereas that of the human brain, Ah, is (inline_2), where Rw and Rh are the radii of the woodpecker and human brains, respectively.".
+  c4o:hasContent "I note that both woodpecker and human brains are roughly hemispherical, but that they have different orientations within the skull (Fig. 2), so that the projected contact area, Aw, of the woodpecker brain against the skull is approximately (inline1) whereas that of the human brain, Ah, is (inline_2), where Rw and Rh are the radii of the woodpecker and human brains, respectively.";
   po:contains
     :figure_2_reference_sentence_41.
 
@@ -811,11 +811,11 @@
 
 # SENTENCE 42
 :sentence_42 a doco:Sentence;
-  c4o:hasContent "Assuming that brain injury occurs at the same stress, s, in both the woodpecker and the human, then or where F is the force on the brain and subscripts w and h refer to woodpecker and human, respectively.".
+  c4o:hasContent "Assuming that brain injury occurs at the same stress, s, in both the woodpecker and the human, then or where F is the force on the brain and subscripts w and h refer to woodpecker and human, respectively.";
   po:contains
-    :formula_2;
-    :formula_3;
-    :formula_2_reference_sentence_42;
+    :formula_2,
+    :formula_3,
+    :formula_2_reference_sentence_42,
     :formula_3_reference_sentence_42.
 
 :formula_2_reference_sentence_42
@@ -888,9 +888,9 @@
 # SENTENCE 48
 :sentence_48 
   a doco:Sentence;
-  c4o:hasContent "A similar tolerance curve for the acorn woodpecker can be estimated using the scaling relationship equation (3) (the upper curve in Fig. 1).".
+  c4o:hasContent "A similar tolerance curve for the acorn woodpecker can be estimated using the scaling relationship equation (3) (the upper curve in Fig. 1).";
   po:contains
-    :figure_1_reference_sentence_48.
+    :figure_1_reference_sentence_48,
     :formula_3_reference_sentence_48.
 
 :formula_3_reference_sentence_48
@@ -990,7 +990,7 @@
 
 # SENTENCE 58
 :sentence_58 a doco:Sentence;
-  c4o:hasContent "Mr Matt Dawson assisted with the preparation of Fig. 1. The photographs of the skulls in Fig. 2 were kindly provided by Mr Jeremiah Trimble of the Ornithology Department of the Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard College.".
+  c4o:hasContent "Mr Matt Dawson assisted with the preparation of Fig. 1. The photographs of the skulls in Fig. 2 were kindly provided by Mr Jeremiah Trimble of the Ornithology Department of the Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard College.";
   po:contains:
     :figure_1_reference_sentence_58,
     :figure_2_reference_sentence_58.
