@@ -1,11 +1,11 @@
-@prefix : <https://sakedhdk.github.io/sake#>.
+@prefix : <https://sakedhdk.github.io/knowledge_graph#>.
 @prefix doco: <http://purl.org/spar/doco/>.
 @prefix deo: <http://purl.org/spar/deo/>.
 @prefix po: <http://www.essepuntato.it/2008/12/pattern#>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix fabio: <http://purl.org/spar/fabio/>.
 @prefix co: <http://purl.org/co/>.
-@prefix c4o: <http://purl.org/spar/c4o>.
+@prefix c4o: <http://purl.org/spar/c4o/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix dbpedia: <http://dbpedia.org/resource/>.
 @prefix dbc: <http://dbpedia.org/resource/Category:>.
@@ -18,7 +18,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix cito: <http://purl.org/spar/cito/2018-02-16>.
 @prefix sake: <https://sakedhdk.github.io/sake#>.
-@prefix biro: <http://purl.org/spar/biro> .
+@prefix biro: <http://purl.org/spar/biro/> .
 
 # DOI is the URI
 <http://dx.doi.org/10.1111/j.1469-7998.2006.00166.x> 
@@ -991,7 +991,7 @@
 # SENTENCE 58
 :sentence_58 a doco:Sentence;
   c4o:hasContent "Mr Matt Dawson assisted with the preparation of Fig. 1. The photographs of the skulls in Fig. 2 were kindly provided by Mr Jeremiah Trimble of the Ornithology Department of the Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard College.";
-  po:contains:
+  po:contains
     :figure_1_reference_sentence_58,
     :figure_2_reference_sentence_58.
 
