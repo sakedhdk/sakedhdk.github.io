@@ -146,7 +146,7 @@
 
     <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isExpressedIn">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#TheoryComponents"/>
+        <rdfs:domain rdf:resource="https://sakedhdk.github.io/sake#TheoryComponents"/>
         <rdfs:range rdf:resource="http://purl.org/spar/doco/Sentence"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RethoricalExpression is expressed in a Sentence of the structure</rdfs:comment>
     </owl:ObjectProperty>
@@ -255,24 +255,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#TheoryComponents -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#TheoryComponents">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isExpressedIn"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/spar/doco/Sentence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Theory Components are the steps required to formulate a Theory</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://sakedhdk.github.io/sake#Demonstration -->
 
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Demonstration">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#TheoryComponents"/>
+        <rdfs:subClassOf rdf:resource="https://sakedhdk.github.io/sake#TheoryComponents"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#demonstrates"/>
@@ -293,7 +279,7 @@
     <!-- https://sakedhdk.github.io/sake#Evidence -->
 
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Evidence">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#TheoryComponents"/>
+        <rdfs:subClassOf rdf:resource="https://sakedhdk.github.io/sake#TheoryComponents"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#supports"/>
@@ -316,7 +302,7 @@
     <!-- https://sakedhdk.github.io/sake#Phenomenon -->
 
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Phenomenon">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#TheoryComponents"/>
+        <rdfs:subClassOf rdf:resource="https://sakedhdk.github.io/sake#TheoryComponents"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isExplainedBy"/>
@@ -331,7 +317,7 @@
     <!-- https://sakedhdk.github.io/sake#Theory -->
 
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Theory">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#TheoryComponents"/>
+        <rdfs:subClassOf rdf:resource="https://sakedhdk.github.io/sake#TheoryComponents"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#explains"/>
@@ -373,10 +359,24 @@
     
 
 
+    <!-- https://sakedhdk.github.io/sake#TheoryComponents -->
+
+    <owl:Class rdf:about="https://sakedhdk.github.io/sake#TheoryComponents">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isExpressedIn"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/doco/Sentence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Theory Components are the steps required to formulate a Theory</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- https://sakedhdk.github.io/sake#Thesis -->
 
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Thesis">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#TheoryComponents"/>
+        <rdfs:subClassOf rdf:resource="https://sakedhdk.github.io/sake#TheoryComponents"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isDemonstratedBy"/>
@@ -407,8 +407,8 @@
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/spar/doco/Sentence"/>
             <rdf:Description rdf:about="http://purl.org/spar/fabio/Article"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gianmarcospinaci/ontologies/2018/3/test.owl#TheoryComponents"/>
             <rdf:Description rdf:about="https://sakedhdk.github.io/sake#InTextResourcePointer"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#TheoryComponents"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
