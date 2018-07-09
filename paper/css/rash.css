@@ -277,6 +277,13 @@ aside#annotations.active>div.side_note_body .side_node_date {
   cursor: pointer;
 }
 
+.annotation_hilight0 {
+  background-color: rgba(255, 0, 0, .3);
+  padding-left: 0;
+  padding-right: 0;
+  cursor: pointer;
+}
+
 .annotation_element {
   border-left: 2px dotted black;
   padding-left: 2px;
