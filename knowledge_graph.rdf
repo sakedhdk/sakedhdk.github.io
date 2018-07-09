@@ -1,50 +1,53 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:po="http://www.essepuntato.it/2008/12/pattern#"
-         xmlns:c4o="http://purl.org/spar/c4o/"
-         xmlns:dc="http://purl.org/dc/terms/"
-         xmlns:foaf="http://xmlns.com/foaf/0.1/"
-         xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/"
-         xmlns:sake="https://sakedhdk.github.io/sake#"
-         xmlns:fabio="http://purl.org/spar/fabio/"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:frbr="http://purl.org/vocab/frbr/"
-         xmlns:org="http://www.w3.org/ns/org#"
-         xmlns:dbo="http://dbpedia.org/ontology/"
-         xmlns:doco="http://purl.org/spar/doco/"
-         xmlns:deo="http://purl.org/spar/deo/"
-         xmlns:co="http://purl.org/co/"
-         xmlns:cito="http://purl.org/spar/cito/"
-         xmlns:biro="http://purl.org/spar/biro/">
+<rdf:RDF 
+        xmlns="https://sakedhdk.github.io/knowledge_graph.rdf#"
+        xmlns:base="https://sakedhdk.github.io/knowledge_graph.rdf#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:po="http://www.essepuntato.it/2008/12/pattern#"
+        xmlns:c4o="http://purl.org/spar/c4o/"
+        xmlns:dc="http://purl.org/dc/terms/"
+        xmlns:foaf="http://xmlns.com/foaf/0.1/"
+        xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/"
+        xmlns:sake="https://sakedhdk.github.io/sake#"
+        xmlns:fabio="http://purl.org/spar/fabio/"
+        xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+        xmlns:frbr="http://purl.org/vocab/frbr/"
+        xmlns:org="http://www.w3.org/ns/org#"
+        xmlns:dbo="http://dbpedia.org/ontology/"
+        xmlns:doco="http://purl.org/spar/doco/"
+        xmlns:deo="http://purl.org/spar/deo/"
+        xmlns:co="http://purl.org/co/"
+        xmlns:cito="http://purl.org/spar/cito/"
+        xmlns:biro="http://purl.org/spar/biro/">
 
   <rdf:Description rdf:about="http://dx.doi.org/10.1111/j.1469-7998.2006.00166.x">
     <rdf:type rdf:resource="http://purl.org/spar/fabio/JournalArticle"/>
     <po:contains>
-      <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#front_matter">
+      <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#front_matter">
         <rdf:type rdf:resource="http://purl.org/spar/doco/FrontMatter"/>
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#title">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#title">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Title"/>
             <c4o:hasContent>Woodpecker pecking: how woodpeckers avoid brain injury</c4o:hasContent>
           </rdf:Description>
         </po:contains>
 
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#author_list">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#author_list">
             <rdf:type rdf:resource="http://purl.org/spar/doco/ListOfAuthors"/>
-            <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#L_J_Gibson"/>
+            <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#L_J_Gibson"/>
           </rdf:Description>
         </po:contains>
 
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#affiliation_list">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#affiliation_list">
             <rdf:type rdf:resource="http://purl.org/spar/doco/ListOfOrganizations"/>
-            <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#MSE_MIT"/>
+            <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#MSE_MIT"/>
           </rdf:Description>
         </po:contains>
 
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#correspondence">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#correspondence">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
             <dc:title>Correspondence</dc:title>
             <c4o:hasContent>Lorna J. Gibson, Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA. Email: ljgibson@mit.edu</c4o:hasContent>
@@ -52,19 +55,19 @@
         </po:contains>
 
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#abstract">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#abstract">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
             <rdf:type rdf:resource="http://purl.org/spar/fabio/abstract"/>
             <dc:title>Abstract</dc:title>
-            <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#abstract_sentence1"/>
+            <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#abstract_sentence1"/>
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#abstract_sentence2">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#abstract_sentence2">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                 <c4o:hasContent>In this paper, I re-examine previous studies of pecking and scaling effects in brain injury.</c4o:hasContent>
               </rdf:Description>
             </po:contains>
 
-            <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#abstract_sentence3"/>
+            <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#abstract_sentence3"/>
           </rdf:Description>
         </po:contains>
 
@@ -72,47 +75,47 @@
     </po:contains>
 
     <po:contains>
-      <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#body_matter">
+      <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#body_matter">
         <rdf:type rdf:resource="http://purl.org/spar/doco/BodyMatter"/>
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#section_introduction">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#section_introduction">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
             <rdf:type rdf:resource="http://purl.org/spar/deo/Introduction"/>
             <dc:title>Introduction</dc:title>
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#paragraph_1">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#paragraph_1">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_1">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_1">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>Most woodpeckers drill holes into trees to forage for insects and their larvae.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_2">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_2">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>One group of woodpeckers, the sapsuckers, draws sap out of the holes they drill with the brush-like ends of their long tongues.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_3"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_3"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_4">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_4">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>All woodpeckers excavate cavity nests with a horizontal entry leading to an enlarged opening below it to lay their eggs.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_5">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_5">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>Woodpeckers drum on hollow branches, beating quickly and loudly, but less forcefully than during drilling, to attract a mate or to maintain their territory.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_6">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_6">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>With all of this drilling, excavating and drumming, how do woodpeckers avoid brain injury?</c4o:hasContent>
                   </rdf:Description>
@@ -122,25 +125,25 @@
             </po:contains>
 
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#paragraph_2">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#paragraph_2">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_7"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_7"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_8">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_8">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>(The bird, which was unable to fly as a result of injuries from a broken wing, lived in the office of a park ranger in California and would reliably peck on a tree trunk in the office when it heard the tapping of typewriter keys).</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_9">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_9">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>Quantitative analysis of the film images showed that the woodpecker’s head moved forward in a straight trajectory, reaching maximum speeds of roughly 6–7.5 m s􏰀1, and decelerating at about 600–1500 g on impact, in 0.5–1.0ms.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_10">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_10">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>The entire forward trajectory took between 8 and 25 ms.</c4o:hasContent>
                   </rdf:Description>
@@ -150,25 +153,25 @@
             </po:contains>
 
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#paragraph_3">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#paragraph_3">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_11">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_11">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>The tolerance of the human head to impact depends on both the acceleration and the duration of that acceleration.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_12"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_12"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_13">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_13">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>For shorter impact durations, higher accelerations can be tolerated.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_14">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_14">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>Note that, for a 1 ms duration impact, the threshold acceleration for concussion in humans is about 300 g: the human brain is injured at accelerations of about 1/5–1/2 of those routinely attained in repeated woodpecker drilling.</c4o:hasContent>
                   </rdf:Description>
@@ -181,45 +184,45 @@
         </po:contains>
 
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#section_literature_review">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#section_literature_review">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
             <rdf:type rdf:resource="http://purl.org/spar/deo/RelatedWork"/>
             <dc:title>Literature Review</dc:title>
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#paragraph_4">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#paragraph_4">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_15">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_15">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>A number of suggestions have been made to explain the ability of woodpeckers to withstand the repeated impacts from drilling.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_16">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_16">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>The classic argument made in the ornithology literature focuses on an unusual feature of birds: cranial kinesis, or the ability to move the upper portion of the beak relative to the brain case.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_17"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_17"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_18">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_18">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>This analysis appears to miss the dynamic effect: the brain itself accelerates during the impact.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_19"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_19"/>
               </rdf:Description>
             </po:contains>
 
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#paragraph_5">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#paragraph_5">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_20"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_20"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_21">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_21">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>I examine the scaling argument in more detail below.</c4o:hasContent>
                   </rdf:Description>
@@ -229,13 +232,13 @@
             </po:contains>
 
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#paragraph_6">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#paragraph_6">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_22"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_23"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_24"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_22"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_23"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_24"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_25">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_25">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>In light of these observations, the centripetal theory of concussion is no longer thought to be valid so that May’s argument, that the straight trajectory prevents brain injury in woodpeckers, is doubtful.</c4o:hasContent>
                   </rdf:Description>
@@ -245,25 +248,25 @@
             </po:contains>
 
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#paragraph_7">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#paragraph_7">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_26">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_26">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>The convulsive theory proposes that concussion occurs when mechanical stresses produce depolarization in neurons.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_27"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_28"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_27"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_28"/>
               </rdf:Description>
             </po:contains>
 
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#paragraph_8">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#paragraph_8">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_29"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_30"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_29"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_30"/>
               </rdf:Description>
             </po:contains>
 
@@ -271,59 +274,59 @@
         </po:contains>
 
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#section_analysis">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#section_analysis">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
             <rdf:type rdf:resource="http://purl.org/spar/deo/Discussion"/>
             <dc:title>Analysis</dc:title>
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#paragraph_9">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#paragraph_9">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_31">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_31">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>Here, I re-examine scaling effects in brain injury to explain how woodpeckers are able to withstand such high decelerations during pecking.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_32"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_33"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_32"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_33"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_34">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_34">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>Tolerable accelerations can be defined either for a particular duration or as the asymptotic acceleration that does not cause injury at long durations.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_35"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_36"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_37"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_38"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_35"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_36"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_37"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_38"/>
               </rdf:Description>
             </po:contains>
 
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#paragraph_10">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#paragraph_10">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_39">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_39">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>I next write a scaling relationship for the tolerable translational acceleration, a, of both woodpecker and human brains, for a given duration of impact.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_40">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_40">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>I assume that the properties, such as the density r, of the brain tissue are the same in both woodpeckers and humans.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_41"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_42"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_43"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_44"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_41"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_42"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_43"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_44"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_45">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_45">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>Video imaging experiments measure head accelerations during impact rather than brain accelerations; I use the measured head accelerations as an indicator of the brain acceleration.</c4o:hasContent>
                   </rdf:Description>
@@ -333,24 +336,24 @@
             </po:contains>
 
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#paragraph_11">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#paragraph_11">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_46"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_47"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_48"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_49"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_50"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_51"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_52"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_53"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_54"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_46"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_47"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_48"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_49"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_50"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_51"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_52"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_53"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_54"/>
               </rdf:Description>
             </po:contains>
 
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#paragraph_12">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#paragraph_12">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_55"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_55"/>
               </rdf:Description>
             </po:contains>
 
@@ -358,94 +361,94 @@
         </po:contains>
 
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#section_acknowledgements">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#section_acknowledgements">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
             <rdf:type rdf:resource="http://purl.org/spar/deo/Acknowledgements"/>
             <dc:title>Acknowledgements</dc:title>
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#paragraph_13">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#paragraph_13">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_56">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_56">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>I am grateful to Professors Trey Crisco of the Department of Orthopaedics and Sharon Swartz of the Department of Ecology and Evolutionary Biology, both at Brown University, who commented on an earlier draft of this paper.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
                 <po:contains>
-                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_57">
+                  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_57">
                     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
                     <c4o:hasContent>I also appreciate early discussions with Professor Andy Biewener of the Department of Organismic and Evolutionary Biology at Harvard University.</c4o:hasContent>
                   </rdf:Description>
                 </po:contains>
 
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_58"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_58"/>
               </rdf:Description>
             </po:contains>
 
             <po:contains>
-              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#contributor_list">
+              <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#contributor_list">
                 <rdf:type rdf:resource="http://purl.org/spar/doco/ListOfContributors"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#Trey_Crisco"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#Sharon_Swartz"/>
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#Andy_Biewener"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#Trey_Crisco"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#Sharon_Swartz"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#Andy_Biewener"/>
                 <po:contains>
-                  <foaf:Person rdf:about="https://sakedhdk.github.io/knowledge_graph#Matt_Dawson">
+                  <foaf:Person rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#Matt_Dawson">
                     <foaf:firstName>Matt</foaf:firstName>
                     <foaf:familyName>Dawson</foaf:familyName>
                   </foaf:Person>
                 </po:contains>
 
-                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#Jeremiah_Trimble"/>
+                <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#Jeremiah_Trimble"/>
               </rdf:Description>
             </po:contains>
 
           </rdf:Description>
         </po:contains>
 
-        <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#section_references"/>
-        <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_1"/>
-        <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_2"/>
+        <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#section_references"/>
+        <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1"/>
+        <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_2"/>
       </rdf:Description>
     </po:contains>
 
     <po:contains>
-      <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#back_matter">
+      <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#back_matter">
         <rdf:type rdf:resource="http://purl.org/spar/doco/BackMatter"/>
-        <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#section_references"/>
+        <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#section_references"/>
       </rdf:Description>
     </po:contains>
 
     <prism:doi>10.1111/j.1469-7998.2006.00166.x</prism:doi>
-    <dc:creator rdf:resource="https://sakedhdk.github.io/knowledge_graph#L_J_Gibson"/>
+    <dc:creator rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#L_J_Gibson"/>
     <dc:title>Woodpecker pecking: how woodpeckers avoid brain injury</dc:title>
-    <sake:formulates rdf:resource="https://sakedhdk.github.io/knowledge_graph#L_J_Gibson_Theory"/>
+    <sake:formulates rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#L_J_Gibson_Theory"/>
     <fabio:hasDateReceived rdf:datatype="http://www.w3.org/2001/XMLSchema#date">31 August 2005</fabio:hasDateReceived>
     <fabio:dateAccepted rdf:datatype="http://www.w3.org/2001/XMLSchema#date">23 February 2006</fabio:dateAccepted>
     <fabio:hasPublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</fabio:hasPublicationYear>
     <fabio:hasSubjectTerm>
-      <fabio:SubjectTerm rdf:about="https://sakedhdk.github.io/knowledge_graph#woodpeckers">
+      <fabio:SubjectTerm rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#woodpeckers">
         <skos:prefLabel>woodpeckers</skos:prefLabel>
         <fabio:hasDiscipline rdf:resource="http://dbpedia.org/resource/Category:Ornithology"/>
       </fabio:SubjectTerm>
     </fabio:hasSubjectTerm>
 
     <fabio:hasSubjectTerm>
-      <fabio:SubjectTerm rdf:about="https://sakedhdk.github.io/knowledge_graph#pecking">
+      <fabio:SubjectTerm rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#pecking">
         <skos:prefLabel>pecking</skos:prefLabel>
         <fabio:hasDiscipline rdf:resource="http://dbpedia.org/resource/Category:Ornithology"/>
       </fabio:SubjectTerm>
     </fabio:hasSubjectTerm>
 
     <fabio:hasSubjectTerm>
-      <fabio:SubjectTerm rdf:about="https://sakedhdk.github.io/knowledge_graph#brain_injury">
+      <fabio:SubjectTerm rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#brain_injury">
         <skos:prefLabel>brain injury</skos:prefLabel>
         <fabio:hasDiscipline rdf:resource="http://dbpedia.org/resource/Category:Neurosurgery"/>
       </fabio:SubjectTerm>
     </fabio:hasSubjectTerm>
 
     <fabio:hasSubjectTerm>
-      <fabio:SubjectTerm rdf:about="https://sakedhdk.github.io/knowledge_graph#biomechanics">
+      <fabio:SubjectTerm rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#biomechanics">
         <skos:prefLabel>biomechanics</skos:prefLabel>
         <fabio:hasDiscipline rdf:resource="http://dbpedia.org/resource/Category:Biomechanics"/>
       </fabio:SubjectTerm>
@@ -453,13 +456,13 @@
 
     <prism:ISSN>ISSN 0952-8369</prism:ISSN>
     <frbr:corepartOf>
-      <fabio:JournalIssue rdf:about="https://sakedhdk.github.io/knowledge_graph#Journal_of_Zoology_270">
+      <fabio:JournalIssue rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#Journal_of_Zoology_270">
         <dc:title>Journal of Zoology</dc:title>
         <fabio:issueIdentifier rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">270</fabio:issueIdentifier>
         <fabio:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</fabio:publicationDate>
         <fabio:hasCopyrightYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</fabio:hasCopyrightYear>
         <dc:publisher>
-          <foaf:Organization rdf:about="https://sakedhdk.github.io/knowledge_graph#ZSL">
+          <foaf:Organization rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#ZSL">
             <skos:sameAs rdf:resource="http://dbpedia.org/resource/Zoological_Society_of_London"/>
             <foaf:name>The Zoological Society of London</foaf:name>
           </foaf:Organization>
@@ -469,7 +472,7 @@
     </frbr:corepartOf>
 
     <prism:pageRange>
-      <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#page_range">
+      <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#page_range">
         <prism:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">462</prism:startingPage>
         <prism:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">465</prism:endingPage>
       </rdf:Description>
@@ -477,84 +480,84 @@
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#abstract_sentence1">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#abstract_sentence1">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>Woodpeckers are capable of repeated pecking on a tree at remarkably high decelerations (on the order of 10 000 m s2 or 1000 g).</c4o:hasContent>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#abstract_sentence3">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#abstract_sentence3">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>I find that there are three keys to woodpeckers’ ability to withstand high decelerations: their small size, which reduces the stress on the brain for a given acceleration; the short duration of the impact, which increases the tolerable acceleration; and the orientation of the brain within the skull, which increases the area of contact between the brain and the skull.</c4o:hasContent>
   </rdf:Description>
 
-  <foaf:Person rdf:about="https://sakedhdk.github.io/knowledge_graph#L_J_Gibson">
+  <foaf:Person rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#L_J_Gibson">
     <foaf:firstName>Lorna J.</foaf:firstName>
     <foaf:familyName>Gibson</foaf:familyName>
     <foaf:gender>Female</foaf:gender>
     <foaf:mbox>ljgibson@mit.edu</foaf:mbox>
-    <org:memberOf rdf:resource="https://sakedhdk.github.io/knowledge_graph#MSE_MIT"/>
+    <org:memberOf rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#MSE_MIT"/>
   </foaf:Person>
 
-  <foaf:Organization rdf:about="https://sakedhdk.github.io/knowledge_graph#MSE_MIT">
+  <foaf:Organization rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#MSE_MIT">
     <foaf:name>Department of Materials Science and Engineering, Massachusetts Institute of Technology</foaf:name>
     <dbo:affiliation rdf:resource="http://dbpedia.org/resource/Massachusetts_Institute_of_Technology"/>
-    <foaf:member rdf:resource="https://sakedhdk.github.io/knowledge_graph#L_J_Gibson"/>
+    <foaf:member rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#L_J_Gibson"/>
   </foaf:Organization>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#formula_1">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#formula_1">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Formula"/>
     <dc:title>(1)</dc:title>
     <c4o:hasContent>&lt;mfrac&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x3B8;&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x3B8;&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mfrac&gt;&lt;msub&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;msub&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;/mfrac&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mfrac&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/mfrac&gt;&lt;/mrow&gt;&lt;/msup&gt;</c4o:hasContent>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#formula_2">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#formula_2">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Formula"/>
     <dc:title>(2)</dc:title>
     <c4o:hasContent>&lt;mfrac&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x3C3;&lt;/mi&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;/msub&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x3C3;&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;&amp;#x221E;&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;F&lt;/mi&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;msub&gt;&lt;mi&gt;F&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;/msub&gt;&lt;/mfrac&gt;&lt;mo&gt;&amp;#x221E;&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;/msub&gt;&lt;mrow&gt;&lt;msubsup&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/msubsup&gt;&lt;/mrow&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;msubsup&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msubsup&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mrow&gt;&lt;msubsup&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/msubsup&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;msub&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;/msub&gt;&lt;mrow&gt;&lt;msubsup&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/msubsup&gt;&lt;/mrow&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mfrac&gt;</c4o:hasContent>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#formula_3">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#formula_3">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Formula"/>
     <dc:title>(3)</dc:title>
     <c4o:hasContent>&lt;mfrac&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;/msub&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;/msub&gt;&lt;/mfrac&gt;&lt;mo&gt;&amp;#x221E;&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;msub&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mfrac&gt;</c4o:hasContent>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#figure_1">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1">
     <rdf:type rdf:resource="http://purl.org/spar/doco/FigureBox"/>
     <dc:title>Figure 1</dc:title>
     <po:contains>
-      <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#caption_fig_1">
+      <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#caption_fig_1">
         <rdf:type rdf:resource="http://purl.org/spar/deo/Caption"/>
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#fig1_sentece_1">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#fig1_sentece_1">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
             <c4o:hasContent>Tolerance curves for human and acorn woodpecker Melanerpes formicivorus head impact.</c4o:hasContent>
           </rdf:Description>
         </po:contains>
 
-        <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#fig1_sentece_2"/>
+        <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#fig1_sentece_2"/>
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#fig1_sentece_3">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#fig1_sentece_3">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
             <c4o:hasContent>The upper curve, for acorn woodpecker head impact, is obtained using the scaling relationship equation (3).</c4o:hasContent>
           </rdf:Description>
         </po:contains>
 
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#fig1_sentece_4">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#fig1_sentece_4">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
             <c4o:hasContent>The duration of human head impacts in accidents is typically 3–15 ms, corresponding to tolerable accelerations of 80g to 160g.</c4o:hasContent>
           </rdf:Description>
         </po:contains>
 
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#fig1_sentece_5">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#fig1_sentece_5">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
             <c4o:hasContent>The duration of acorn woodpecker head impacts has been measured to be 0.5–1.0 ms (May et al., 1979), suggesting that acorn woodpeckers can tolerate impact accelerations of 4600 g to 6000 g, well in excess of measured values of 634 g to 1525 g.</c4o:hasContent>
             <po:contains>
-              <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#fig1_sentence_5_reference1">
-                <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_7"/>
-                <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#fig1_sentece_2"/>
+              <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#fig1_sentence_5_reference1">
+                <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_7"/>
+                <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#fig1_sentece_2"/>
                 <c4o:hasContent>(May et al., 1979)</c4o:hasContent>
               </c4o:InTextReferencePointer>
             </po:contains>
@@ -567,47 +570,47 @@
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#fig1_sentece_2">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#fig1_sentece_2">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The lower curve gives the threshold acceleration for concussion in humans and is adapted from Ono et al. (1980); accelerations below the curve can be tolerated without brain injury.</c4o:hasContent>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#fig1_sentence_2_reference1"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#fig1_sentence_2_reference1"/>
   </rdf:Description>
 
-  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#fig1_sentence_3_reference1">
-    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_14"/>
-    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#fig1_sentece_2"/>
+  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#fig1_sentence_3_reference1">
+    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_14"/>
+    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#fig1_sentece_2"/>
     <c4o:hasContent>Ono et al. (1980)</c4o:hasContent>
   </c4o:InTextReferencePointer>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#figure_2">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#figure_2">
     <rdf:type rdf:resource="http://purl.org/spar/doco/FigureBox"/>
     <dc:title>Figure 2</dc:title>
     <po:contains>
-      <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#caption_fig_2">
+      <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#caption_fig_2">
         <rdf:type rdf:resource="http://purl.org/spar/deo/Caption"/>
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#fig2_sentece_1">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#fig2_sentece_1">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
             <c4o:hasContent>Photographs of (a, c) acorn woodpecker Melanerpes formicivorus (MCZ 347602) and (b, d) human skulls (MCZ 7299).</c4o:hasContent>
           </rdf:Description>
         </po:contains>
 
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#fig2_sentece_2">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#fig2_sentece_2">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
             <c4o:hasContent>(e, f) Schematics showing approximately the different orientations of the brain within each skull.</c4o:hasContent>
           </rdf:Description>
         </po:contains>
 
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#fig2_sentece_3">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#fig2_sentece_3">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
             <c4o:hasContent>Tolerance curves for human and acorn woodpecker Melanerpes formicivorus head impact.</c4o:hasContent>
           </rdf:Description>
         </po:contains>
 
         <po:contains>
-          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#fig2_sentece_4">
+          <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#fig2_sentece_4">
             <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
             <c4o:hasContent> All images by kind courtesy of Jeremiah Trimble, Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard University. Scale bars: (a) 20mm, (b) 135 mm.</c4o:hasContent>
           </rdf:Description>
@@ -618,758 +621,758 @@
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_3">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_3">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The acorn woodpecker excavates larger holes to store individual acorns; social groups of acorn woodpeckers have been known to store more than 60000 acorns, each in its individual hole, in a dead tree trunk or limb, known as a ‘granary’ (Elphick, Dunning &amp; Sibley, 2001).</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_3_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_5"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_3"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_3_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_5"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_3"/>
         <c4o:hasContent>(Elphick, Dunning &amp; Sibley, 2001)</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_7">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_7">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The most detailed study of woodpecker drilling behaviour remains that of May et al. (1979), who made high-speed films of an acorn woodpecker Melanerpes formicivorus pecking into a tree.</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_7_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_7"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_7"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_7_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_7"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_7"/>
         <c4o:hasContent>May et al. (1979)</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_12">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_12">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The Japan Head Tolerance Curve, the lower curve in Fig. 1, shows the threshold combinations of impact acceleration and duration for concussion; accelerations above the curve cause concussion whereas those below do not (Ono et al., 1980; McLean &amp; Anderson, 1997).</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_12_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_14"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_12"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_12_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_14"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_12"/>
         <c4o:hasContent>Ono et al., 1980</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_12_reference2">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_9"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_12"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_12_reference2">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_9"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_12"/>
         <c4o:hasContent>McLean &amp; Anderson, 1997</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
     <po:contains>
-      <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#figure_1_reference_sentence_12">
-        <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_1"/>
-        <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_12"/>
+      <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1_reference_sentence_12">
+        <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1"/>
+        <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_12"/>
         <sake:hasContent>Fig. 1</sake:hasContent>
       </sake:InResourcePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_17">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_17">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>Bock (1964, 1966, 1999a,b) used a static analysis of the anatomical features of birds that give rise to cranial kinesis to show that, during pecking, the force of the impact is directed away from the dorsal portion of the brain case (which is lightly constructed) and towards the ventral base of the brain case (which consists of more massive bone), so that the brain itself is protected from the impact.</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_17_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_1"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_17"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_17_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_1"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_17"/>
         <c4o:hasContent>Bock 1964</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_17_reference2">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_2"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_17"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_17_reference2">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_2"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_17"/>
         <c4o:hasContent>Bock 1966</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_17_reference3">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_3"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_17"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_17_reference3">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_3"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_17"/>
         <c4o:hasContent>Bock 1999a</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_17_reference4">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_4"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_17"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_17_reference4">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_4"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_17"/>
         <c4o:hasContent>Bock 1999b</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_19">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_19">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>Bock (1999a) does note that the brain may move forward and hit the inner wall of the skull if it is not firmly anchored in some way, possibly causing brain injury, and that there is little information on the morphological relationship of the brain to the brain case.</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_19_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_3"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_19"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_19_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_3"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_19"/>
         <c4o:hasContent>Bock 1999a</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_20">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_20">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>Simple scaling arguments indicate that small size is an advantage: as brain size decreases, the ratio of the brain mass to surface area decreases (assuming that the brain tissue density is similar across species), reducing the stress on the brain tissue associated with a given acceleration (May et al., 1979; Winkler, Christie &amp; Nurney, 1995).</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_20_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_7"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_20"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_20_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_7"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_20"/>
         <c4o:hasContent>May et al., 1979</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_20_reference2">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_18"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_20"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_20_reference2">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_18"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_20"/>
         <c4o:hasContent>Winkler, Christie &amp; Nurney, 1995</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_22">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_22">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The centripetal theory of concussion suggests that rotational, rather than translational, accelerations produce concussion (Holbourn, 1943; Ommaya et al., 1967; Ommaya &amp; Hirsch, 1971), leading May et al. (1979) to argue that the straight-line trajectory protects the woodpecker from injury.</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_22_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_6"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_22"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_22_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_6"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_22"/>
         <c4o:hasContent>Holbourn, 1943</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_22_reference2">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_13"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_22"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_22_reference2">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_13"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_22"/>
         <c4o:hasContent>Ommaya et al., 1967</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_22_reference3">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_12"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_22"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_22_reference3">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_12"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_22"/>
         <c4o:hasContent>Ommaya &amp; Hirsch, 1971</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_20_reference4"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_20_reference4"/>
   </rdf:Description>
 
-  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_22_reference4">
-    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_7"/>
-    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_22"/>
+  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_22_reference4">
+    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_7"/>
+    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_22"/>
     <c4o:hasContent>May et al. (1979)</c4o:hasContent>
   </c4o:InTextReferencePointer>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_23">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_23">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>However, later studies demonstrated that translational accelerations in non-human primates also lead to concussion (Ono et al., 1980).</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_23_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_14"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_23"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_23_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_14"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_23"/>
         <c4o:hasContent>Ono et al., 1980</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_24">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_24">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>In addition, the centripetal model predicts a progression of injury from cortex to subcortex to brain stem that does not always correspond to clinical observations of concussion (Shaw, 2002).</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_24_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_16"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_24"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_24_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_16"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_24"/>
         <c4o:hasContent>Shaw, 2002</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_27">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_27">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The brain of the woodpecker is tightly packed within the skull, and there is relatively little cerebrospinal fluid (May et al., 1976).</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_27_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_8"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_27"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_27_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_8"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_27"/>
         <c4o:hasContent>May et al., 1976</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_28">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_28">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>Shaw (2002) has proposed that the woodpecker avoids injury through the tight packing of the brain in the skull, which he suggests prevents rotation and mechanical stressing of the brain within the skull.</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_28_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_16"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_28"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_28_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_16"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_28"/>
         <c4o:hasContent>Shaw (2002)</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_29">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_29">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>Various shock absorption mechanisms, involving the muscles attached at the rear end of the mandible (Bock, 1964; Spring, 1965; May et al., 1976) or those connected to the tongue, which wraps around the back of the head (May et al., 1976), have been proposed.</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_29_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_1"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_29"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_29_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_1"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_29"/>
         <c4o:hasContent>Bock, 1964</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_29_reference2">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_17"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_29"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_29_reference2">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_17"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_29"/>
         <c4o:hasContent>Spring, 1965</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_29_reference3">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_8"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_29"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_29_reference3">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_8"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_29"/>
         <c4o:hasContent>May et al., 1976</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_30">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_30">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>Yet all of these suffer from the difficulty that such shock absorption mechanisms work by increasing the duration of the impact, decreasing the force and, consequently, the efficiency of drilling (Bock, 1999a).</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_30_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_3"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_30"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_30_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_3"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_30"/>
         <c4o:hasContent>Bock, 1999a</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_32">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_32">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>Studies of brain injury have shown that both rotational and translational accelerations lead to brain injury (Ommaya &amp; Hirsch, 1971; Ono et al., 1980; McLean &amp; Anderson, 1997).</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_32_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_12"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_32"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_32_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_12"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_32"/>
         <c4o:hasContent>Ommaya &amp; Hirsch, 1971</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_32_reference2">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_14"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_32"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_32_reference2">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_14"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_32"/>
         <c4o:hasContent>Ono et al., 1980</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_32_reference3">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_9"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_32"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_32_reference3">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_9"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_32"/>
         <c4o:hasContent>McLean &amp; Anderson, 1997</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_33">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_33">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>A. H. S. Holbourn (unpubl. data, cited by Ommaya et al., 1967 and Ommaya &amp; Hirsch, 1971) proposed a scaling relationship that the tolerable rotational acceleration, €y, for a given duration of impact, for geometrically similar brains of similar properties (e.g. density, stiffness, strain threshold for injury) but different sizes, is inversely proportional to the 2/3 power of the mass, M, of the brains: where subscripts 1 and 2 refer to brains of sizes 1 and 2.</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_33_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_13"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_33"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_33_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_13"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_33"/>
         <c4o:hasContent>Ommaya et al., 1967</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_33_reference2">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_12"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_33"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_33_reference2">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_12"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_33"/>
         <c4o:hasContent>Ommaya &amp; Hirsch, 1971</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_35">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_35">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>Equation (1) has been experimentally confirmed, using some approximations, in whiplash experiments on three species of non-human primates with brain masses ranging from 20 to 500 g (Ommaya &amp; Hirsch, 1971).</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_35_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_12"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_35"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_35_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_12"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_35"/>
         <c4o:hasContent>Ommaya &amp; Hirsch, 1971</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_35_reference2"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_35_reference2"/>
     <po:contains>
-      <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#for_1_reference_sentence_35">
-        <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph#formula_1"/>
-        <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_35"/>
+      <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#for_1_reference_sentence_35">
+        <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#formula_1"/>
+        <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_35"/>
         <sake:hasContent>Equation (1)</sake:hasContent>
       </sake:InResourcePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_36">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_36">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>May et al. (1979) use Holbourn’s scaling relationship for rotational acceleration to suggest that woodpeckers (with brain masses between 1.25 and 3.95 g) should be 50–100 times less susceptible to concussion than humans (brain mass of 1400 g).</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_36_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_7"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_36"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_36_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_7"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_36"/>
         <c4o:hasContent>May et al. (1979)</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_37">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_37">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>However, May et al.’s (1979) high-speed film observations (up to 2000 frames s^(-1)) indicate that the trajectory of the acorn woodpecker is a straight-line translation rather than a rotation.</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_37_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_7"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_37"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_37_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_7"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_37"/>
         <c4o:hasContent>May et al. (1979)</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_38">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_38">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>Limited data from slower films (at 64 frames s^(-1)) suggest that the yellow-bellied sapsucker Sphyrapicus varius also made a straight-line trajectory during pecking whereas the black-backed woodpecker Picoides arcticus made a slightly rotational trajectory, with the entire body rotating as the pelvis rotated about the femoral head (Spring, 1965).</c4o:hasContent>
     <po:contains>
-      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_38_reference1">
-        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_17"/>
-        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_38"/>
+      <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_38_reference1">
+        <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_17"/>
+        <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_38"/>
         <c4o:hasContent>Spring, 1965</c4o:hasContent>
       </c4o:InTextReferencePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_41">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_41">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>I note that both woodpecker and human brains are roughly hemispherical, but that they have different orientations within the skull (Fig. 2), so that the projected contact area, Aw, of the woodpecker brain against the skull is approximately (inline1) whereas that of the human brain, Ah, is (inline_2), where Rw and Rh are the radii of the woodpecker and human brains, respectively.</c4o:hasContent>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_2_reference_sentence_41"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_2_reference_sentence_41"/>
   </rdf:Description>
 
-  <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#figure_2_reference_sentence_41">
+  <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#figure_2_reference_sentence_41">
     <rdf:type rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
-    <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_2"/>
-    <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_41"/>
+    <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_2"/>
+    <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_41"/>
     <sake:hasContent>(Fig. 2)</sake:hasContent>
   </sake:InResourcePointer>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_42">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_42">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>Assuming that brain injury occurs at the same stress, s, in both the woodpecker and the human, then or where F is the force on the brain and subscripts w and h refer to woodpecker and human, respectively.</c4o:hasContent>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#formula_2"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#formula_3"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#formula_2_reference_sentence_42"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#formula_3_reference_sentence_42"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#formula_2"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#formula_3"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#formula_2_reference_sentence_42"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#formula_3_reference_sentence_42"/>
   </rdf:Description>
 
-  <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#formula_2_reference_sentence_42">
+  <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#formula_2_reference_sentence_42">
     <rdf:type rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
-    <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph#formula_2"/>
-    <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_42"/>
+    <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#formula_2"/>
+    <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_42"/>
     <sake:hasContent>(2)</sake:hasContent>
   </sake:InResourcePointer>
 
-  <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#formula_3_reference_sentence_42">
+  <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#formula_3_reference_sentence_42">
     <rdf:type rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
-    <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph#formula_3"/>
-    <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_42"/>
+    <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#formula_3"/>
+    <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_42"/>
     <sake:hasContent>(3)</sake:hasContent>
   </sake:InResourcePointer>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_43">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_43">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The brain mass of the acorn woodpecker is about 2.5g (Mlikovsky, 1989) whereas that of a human is about 1400 g, suggesting that the ratio of the brain radii, rw/rh, is about 0.12 and that the translational acceleration the acorn woodpecker can with-stand without injury is 16 times that of a human (for a given duration of impact).</c4o:hasContent>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_43_reference1"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_43_reference1"/>
   </rdf:Description>
 
-  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_43_reference1">
+  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_43_reference1">
     <rdf:type rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
-    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_10"/>
-    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_43"/>
+    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_10"/>
+    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_43"/>
     <c4o:hasContent>Mlikovsky, 1989</c4o:hasContent>
   </c4o:InTextReferencePointer>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_44">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_44">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The brain masses of a number of species of woodpeckers have been measured to range from 1.2 g (Dendrocopos minor) to 7.7 g (Dryocopus martius) (Mlikovsky, 1989), corresponding to tolerable accelerations of the woodpecker brain about 11–20 times that of the human brain (again, for a given duration of impact).</c4o:hasContent>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_46">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_46">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The maximum acceleration that the human head can withstand without brain injury depends on the duration of the acceleration.</c4o:hasContent>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_47">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_47">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The lower curve in Fig. 1 (adapted from Ono et al., 1980) shows a tolerance curve for human head impact: accelerations below the curve can be tolerated without concussion.</c4o:hasContent>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_47_reference1"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_1_reference_sentence_47"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_47_reference1"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1_reference_sentence_47"/>
   </rdf:Description>
 
-  <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#figure_1_reference_sentence_47">
+  <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1_reference_sentence_47">
     <rdf:type rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
-    <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_1"/>
-    <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_47"/>
+    <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1"/>
+    <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_47"/>
     <sake:hasContent>Fig. 1</sake:hasContent>
   </sake:InResourcePointer>
 
-  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_47_reference1">
+  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_47_reference1">
     <rdf:type rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
-    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_14"/>
-    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_47"/>
+    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_14"/>
+    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_47"/>
     <c4o:hasContent>Ono et al., 1980</c4o:hasContent>
   </c4o:InTextReferencePointer>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_48">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_48">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>A similar tolerance curve for the acorn woodpecker can be estimated using the scaling relationship equation (3) (the upper curve in Fig. 1).</c4o:hasContent>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_1_reference_sentence_48"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#formula_3_reference_sentence_48"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1_reference_sentence_48"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#formula_3_reference_sentence_48"/>
   </rdf:Description>
 
-  <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#formula_3_reference_sentence_48">
+  <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#formula_3_reference_sentence_48">
     <rdf:type rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
-    <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph#formula_3"/>
-    <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_48"/>
+    <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#formula_3"/>
+    <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_48"/>
     <sake:hasContent>equation(3)</sake:hasContent>
   </sake:InResourcePointer>
 
-  <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#figure_1_reference_sentence_48">
+  <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1_reference_sentence_48">
     <rdf:type rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
-    <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_1"/>
-    <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_48"/>
+    <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1"/>
+    <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_48"/>
     <sake:hasContent>(the upper curve in Fig. 1)</sake:hasContent>
   </sake:InResourcePointer>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_49">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_49">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>In automobile crashes, the duration of the contact time between an unbelted vehicular occupant and a component of the vehicle is typically 3–7 ms (Ommaya, Goldsmith &amp; Thibault, 2002).</c4o:hasContent>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_49_reference1"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_49_reference1"/>
   </rdf:Description>
 
-  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_49_reference1">
+  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_49_reference1">
     <rdf:type rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
-    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_11"/>
-    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_49"/>
+    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_11"/>
+    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_49"/>
     <c4o:hasContent>Ommaya, Goldsmith &amp; Thibault, 2002</c4o:hasContent>
   </c4o:InTextReferencePointer>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_50">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_50">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The duration of head impacts in National Football League players who suffer concussion is typically 15ms (Pellman et al., 2003).</c4o:hasContent>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_50_reference1"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_50_reference1"/>
   </rdf:Description>
 
-  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_50_reference1">
+  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_50_reference1">
     <rdf:type rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
-    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_15"/>
-    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_50"/>
+    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_15"/>
+    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_50"/>
     <c4o:hasContent>Pellman et al., 2003</c4o:hasContent>
   </c4o:InTextReferencePointer>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_51">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_51">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>For this range of duration of human head impact (3–15 ms), the tolerable acceleration ranges from 80 g to 160 g.</c4o:hasContent>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_52">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_52">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The duration of impact for the acorn woodpecker is remarkably short: 0.5–1.0 ms (May et al., 1979).</c4o:hasContent>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_52_reference1"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_52_reference1"/>
   </rdf:Description>
 
-  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_52_reference1">
+  <c4o:InTextReferencePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_52_reference1">
     <rdf:type rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
-    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_7"/>
-    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_52"/>
+    <c4o:denotes rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_7"/>
+    <c4o:hasContext rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_52"/>
     <c4o:hasContent>May et al., 1979</c4o:hasContent>
   </c4o:InTextReferencePointer>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_53">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_53">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The scaled tolerance curve for the acorn woodpecker suggests that for these short impact durations, the woodpecker head can tolerate translational accelerations of 4600 g–6000 g, well above the values of 634 g to 1525 g measured by May and his co-workers.</c4o:hasContent>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_54">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_54">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>As noted above, other species of woodpeckers, with somewhat smaller or larger brains, would be expected to tolerate accelerations of about 11/16 = 69% to 20/16=125% that of the acorn woodpecker (assuming that they, too, have similarly short durations of the impact).</c4o:hasContent>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_55">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_55">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>The ability of woodpeckers to withstand high accelerations associated with drilling for food and excavating nests is due to three factors: their small size, which reduces the stress on the brain for a given acceleration; the short duration of the impact, which increases the tolerable acceleration; and the orientation of the brain within the skull, which increases the area of contact between the brain and the skull.</c4o:hasContent>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#sentence_58">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_58">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Sentence"/>
     <c4o:hasContent>Mr Matt Dawson assisted with the preparation of Fig. 1. The photographs of the skulls in Fig. 2 were kindly provided by Mr Jeremiah Trimble of the Ornithology Department of the Museum of Comparative Zoology, Harvard University, copyright President and Fellows of Harvard College.</c4o:hasContent>
     <po:contains>
-      <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#figure_1_reference_sentence_58">
-        <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_1"/>
-        <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_58"/>
+      <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1_reference_sentence_58">
+        <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1"/>
+        <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_58"/>
         <sake:hasContent>Mr Matt Dawson assited with the preparation of Fig. 1</sake:hasContent>
       </sake:InResourcePointer>
     </po:contains>
 
     <po:contains>
-      <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph#figure_2_reference_sentence_58">
-        <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_2"/>
-        <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_58"/>
+      <sake:InResourcePointer rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#figure_2_reference_sentence_58">
+        <sake:reliesOn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_2"/>
+        <sake:isPlaced rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_58"/>
         <sake:hasContent>The photographs of skull in Fig.2</sake:hasContent>
       </sake:InResourcePointer>
     </po:contains>
 
   </rdf:Description>
 
-  <foaf:Person rdf:about="https://sakedhdk.github.io/knowledge_graph#Trey_Crisco">
+  <foaf:Person rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#Trey_Crisco">
     <foaf:firstName>Trey</foaf:firstName>
     <foaf:familyName>Crisco</foaf:familyName>
     <org:memberOf>
-      <foaf:Organization rdf:about="https://sakedhdk.github.io/knowledge_graph#DO_BU">
+      <foaf:Organization rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#DO_BU">
         <foaf:name>Department of Orthopaedics, Brown University</foaf:name>
         <dbo:affiliation rdf:resource="http://dbpedia.org/resource/Brown_University"/>
-        <foaf:member rdf:resource="https://sakedhdk.github.io/knowledge_graph#Trey_Crisco"/>
+        <foaf:member rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#Trey_Crisco"/>
       </foaf:Organization>
     </org:memberOf>
 
   </foaf:Person>
 
-  <foaf:Person rdf:about="https://sakedhdk.github.io/knowledge_graph#Sharon_Swartz">
+  <foaf:Person rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#Sharon_Swartz">
     <foaf:firstName>Sharon</foaf:firstName>
     <foaf:familyName>Swartz</foaf:familyName>
     <org:memberOf>
-      <foaf:Organization rdf:about="https://sakedhdk.github.io/knowledge_graph#EEB_BU">
+      <foaf:Organization rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#EEB_BU">
         <foaf:name>Department of Ecology and Evolutionary Biology, Brown University</foaf:name>
         <dbo:affiliation rdf:resource="http://dbpedia.org/resource/Brown_University"/>
-        <foaf:member rdf:resource="https://sakedhdk.github.io/knowledge_graph#Sharon_Swartz"/>
+        <foaf:member rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#Sharon_Swartz"/>
       </foaf:Organization>
     </org:memberOf>
 
   </foaf:Person>
 
-  <foaf:Person rdf:about="https://sakedhdk.github.io/knowledge_graph#Andy_Biewener">
+  <foaf:Person rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#Andy_Biewener">
     <foaf:firstName>Andy</foaf:firstName>
     <foaf:familyName>Biewener</foaf:familyName>
     <org:memberOf>
-      <foaf:Organization rdf:about="https://sakedhdk.github.io/knowledge_graph#OEB_HU">
+      <foaf:Organization rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#OEB_HU">
         <foaf:name>Department of Organismic and Evolutionary Biology, Harvard University</foaf:name>
         <dbo:affiliation rdf:resource="http://dbpedia.org/resource/Harvard_University"/>
-        <foaf:member rdf:resource="https://sakedhdk.github.io/knowledge_graph#Andy_Biewener"/>
+        <foaf:member rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#Andy_Biewener"/>
       </foaf:Organization>
     </org:memberOf>
 
   </foaf:Person>
 
-  <foaf:Person rdf:about="https://sakedhdk.github.io/knowledge_graph#Jeremiah_Trimble">
+  <foaf:Person rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#Jeremiah_Trimble">
     <foaf:firstName>Jeremiah</foaf:firstName>
     <foaf:familyName>Trimble</foaf:familyName>
     <org:memberOf>
-      <foaf:Organization rdf:about="https://sakedhdk.github.io/knowledge_graph#ODMCZ_HU">
+      <foaf:Organization rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#ODMCZ_HU">
         <foaf:name>Ornithology Department of the Museum of Comparative Zoology, Harvard University</foaf:name>
         <dbo:affiliation rdf:resource="http://dbpedia.org/resource/Harvard_University"/>
-        <foaf:member rdf:resource="https://sakedhdk.github.io/knowledge_graph#Jeremiah_Trimble"/>
+        <foaf:member rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#Jeremiah_Trimble"/>
       </foaf:Organization>
     </org:memberOf>
 
   </foaf:Person>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#section_references">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#section_references">
     <rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
     <rdf:type rdf:resource="http://purl.org/spar/doco/BibliographicReference"/>
     <dc:title>References</dc:title>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_1"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_2"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_3"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_4"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_5"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_6"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_7"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_8"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_9"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_10"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_11"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_12"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_13"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_14"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_15"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_16"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_17"/>
-    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_18"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_1"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_2"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_3"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_4"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_5"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_6"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_7"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_8"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_9"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_10"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_11"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_12"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_13"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_14"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_15"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_16"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_17"/>
+    <po:contains rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_18"/>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_1">
+  <rdf:Description rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_1">
     <rdf:type rdf:resource="http://purl.org/spar/biro/BibliographicReference"/>
     <c4o:hasContent>Bock, W.J. (1964). Kinetics of the avian skull. J. Morph. 114, 1–42.</c4o:hasContent>
     <biro:references rdf:resource="https://doi.org/10.1002/jmor.1051140102"/>
   </rdf:Description>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_2">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_2">
     <c4o:hasContent>Bock, W.J. (1966). An approach to the functional analysis of bill shape. Auk 83, 10–51.</c4o:hasContent>
     <biro:references rdf:resource="https://www.jstor.org/stable/4082976"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_3">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_3">
     <c4o:hasContent>Bock, W.J. (1999a). Functional and evolutionary morphology of woodpeckers. Ostrich 70, 23–31.</c4o:hasContent>
     <biro:references rdf:resource="https://doi.org/10.1080/00306525.1999.9639746"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_4">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_4">
     <c4o:hasContent>Bock, W.J. (1999b). Cranial kinesis revisited. Zool. Anzeiger 238, 27–39.</c4o:hasContent>
     <biro:references rdf:resource="http://rcin.org.pl/dlibra/docmetadata?id=45207"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_5">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_5">
     <c4o:hasContent>Elphick, C., Dunning, J.B. &amp; Sibley, D.A. (Eds). (2001). The Sibley guide to bird life and bird behavior. New York: Alfred A. Knopf.</c4o:hasContent>
     <biro:references rdf:resource="http://www.worldcat.org/oclc/863051110"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_6">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_6">
     <c4o:hasContent>Holbourn, A.H.S. (1943). Mechanics of head injuries. Lancet 242, 438–441.</c4o:hasContent>
     <biro:references rdf:resource="https://doi.org/10.1016/S0140-6736(00)87453-X"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_7">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_7">
     <c4o:hasContent>May, P.R.A., Fuster, J.M., Haber, J. &amp; Hirschman, A. (1979). Woodpecker drilling behaviour: an endorsement of the rotational theory of impact brain injury. Arch. Neurol. 36, 370–373.</c4o:hasContent>
     <biro:references rdf:resource="https://www.ncbi.nlm.nih.gov/pubmed/454236"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_8">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_8">
     <c4o:hasContent>May, P.R.A., Fuster, J.M., Newman, P.A. &amp; Hirschman, A. (1976). Woodpeckers and head injury. Lancet 307, 454–455.</c4o:hasContent>
     <biro:references rdf:resource="https://www.ncbi.nlm.nih.gov/pubmed/55721"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_9">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_9">
     <c4o:hasContent>McLean, A.J. &amp; Anderson, R.W.G. (1997). Biomechanics of closed head injury. Chapter 2. In Head injury: 25–37. Reilly, P. &amp; Bullock, R. (Eds). London: Chapman &amp; Hall.</c4o:hasContent>
     <biro:references rdf:resource="https://doi.org/10.1016/j.cma.2008.06.006"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_10">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_10">
     <c4o:hasContent>Mlikovsky, J. (1989). Brain size in birds: 3. Columbiformes through Piciformes. Vestn. Cesk. Spol. Zool. 53, 252–264.</c4o:hasContent>
     <biro:references rdf:resource="https://eurekamag.com/research/007/069/007069293.php"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_11">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_11">
     <c4o:hasContent>Ommaya, A.K., Goldsmith, W. &amp; Thibault, L. (2002). Bio-mechanics and neuropathology of adult and paediatric head injury. Br. J. Neurosurg. 16, 220–242.</c4o:hasContent>
     <biro:references rdf:resource="https://www.ncbi.nlm.nih.gov/pubmed/12201393"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_12">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_12">
     <c4o:hasContent>Ommaya, A.K. &amp; Hirsch, A.E. (1971). Tolerances for cerebral concussion from head impact and whiplash in primates. J. Biomech. 4, 13–21.</c4o:hasContent>
     <biro:references rdf:resource="https://doi.org/10.1016/0021-9290(71)90011-X"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_13">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_13">
     <c4o:hasContent>Ommaya, A.K., Yarnell, P., Hirsch, A.E. &amp; Harris, E.H. (1967). Scaling of experimental data on cerebral concussion in sub-human primates to concussion threshold for man. In Proceedings of the 11th Stapp car crash conference: 47–52. New York: Society of Automotive Engineers.</c4o:hasContent>
     <biro:references rdf:resource="https://doi.org/10.4271/670906"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_14">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_14">
     <c4o:hasContent>Ono, K., Kikuchi, A., Nakamura, M., Kobayashi, H. &amp; Nakamura, N. (1980). Human head tolerance to sagittal impact: reliable estimation deduced from experimental head injury using subhuman primates and human cadaver skulls. In Proceedings of the 24th Stapp car crash conference: 101–160. Warrendale, PA: Society of Automotive Engineers.</c4o:hasContent>
     <biro:references rdf:resource="https://www.jstor.org/stable/44632635"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_15">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_15">
     <c4o:hasContent>Pellman, E.J., Viano, D.C., Tucker, A.M., Casson, I.R. &amp; Waeckerle, J.F. (2003). Concussion in professional foot-ball: reconstruction of game impacts and injuries. Neuro-surgery 53, 799–814.</c4o:hasContent>
     <biro:references rdf:resource="https://doi.org/10.1093/neurosurgery/53.3.799"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_16">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_16">
     <c4o:hasContent>Shaw, N.A. (2002). The neurophysiology of concussion. Prog. Neurobiol. 67, 281–344.</c4o:hasContent>
     <biro:references rdf:resource="https://doi.org/10.1016/S0301-0082(02)00018-7"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_17">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_17">
     <c4o:hasContent>Spring, L.W. (1965). Climbing and pecking adaptations in some North American woodpeckers. Condor 67, 457–488.</c4o:hasContent>
     <biro:references rdf:resource="https://www.jstor.org/stable/1365612"/>
   </biro:BibliographicReference>
 
-  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph#bibliography_18">
+  <biro:BibliographicReference rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_18">
     <c4o:hasContent>Winkler, H., Christie, D.A. &amp; Nurney, D. (1995). Woodpeckers: a guide to the woodpeckers of the world. Boston: Houghton Mifflin.</c4o:hasContent>
     <biro:references rdf:resource="http://www.worldcat.org/oclc/751504766"/>
   </biro:BibliographicReference>
 
-  <sake:Theory rdf:about="https://sakedhdk.github.io/knowledge_graph#L_J_Gibson_Theory">
+  <sake:Theory rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#L_J_Gibson_Theory">
     <sake:isFormulatedBy rdf:resource="http://dx.doi.org/10.1111/j.1469-7998.2006.00166.x"/>
-    <dc:creator rdf:resource="https://sakedhdk.github.io/knowledge_graph#L_J_Gibson"/>
-    <sake:isBasedOn rdf:resource="https://sakedhdk.github.io/knowledge_graph#Holbourn_Theory"/>
+    <dc:creator rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#L_J_Gibson"/>
+    <sake:isBasedOn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#Holbourn_Theory"/>
     <sake:isBasedOn>
-      <sake:ExternalTheory rdf:about="https://sakedhdk.github.io/knowledge_graph#May_Theory">
-        <sake:isFormulatedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph#bibliography_7"/>
+      <sake:ExternalTheory rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#May_Theory">
+        <sake:isFormulatedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#bibliography_7"/>
         <dc:creator>P. R. A. May</dc:creator>
-        <sake:BasedOn rdf:resource="https://sakedhdk.github.io/knowledge_graph#Holbourn_Theory"/>
+        <sake:BasedOn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#Holbourn_Theory"/>
         <sake:hasField rdf:resource="http://dbpedia.org/resource/Category:Ornithology"/>
         <sake:hasField rdf:resource="http://dbpedia.org/resource/Category:Biomechanics"/>
         <sake:hasField rdf:resource="http://dbpedia.org/resource/Category:Neurosurgery"/>
-        <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_36"/>
+        <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_36"/>
       </sake:ExternalTheory>
     </sake:isBasedOn>
 
     <sake:explains>
-      <sake:Phenomenon rdf:about="https://sakedhdk.github.io/knowledge_graph#woodpecker_behaviour">
-        <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#abstract_sentence1"/>
+      <sake:Phenomenon rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#woodpecker_behaviour">
+        <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#abstract_sentence1"/>
       </sake:Phenomenon>
     </sake:explains>
 
     <sake:hasField rdf:resource="http://dbpedia.org/resource/Category:Ornithology"/>
     <sake:hasField rdf:resource="http://dbpedia.org/resource/Category:Biomechanics"/>
     <sake:hasField rdf:resource="http://dbpedia.org/resource/Category:Neurosurgery"/>
-    <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#abstract_sentence3"/>
-    <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_55"/>
+    <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#abstract_sentence3"/>
+    <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_55"/>
     <sake:hasAsIdea>
-      <sake:Thesis rdf:about="https://sakedhdk.github.io/knowledge_graph#woodpecker_thesis_size">
-        <sake:isIdeaOf rdf:resource="https://sakedhdk.github.io/knowledge_graph#L_J_Gibson_Theory"/>
+      <sake:Thesis rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#woodpecker_thesis_size">
+        <sake:isIdeaOf rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#L_J_Gibson_Theory"/>
         <c4o:hasContent>their small size, which reduces the stress on the brain for a given acceleration</c4o:hasContent>
         <sake:isDemonstratedBy>
-          <sake:Demonstration rdf:about="https://sakedhdk.github.io/knowledge_graph#woodpecker_demonstration_size">
-            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_43"/>
-            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_44"/>
-            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_54"/>
-            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_43_reference1"/>
+          <sake:Demonstration rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#woodpecker_demonstration_size">
+            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_43"/>
+            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_44"/>
+            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_54"/>
+            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_43_reference1"/>
           </sake:Demonstration>
         </sake:isDemonstratedBy>
 
@@ -1377,26 +1380,26 @@
     </sake:hasAsIdea>
 
     <sake:hasAsIdea>
-      <sake:Thesis rdf:about="https://sakedhdk.github.io/knowledge_graph#woodpecker_thesis_duration">
-        <sake:isIdeaOf rdf:resource="https://sakedhdk.github.io/knowledge_graph#L_J_Gibson_Theory"/>
+      <sake:Thesis rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#woodpecker_thesis_duration">
+        <sake:isIdeaOf rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#L_J_Gibson_Theory"/>
         <c4o:hasContent>the short duration of the impact, which increases the tolerable acceleration;</c4o:hasContent>
         <sake:isDemonstratedBy>
-          <sake:Demonstration rdf:about="https://sakedhdk.github.io/knowledge_graph#woodpecker_demonstration_duration">
-            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_46"/>
-            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_47"/>
-            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_48"/>
-            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_49"/>
-            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_50"/>
-            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_51"/>
-            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_52"/>
-            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_53"/>
-            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_47_reference1"/>
-            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_49_reference1"/>
-            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_50_reference1"/>
-            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_52_reference1"/>
-            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_1_reference_sentence_47"/>
-            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph#formula_3_reference_sentence_48"/>
-            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_1_reference_sentence_48"/>
+          <sake:Demonstration rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#woodpecker_demonstration_duration">
+            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_46"/>
+            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_47"/>
+            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_48"/>
+            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_49"/>
+            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_50"/>
+            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_51"/>
+            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_52"/>
+            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_53"/>
+            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_47_reference1"/>
+            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_49_reference1"/>
+            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_50_reference1"/>
+            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_52_reference1"/>
+            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1_reference_sentence_47"/>
+            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#formula_3_reference_sentence_48"/>
+            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_1_reference_sentence_48"/>
           </sake:Demonstration>
         </sake:isDemonstratedBy>
 
@@ -1404,16 +1407,16 @@
     </sake:hasAsIdea>
 
     <sake:hasAsIdea>
-      <sake:Thesis rdf:about="https://sakedhdk.github.io/knowledge_graph#woodpecker_thesis_orientation">
-        <sake:isIdeaOf rdf:resource="https://sakedhdk.github.io/knowledge_graph#L_J_Gibson_Theory"/>
+      <sake:Thesis rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#woodpecker_thesis_orientation">
+        <sake:isIdeaOf rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#L_J_Gibson_Theory"/>
         <c4o:hasContent>the orientation of the brain within the skull, which increases the area of contact between the brain and the skull.</c4o:hasContent>
         <sake:isDemonstratedBy>
-          <sake:Demonstration rdf:about="https://sakedhdk.github.io/knowledge_graph#woodpecker_demonstration_orientation">
-            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_41"/>
-            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_42"/>
-            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph#figure_2_reference_sentence_41"/>
-            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph#formula_2_reference_sentence_42"/>
-            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph#formula_3_reference_sentence_42"/>
+          <sake:Demonstration rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#woodpecker_demonstration_orientation">
+            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_41"/>
+            <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_42"/>
+            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#figure_2_reference_sentence_41"/>
+            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#formula_2_reference_sentence_42"/>
+            <sake:isSupportedBy rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#formula_3_reference_sentence_42"/>
           </sake:Demonstration>
         </sake:isDemonstratedBy>
 
@@ -1422,13 +1425,13 @@
 
   </sake:Theory>
 
-  <sake:Theory rdf:about="https://sakedhdk.github.io/knowledge_graph#Holbourn_Theory">
+  <sake:Theory rdf:about="https://sakedhdk.github.io/knowledge_graph.rdf#Holbourn_Theory">
     <sake:isFormulatedBy rdf:resource="https://doi.org/10.1016/0021-9290(71)90011-X"/>
     <sake:isFormulatedBy rdf:resource="https://doi.org/10.4271/670906"/>
     <dc:creator>A. H. S. Holbourn</dc:creator>
     <sake:hasField rdf:resource="http://dbpedia.org/resource/Category:Neurosurgery"/>
     <sake:hasField rdf:resource="http://dbpedia.org/resource/Category:Biomechanics"/>
-    <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph#sentence_33"/>
+    <sake:isExpressedIn rdf:resource="https://sakedhdk.github.io/knowledge_graph.rdf#sentence_33"/>
   </sake:Theory>
 
 </rdf:RDF>

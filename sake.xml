@@ -39,6 +39,18 @@
     
 
 
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+    
+
+
     <!-- https://sakedhdk.github.io/sake#demonstrates -->
 
     <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#demonstrates">
@@ -91,7 +103,7 @@
 
     <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#hasContent">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
+        <rdfs:domain rdf:resource="https://sakedhdk.github.io/sake#InResourcePointer"/>
         <rdfs:comment>It is used to specify the textual content of a in-text resource pointer.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -179,7 +191,7 @@
 
     <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#isPlaced">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
+        <rdfs:domain rdf:resource="https://sakedhdk.github.io/sake#InResourcePointer"/>
         <rdfs:range rdf:resource="http://purl.org/spar/doco/Sentence"/>
         <rdfs:comment>&quot;isPlaced&quot; is used to indicate the textual context (e.g. a sentence or a paragraph) of a particular in-text resource pointer, this context providing the rhetorical motivation for the existence of that reference.</rdfs:comment>
     </owl:ObjectProperty>
@@ -213,7 +225,7 @@
 
     <owl:ObjectProperty rdf:about="https://sakedhdk.github.io/sake#reliesOn">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
+        <rdfs:domain rdf:resource="https://sakedhdk.github.io/sake#InResourcePointer"/>
         <rdfs:range rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
         <rdfs:comment>&quot;reliesOn&quot; is used to assert the connection between an in-text resource pointer and the resource it points to.</rdfs:comment>
     </owl:ObjectProperty>
@@ -271,6 +283,13 @@
                 <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Demonstration is the intellectual procedure made by one or more scholars to demonstrate the scientifical validity of the Idea</rdfs:comment>
     </owl:Class>
     
@@ -282,6 +301,12 @@
         <rdfs:subClassOf rdf:resource="https://sakedhdk.github.io/sake#TheoryComponents"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#supports"/>
                 <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Demonstration"/>
             </owl:Restriction>
@@ -291,9 +316,28 @@
     
 
 
-    <!-- https://sakedhdk.github.io/sake#InTextResourcePointer -->
+    <!-- https://sakedhdk.github.io/sake#InResourcePointer -->
 
-    <owl:Class rdf:about="https://sakedhdk.github.io/sake#InTextResourcePointer">
+    <owl:Class rdf:about="https://sakedhdk.github.io/sake#InResourcePointer">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isPlaced"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/spar/doco/Sentence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#reliesOn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#isPlaced"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#reliesOn"/>
+        </owl:hasKey>
         <rdfs:comment>The in-text reference resource is a textual element that denotes a specific object (i.e. formula, picture, etc.) used by the author to support his/her theory.</rdfs:comment>
     </owl:Class>
     
@@ -303,6 +347,12 @@
 
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Phenomenon">
         <rdfs:subClassOf rdf:resource="https://sakedhdk.github.io/sake#TheoryComponents"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#isExplainedBy"/>
@@ -318,6 +368,30 @@
 
     <owl:Class rdf:about="https://sakedhdk.github.io/sake#Theory">
         <rdfs:subClassOf rdf:resource="https://sakedhdk.github.io/sake#TheoryComponents"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Demonstration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Evidence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Phenomenon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Thesis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://sakedhdk.github.io/sake#explains"/>
@@ -389,6 +463,13 @@
                 <owl:someValuesFrom rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://sakedhdk.github.io/sake#Theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Thesis is an Idea proposed by one or more scholars</rdfs:comment>
     </owl:Class>
     
@@ -405,19 +486,11 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/spar/doco/Sentence"/>
-            <rdf:Description rdf:about="http://purl.org/spar/fabio/Article"/>
-            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#InTextResourcePointer"/>
-            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#TheoryComponents"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/spar/deo/DiscourseElement"/>
             <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Demonstration"/>
             <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Evidence"/>
+            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#InResourcePointer"/>
             <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Phenomenon"/>
-            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Theory"/>
             <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Thesis"/>
         </owl:members>
     </rdf:Description>
