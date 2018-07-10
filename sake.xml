@@ -489,7 +489,6 @@
             <rdf:Description rdf:about="http://purl.org/spar/deo/DiscourseElement"/>
             <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Demonstration"/>
             <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Evidence"/>
-            <rdf:Description rdf:about="https://sakedhdk.github.io/sake#InResourcePointer"/>
             <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Phenomenon"/>
             <rdf:Description rdf:about="https://sakedhdk.github.io/sake#Thesis"/>
         </owl:members>
