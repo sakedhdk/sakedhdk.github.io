@@ -9,6 +9,12 @@ h1 {
 }
 h1 strong {
 	font-weight: 900;
+	@media 
+}
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 30px;
+	}
 }
 h2 {
 	line-height: 20px;
