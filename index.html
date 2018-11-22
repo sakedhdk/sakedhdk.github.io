@@ -364,14 +364,18 @@
 <script>
 document.getElementById("navnav").addEventListener("click", hidelogo);
 var navbarsel = false;
+var waitmoment = false;
 function hidelogo() {
-    if (navbarsel == false){
-        document.getElementById("logologo").style.display = "none";
-        navbarsel = true;
-    }
-    else if (navbarsel == true){
-        document.getElementById("logologo").style.display = "block";
-        navbarsel = false;
+    if (waitmoment == false) {
+        if (navbarsel == false){
+            document.getElementById("logologo").style.display = "none";
+            navbarsel = true;
+        }
+        else if (navbarsel == true){
+            waitmoment = true
+            setTimeout(function(){ document.getElementById("logologo").style.display = "block"; waitmoment = false;}, 2000);
+            navbarsel = false;
+        }
     }
 }
 </script>
