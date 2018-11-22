@@ -484,6 +484,13 @@ label {
 }
 @media (max-width: 768px) {
 	#titleSite {
-	font-size: 10px !important;
+	font-size: 30px !important;
 	}
 }
+@media (max-width: 768px) {
+	.navbar-brand > img {
+    		display: block;
+    		width: 10px;
+	}
+}
+
