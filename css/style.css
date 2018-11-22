@@ -497,7 +497,7 @@ label {
 	#list_categories {
     		padding: 36px;
 		padding-top: 0px;
-		padding-bottom: 30px;
+		padding-bottom: 19px;
 	}
 }
 @media (max-width: 768px) {
