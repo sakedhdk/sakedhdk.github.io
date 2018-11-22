@@ -483,5 +483,5 @@ label {
 }
 }
 @media (max-width: 768px) {
-	font-size: 10px;
+	font-size: 10px !important;
 }
