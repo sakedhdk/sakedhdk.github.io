@@ -493,4 +493,9 @@ label {
     		width: 87px;
 	}
 }
+@media (max-width: 768px) {
+	#categories {
+    		padding: 10px;
+	}
+}
 
