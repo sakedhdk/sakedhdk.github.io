@@ -498,4 +498,9 @@ label {
     		padding: 10px;
 	}
 }
+@media (max-width: 768px) {
+	h2 {
+		font-size: 28px;
+	}
+}
 
