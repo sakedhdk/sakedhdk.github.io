@@ -181,7 +181,7 @@ header p {
 	background-color: #f6f6f6;
 }
 .categories {
-	padding-bottom: 6px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 ul.cat li {
@@ -523,3 +523,13 @@ label {
 		padding-bottom: 864px;
 	}
 }
+@media (min-width: 1365px) {
+	.intro-text {
+		position: relative;
+		padding-top: 250px;
+		padding-right: 0;
+		padding-left: 0;
+		padding-bottom: 464px;
+	}
+}
+
