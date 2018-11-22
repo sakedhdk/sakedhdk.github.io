@@ -118,7 +118,7 @@ hr {
 }
 /* Home Style */
 header {
-	background: url(../img/sake_background.jpeg) no-repeat bottom right;
+	background: url(../img/sakeBack.jpeg) no-repeat bottom right;
 	background-size: cover;
 	color: #cfcfcf;
 	position: relative;
